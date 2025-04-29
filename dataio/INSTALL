@@ -1,0 +1,19 @@
+For testing the following line has to be added to .bashrc where the first 3
+statement has to fit to your environment.
+
+```sh
+PATH=/cygdrive/c/Python27:$PATH
+
+export MEASROOT=/cygdrive/c/KBData/measurement
+export MEASBACKUP=c:/KBData/backup
+
+findmeas() {
+  m=`find $MEASROOT -type f -name $1`
+  if [ $m ]
+    then cygpath -ma $m
+  fi
+}
+
+export -f findmeas
+```
+

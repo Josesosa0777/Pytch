@@ -1,0 +1,3 @@
+include src/measparser/ffmpeg.exe
+include src/measparser/mdfsort.exe
+include src/measparser/MdfLibms8.dll
