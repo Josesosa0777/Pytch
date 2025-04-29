@@ -1,0 +1,15 @@
+For testing the following line has to be added to .bashrc where MEASROOT has to
+be present in your environment.
+
+```sh
+export MEASROOT=/cygdrive/c/KBData/measurement
+export MEASBACKUP=c:/KBData/backup
+
+function findmeas()
+{
+  find $MEASROOT -type f -name $1 | xargs cygpath -wa
+}
+
+export -f findmeas
+```
+

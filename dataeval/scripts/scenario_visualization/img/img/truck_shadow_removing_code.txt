@@ -1,0 +1,1 @@
+convert Knorr-Truck-Blue-original.png -channel alpha -threshold 50% test_2.png
