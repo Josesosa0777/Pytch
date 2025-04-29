@@ -1,0 +1,18 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$sensor status
+--!LABEL "camera status"
+--$ego speed start [kph]
+--!QUANTITY "ego vehicle", "speed start", 3.6
+--$ego speed min [kph]
+--!QUANTITY "ego vehicle", "speed min", 3.6
+--$comment
+--!COMMENT

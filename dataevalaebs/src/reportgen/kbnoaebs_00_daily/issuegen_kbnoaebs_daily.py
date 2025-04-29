@@ -1,0 +1,317 @@
+# -*- dataeval: init -*-
+
+import os
+from collections import OrderedDict
+
+from interface.Interfaces import iAnalyze
+from config.Analyze import cIntervalHeader
+from pyutils.math import round2
+
+
+abspath = lambda pth: os.path.abspath(os.path.join(os.path.dirname(__file__), pth))
+cm = 1.0
+
+class Analyze(iAnalyze):
+  optdep = dict(
+    ldws_events='analyze_events-last_entries@ldwseval',
+    flc20_spec_statuses='analyze_issues-last_entries@flc20eval.sensorstatus',
+    dur_vs_roadtype='view_quantity_vs_roadtype_stats-print_duration@egoeval.roadtypes',
+    dist_vs_roadtype='view_quantity_vs_roadtype_stats-print_mileage@egoeval.roadtypes',
+    dur_vs_engine_onoff='view_quantity_vs_onoff_stats-print_duration@egoeval.enginestate',
+    dur_vs_daytime='view_quantity_vs_daytime_stats-print_duration@flc20eval.daytime',
+    dur_vs_flc20status='view_quantity_vs_sensorstatus_stats-print_duration@flc20eval.sensorstatus',
+    dur_vs_ldwsstate='view_quantity_vs_systemstate_stats-print_duration@ldwseval.systemstate',
+  )
+  
+  def init(self):
+    self.doc = self.get_doc('dataeval.simpletxt')
+    return
+  
+  def fill(self):
+    index_fill = lambda fill: fill.all
+    story = []
+    
+    # dynamic import hack  # TODO: "from self.doc.tygra import Paragraph, Spacer"
+    vars_ = globals()
+    for module in ('Paragraph', 'IndexedParagraph', 'Spacer', 'NonEmptyTableWithHeader', 'bold', 'italic'):
+      vars_[module] = getattr(self.doc.tygra, module)
+    
+    story += [IndexedParagraph('Summary', 'Heading2')]
+    #-------------------------------------------------
+    # driven distance and duration
+    if (self.optdep['dur_vs_roadtype'] in self.passed_optdep and 
+        self.optdep['dist_vs_roadtype'] in self.passed_optdep):
+      roadt_dur = index_fill(self.modules.fill(self.optdep['dur_vs_roadtype']))
+      roadt_dist = index_fill(self.modules.fill(self.optdep['dist_vs_roadtype']))
+      
+      # distance
+      if roadt_dist.total > 0.0:
+        calc_dist_perc = lambda d: int(round2(d/roadt_dist.total*100.0, 5.0))
+        story += [Paragraph(
+          'Total mileage: %s (ca. %d%% city, %d%% rural, %d%% highway)'%
+          (bold('%.1f km' % roadt_dist.total),
+           calc_dist_perc(roadt_dist['city']),
+           calc_dist_perc(roadt_dist['rural']),
+           calc_dist_perc(roadt_dist['highway']))),]
+      else:
+        story += [Paragraph('Total mileage: %s' % bold('%.1f km' % roadt_dist.total))]
+      # duration
+      if roadt_dur.total > 0.0:
+        calc_dist_perc = lambda d: int(round2(d/roadt_dur.total*100.0, 5.0))
+        story += [Paragraph(
+          'Total duration: %s (ca. %d%% standstill, %d%% city, %d%% rural, %d%% highway)'%
+          (bold('%.1f hours' % roadt_dur.total),
+           calc_dist_perc(roadt_dur['ego stopped']),
+           calc_dist_perc(roadt_dur['city']),
+           calc_dist_perc(roadt_dur['rural']),
+           calc_dist_perc(roadt_dur['highway']))),]
+      else:
+        story += [Paragraph('Total duration: %s' % bold('%.1f hours' % roadt_dur.total))]
+    else:
+      self.logger.warning('Road type statistics not available')
+      story += [Paragraph('Total duration: n/a'),
+                Paragraph('Total mileage: n/a'),]
+    # engine running
+    if self.optdep['dur_vs_engine_onoff'] in self.passed_optdep:
+      engine_dur = index_fill(self.modules.fill(self.optdep['dur_vs_engine_onoff']))
+      if 'roadt_dur' in locals():
+        # plau check for durations of different sources
+        if roadt_dur.total > 0.25 and abs(1.0 - engine_dur.total/roadt_dur.total) > 0.02:  # 2% tolerance
+          self.logger.error("Different duration results: %.1f h (engine state) "
+          "vs. %.1f h (road type)" % (engine_dur.total, roadt_dur.total))
+      # duration
+      if engine_dur.total > 0.0:
+        story += [Paragraph(
+          'Total duration: %.1f hours (%.1f%% engine running, %.1f%% engine off)'%
+          (engine_dur.total, 100.0 * engine_dur['yes']/engine_dur.total, 100.0 * engine_dur['no']/engine_dur.total)),]
+      else:
+        story += [Paragraph('Total duration: %.1f hours' % engine_dur.total)]
+    else:
+      self.logger.warning('Engine state statistics not available')
+      story += [Paragraph('Total duration: n/a'),]
+    # daytime
+    if self.optdep['dur_vs_daytime'] in self.passed_optdep:
+      daytime_dur = index_fill(self.modules.fill(self.optdep['dur_vs_daytime']))
+      if 'roadt_dur' in locals():
+        # plau check for durations of different sources
+        if roadt_dur.total > 0.25 and abs(1.0 - daytime_dur.total/roadt_dur.total) > 0.02:  # 2% tolerance
+          self.logger.error("Different duration results: %.1f h (daytime) "
+          "vs. %.1f h (road type)" % (daytime_dur.total, roadt_dur.total))
+      # duration
+      if daytime_dur.total > 0.0:
+        calc_dist_perc = lambda d: int(round2(d/daytime_dur.total*100.0, 5.0))
+        story += [Paragraph(
+          'Total duration: %.1f hours (ca. %d%% day, %d%% night, %d%% dusk)'%
+          (daytime_dur.total,
+           calc_dist_perc(daytime_dur['day']),
+           calc_dist_perc(daytime_dur['night']),
+           calc_dist_perc(daytime_dur['dusk']))),]
+      else:
+        story += [Paragraph('Total duration: %.1f hours' % daytime_dur.total)]
+    else:
+      self.logger.warning('Daytime statistics not available')
+      story += [Paragraph('Total duration: n/a'),]
+    # common remark
+    story += [Paragraph(italic('Remark: Percentage values with "ca." are '
+                               'rounded to nearest 5.'), fontsize=8),
+              Spacer(width=1*cm, height=0.2*cm),]
+    
+    # system performance - LDWS state
+    if self.optdep['dur_vs_ldwsstate'] in self.passed_optdep:
+      ldwss_dur = index_fill(self.modules.fill(self.optdep['dur_vs_ldwsstate']))
+
+      if 'roadt_dur' in locals():
+        # plau check for durations of different sources
+        if roadt_dur.total > 0.25 and abs(1.0 - ldwss_dur.total/roadt_dur.total) > 0.02:  # 2% tolerance
+          self.logger.error("Different duration results: %.1f h (LDWS state) "
+            "vs. %.1f h (road type)" % (ldwss_dur.total, roadt_dur.total))
+
+      if ldwss_dur.total > 0.0:
+        calc_ldwss_perc = lambda d: d/ldwss_dur.total*100.0
+        tempna = calc_ldwss_perc(ldwss_dur['Temporary n/a'])
+        ready = calc_ldwss_perc(ldwss_dur['Ready'])
+        override = calc_ldwss_perc(ldwss_dur['Driver override'])
+        warning = calc_ldwss_perc(ldwss_dur['Warning'])
+        op = tempna + ready + override + warning
+        error = calc_ldwss_perc(ldwss_dur['Error'])
+        notavl = calc_ldwss_perc(ldwss_dur['Not available'])
+        notrdy = calc_ldwss_perc(ldwss_dur['Not ready'])
+        deact = calc_ldwss_perc(ldwss_dur['Deactivated by driver'])
+        story += [Paragraph('LDWS state: %.1f%% operational '
+          '(%.1f%% temp. n/a., %.1f%% ready, %.1f%% override, '
+          '%.1f%% warning), '
+          '%.1f%% deactivated, %.1f%% error, %.1f%% n/a, %.1f%% not ready' % 
+          (op, tempna, ready, override, warning,
+           deact, error, notavl, notrdy))]
+      else:
+        story += [Paragraph('LDWS state: n/a')]
+    else:
+      self.logger.warning('LDWS state not available')
+      story += [Paragraph('LDWS state: n/a')]
+
+    # system performance - FLC20 status
+    if self.optdep['dur_vs_flc20status'] in self.passed_optdep:
+      flc20s_dur = index_fill(self.modules.fill(self.optdep['dur_vs_flc20status']))
+
+      if 'roadt_dur' in locals():
+        # plau check for durations of different sources
+        if roadt_dur.total > 0.25 and abs(1.0 - flc20s_dur.total/roadt_dur.total) > 0.02:  # 2% tolerance
+          self.logger.error("Different duration results: %.1f h (FLC20 status) "
+            "vs. %.1f h (road type)" % (flc20s_dur.total, roadt_dur.total))
+
+      if flc20s_dur.total > 0.0:
+        calc_flc20s_perc = lambda d: d/flc20s_dur.total*100.0
+        fully_op = calc_flc20s_perc(flc20s_dur['Fully Operational'])
+        blo_slig = calc_flc20s_perc(flc20s_dur['Slightly Blocked'])
+        op = fully_op + blo_slig
+        blo_part = calc_flc20s_perc(flc20s_dur['Partially Blocked'])
+        blo_full = calc_flc20s_perc(flc20s_dur['Blocked'])
+        blo = blo_part + blo_full
+        misalign = calc_flc20s_perc(flc20s_dur['Misaligned'])
+        error = calc_flc20s_perc(flc20s_dur['Error'])
+        notavl = calc_flc20s_perc(flc20s_dur['NotAvailable'])
+        init = calc_flc20s_perc(flc20s_dur['Warming up / Initializing'])
+        story += [Paragraph('FLC20 sensor status: %.1f%% operational '
+          '(%.1f%% fully op., %.1f%% slightly blocked), '
+          '%.1f%% blocked (%.1f%% part. blocked, %.1f%% full blocked), '
+          '%.1f%% misaligned, %.1f%% error, %.1f%% n/a, %.1f%% init.' %
+          (op, fully_op, blo_slig, blo, blo_part, blo_full, misalign, error, notavl, init))]
+      else:
+        story += [Paragraph('FLC20 sensor status: n/a')]
+    else:
+      self.logger.warning('FLC20 sensor status not available')
+      story += [Paragraph('FLC20 sensor status: n/a')]
+
+    story += [Spacer(width=1*cm, height=0.2*cm),]
+
+    # SW versions
+    story += [Paragraph('FLR21 SW version: (not yet implemented)'),  # TODO: implement
+              Paragraph('FLC20 SW version: (not yet implemented)'),  # TODO: implement
+              Spacer(width=1*cm, height=0.2*cm),]
+
+    story += [IndexedParagraph('FLC20 LDWS warnings', 'Heading2')]
+    #-------------------------------------------------------------
+    if self.optdep['ldws_events'] in self.passed_optdep:
+      header = cIntervalHeader.fromFileName(abspath('../../ldwseval/events_inttable.sql'))
+      ids = index_fill(self.modules.fill(self.optdep['ldws_events']))
+      table = self.batch.get_table(header, ids, sortby=[('measurement', True), ('start [s]', True)])
+      table_chunk = [row[1:-1] for row in table]
+      story += [NonEmptyTableWithHeader(table_chunk),
+                Spacer(width=1*cm, height=0.2*cm),]
+      meas_events = Events(table, self.doc.tygra, self.docname)
+      meas_events(self._manager, story)
+    else:
+      self.logger.warning('LDWS warnings not available')
+      story += [Paragraph('Information not available'),
+                Spacer(width=1*cm, height=0.2*cm),]
+
+    story += [IndexedParagraph('FLC20 sensor statuses (without Fully Operational)', 'Heading2')]
+    #-----------------------------------------------------------------------
+    if self.optdep['flc20_spec_statuses'] in self.passed_optdep:
+      header = cIntervalHeader.fromFileName(abspath('../../flc20eval/sensorstatus/status_inttable.sql'))
+      ids = index_fill(self.modules.fill(self.optdep['flc20_spec_statuses']))
+      table = self.batch.get_table(header, ids, sortby=[('measurement', True), ('start [s]', True)])
+      table_chunk = [row[1:-1] for row in table]
+      story += [NonEmptyTableWithHeader(table_chunk),
+                Spacer(width=1*cm, height=0.2*cm),]
+      meas_events = Events(table, self.doc.tygra, self.docname)
+      meas_events(self._manager, story)
+    else:
+      self.logger.warning('FLC20 special sensor statuses not available')
+      story += [Paragraph('Information not available'),
+                Spacer(width=1*cm, height=0.2*cm),]
+
+    return story
+
+  def analyze(self, story):
+    self.doc.multiBuild(story, f=self.docname)  # TODO: rm self.docname if possible
+    return
+
+
+class Events(dict):
+  modules = OrderedDict([
+    ('view_videonav_lanes-NO_LANES@evaltools', ['VideoNavigator']),
+  ])
+  statuses = ['fillFLC20@aebs.fill',
+              'fillFLR20@aebs.fill', 'fillFLR20_AEB@aebs.fill',
+              'fillFLR20_AEBS_Warning-flr20@aebs.fill',]
+  visibles = ['FLR20_ACC', 'FLR20_AEB', 'FLR20_FUS', 'FLR20', 'FLR20_FUSED',
+              'FLC20', 'FLR20_RADAR_ONLY', 'FLR20_AEBS_Warning-FLR20',
+              'moving', 'stationary']
+  show_nav = False
+  def __init__(self, table, tygra, docname=None):
+    dict.__init__(self)
+    self.init(table, tygra, docname)
+    return
+
+  def init(self, table, tygra, docname=None):
+    head = table[0]
+    for row in table[1:]:
+      event = Event(zip(head, row))
+      event['start'] = event['start [s]']  # hack for later access of 'start'
+      event['ego speed'] = event.get('ego speed [km/h]', event.get('ego speed start [kph]'))  # hack for later access of 'ego speed'
+      meas = event['fullmeas']
+      start = event['start']
+      self.setdefault(meas, {})[start] = event
+    self.tygra = tygra
+    self.docname = docname
+    return
+
+  def __call__(self, master_manager, story):
+    # dynamic import
+    Paragraph = self.tygra.Paragraph
+    Image = self.tygra.Image
+    
+    for meas in sorted(self):
+      events = self[meas]
+      manager = master_manager.clone()
+      manager.set_measurement(meas)
+      manager.build(self.modules, self.statuses, self.visibles, self.show_nav)
+      sync = manager.get_sync()
+      prev_start = float("-inf")
+      for start in sorted(events):
+        manager.set_roi(start, start+events[start]['duration [s]'],
+          color='y', pre_offset=5.0, post_offset=5.0)
+        event = events[start]
+        see_prev_event = start - prev_start < 10.0
+        standstill = event['ego speed'] < 1.0
+        story += [Paragraph(event.get_title(), 'Heading3')]
+        if standstill:
+          story += [Paragraph("Event occurred during standstill")]
+        elif see_prev_event:
+          story += [Paragraph("See previous event")]
+        else:
+          # create snapshots
+          sync.seek(start)
+          for module, clients in self.modules.iteritems():
+            for client_name in clients:
+              try:
+                client = sync.getClient(module, client_name)
+              except ValueError:
+                story += [Paragraph("Image not available")]
+              else:
+                filename = self.get_picname(event.get_picname(module, client_name))
+                client.copyContentToFile(filename)
+                story += [Image(os.path.basename(filename))]
+        prev_start = start
+      manager.close()
+    return
+
+  def get_picname(self, picname_base):
+    if self.docname is not None:
+      filename = "%s_%s" % (os.path.splitext(self.docname)[0], picname_base)
+    else:
+      filename = picname_base
+    return filename
+
+
+class Event(dict):
+  PIC = '%(module)s_%(client)s_%(measurement)s_%(start).2f.png'
+  def get_picname(self, module, client):
+    self['module'] = module
+    self['client'] = client
+    return self.PIC % self
+
+  TITLE = '%(measurement)s @ %(start).2f sec'
+  def get_title(self):
+    return self.TITLE % self

@@ -1,0 +1,6 @@
+remote;local
+//strs0004/Measure1/DAS/EnduranceRun/Evaluation_And_Reports_2_1/DAF/batch.db;               strs0004/DAF.db
+//strs0004/Measure1/DAS/EnduranceRun/Evaluation_And_Reports_2_1/DAF_Wabco/batch.db;         strs0004/DAF_Wabco.db
+//strs0004/Measure1/DAS/EnduranceRun/Evaluation_And_Reports_2_1/MAN_GV/batch.db;            strs0004/MAN_GV.db
+//strs0004/Measure1/DAS/EnduranceRun/Evaluation_And_Reports_2_1/Iveco_Stralis_KB/batch.db;   strs0004/Iveco_Stralis_KB.db
+//strs0004/Measure1/DAS/EnduranceRun/Evaluation_And_Reports_2_1/Iveco_Stralis_Wabco/batch.db;strs0004/Iveco_Stralis_Wabco.db

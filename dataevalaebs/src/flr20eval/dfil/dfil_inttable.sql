@@ -1,0 +1,16 @@
+--$measurement
+--!MEAS
+--$title
+--!TITLE
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$dfil min
+--!QUANTITY "AC100 sensor check", "dfil min"
+--$dfil max
+--!QUANTITY "AC100 sensor check", "dfil max"
+--$driven distance [km]
+--!QUANTITY "ego vehicle", "driven distance"
+--$comment
+--!COMMENT

@@ -1,0 +1,14 @@
+--Query intervals where engine is running / not running
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$engine running
+--!LABEL "engine running"
+--$comment
+--!COMMENT

@@ -1,0 +1,33 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$FLC25 event
+--!LABEL "FLC25 events"
+--$Object LaneChanged
+--!LABEL "FLC25 CEM TPF Object Info"
+--$Object Info(current_id)
+--!QUANTITY "FLC25 Object LaneChange check", 'Object Info(current_id)'
+--$Object Info(previous_index)
+--!QUANTITY "FLC25 Object LaneChange check", 'Object Info(previous_index)'
+--$Object Info(current_index)
+--!QUANTITY "FLC25 Object LaneChange check", 'Object Info(current_index)'
+--$Object lane Changed From(previous_lane)
+--!QUANTITY "FLC25 Object LaneChange check",  'Object Info(previous_lane)'
+--$Object lane Changed to(current_lane)
+--!QUANTITY "FLC25 Object LaneChange check", 'Object Info(current_lane)'
+--$Object Object Info(previous_time)
+--!QUANTITY "FLC25 Object LaneChange check",  'Object Info(previous_time)'
+--$Object Info(current_time)
+--!QUANTITY "FLC25 Object LaneChange check", 'Object Info(current_time)'
+--$Object Distance X
+--!QUANTITY "FLC25 Object LaneChange check", 'Object Distance X'
+
+--$comment
+--!COMMENT

@@ -1,0 +1,20 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$fault
+--!LABEL "FLR21 fault"
+--$fault DTC
+--!QUANTITY "fault identifier", "DTC"
+--$ego speed start [kph]
+--!QUANTITY "ego vehicle", "speed start", 3.6
+--$ego speed max [kph]
+--!QUANTITY "ego vehicle", "speed max", 3.6
+--$comment
+--!COMMENT

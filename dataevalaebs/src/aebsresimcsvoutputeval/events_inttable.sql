@@ -1,0 +1,34 @@
+--Query most important attributes of the Labels event intervals
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$Time
+--!LABEL "Time"
+--$ego velocity [km/h]
+--!QUANTITY "AEBS resim", "ego_velocity_x"
+--$width
+--!QUANTITY "AEBS resim", "obj_width"
+--$length
+--!QUANTITY "AEBS resim", "obj_length"
+--$distance_x
+--!QUANTITY "AEBS resim", "obj_distance_x"
+--$distance_y
+--!QUANTITY "AEBS resim", "obj_distance_y"
+--$relative_velocity_x
+--!QUANTITY "AEBS resim", "obj_relative_velocity_x"
+--$relative_velocity_y
+--!QUANTITY "AEBS resim", "obj_relative_velocity_y"
+--$id
+--!QUANTITY "AEBS resim", "object_id"
+--$dynamic property
+--!QUANTITY "AEBS resim", "e_dynamic_property"
+--$stopped confidence
+--!QUANTITY "AEBS resim", "ui_stopped_confidence"
+--$comment
+--!COMMENT

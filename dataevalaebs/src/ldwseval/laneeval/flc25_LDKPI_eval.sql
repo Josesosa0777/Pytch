@@ -1,0 +1,18 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$lane_available_count
+--!QUANTITY "FLC25 LDWS", "Available"
+--$lane_not_available_count
+--!QUANTITY "FLC25 LDWS", "Not Available"
+--$ldws availability
+--!LABEL "FLC25 LDWS"
+--$comment
+--!COMMENT

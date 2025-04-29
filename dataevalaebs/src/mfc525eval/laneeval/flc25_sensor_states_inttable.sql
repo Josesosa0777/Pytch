@@ -1,0 +1,16 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$ego speed [km/h]
+--!QUANTITY "ego vehicle", "speed start", 3.6
+--$FLC25 Sensor state
+--!LABEL "FLC25 Sensor state"
+--$comment
+--!COMMENT

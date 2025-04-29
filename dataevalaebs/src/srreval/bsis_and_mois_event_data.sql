@@ -1,0 +1,22 @@
+--Query most important attributes of the ACC event intervals
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$BSIS Event
+--!LABEL "BSIS Event"
+--$LonDispMIOPassSide
+--!QUANTITY "BSIS Event", "LonDispMIOPassSide"
+--$LatDispMIOPassSide
+--!QUANTITY "BSIS Event", "LatDispMIOPassSide"
+--$LatDispMIOFront
+--!QUANTITY "BSIS Event", "LatDispMIOFront"
+--$LonDispMIOFront
+--!QUANTITY "BSIS Event", "LonDispMIOFront"
+--$comment
+--!COMMENT

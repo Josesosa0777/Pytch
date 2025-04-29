@@ -1,0 +1,25 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$DM1 event
+--!LABEL "DM1 event"
+--$AmberWarningLamp
+--!QUANTITY "DM1 signals check", "AmberWarningLamp"
+--$FailureModeIdentifier
+--!QUANTITY "DM1 signals check", "FailureModeIdentifier"
+--!LABEL "FLR25 events"
+--$Cat2LastResetReason
+--!QUANTITY "FLR25 radar check", "Cat2LastResetReason"
+--$Address
+--!QUANTITY "FLR25 radar check", "Address"
+--$ResetCounter
+--!QUANTITY "FLR25 radar check", "ResetCounter"
+--$comment
+--!COMMENT

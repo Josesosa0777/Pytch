@@ -1,0 +1,16 @@
+--Query most important attributes of the AEBS event intervals
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$ACC event
+--!LABEL "ACC event"
+--$warning cause
+--!LABEL "AEBS event cause"
+--$comment
+--!COMMENT

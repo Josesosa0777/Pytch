@@ -1,0 +1,30 @@
+--Query most important attributes of the AEBS event intervals
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$moving state
+--!LABEL "PAEBS moving state"
+--$source
+--!LABEL "PAEBS source"
+--$cascade phase
+--!LABEL "PAEBS cascade phase"
+--$ego speed [km/h]
+--!QUANTITY "ego vehicle", "speed start", 3.6
+--$dx along ego path [m]
+--!QUANTITY "target", "dx start"
+--$vx_ref [km/h]
+--!QUANTITY "PAEBS Debug", "vx_ref", 3.6
+--$collision probability [%]
+--!QUANTITY "PAEBS Debug", "collision probability", 100
+--$warning rating scale
+--!LABEL "event severity"
+--$warning cause
+--!LABEL "PAEBS event cause"
+--$comment
+--!COMMENT

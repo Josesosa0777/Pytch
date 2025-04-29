@@ -1,0 +1,14 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$FLC25 event
+--!LABEL "FLC25 events"
+--$comment
+--!COMMENT

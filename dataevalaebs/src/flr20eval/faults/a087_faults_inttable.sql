@@ -1,0 +1,18 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$fault ID
+--!QUANTITY "fault identifier", "ID"
+--$ego speed start [kph]
+--!QUANTITY "ego vehicle", "speed start", 3.6
+--$ego speed max [kph]
+--!QUANTITY "ego vehicle", "speed max", 3.6
+--$comment
+--!COMMENT

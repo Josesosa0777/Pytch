@@ -1,0 +1,14 @@
+--Query most important attributes of the FCW event intervals
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$ACC event
+--!LABEL "ACC event"
+--$comment
+--!COMMENT

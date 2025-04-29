@@ -1,0 +1,28 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$FLC25 events
+--!LABEL "FLC25 events"
+--$Count
+--!QUANTITY "FLC25 ACAL YAW Statistics", "Count"
+--$Mean
+--!QUANTITY "FLC25 ACAL YAW Statistics", "Mean"
+--$Min
+--!QUANTITY "FLC25 ACAL YAW Statistics", "Min"
+--$Max
+--!QUANTITY "FLC25 ACAL YAW Statistics", "Max"
+--$Std
+--!QUANTITY "FLC25 ACAL YAW Statistics", "Std"
+--$Sum
+--!QUANTITY "FLC25 ACAL YAW Statistics", "Sum"
+--$Violation
+--!QUANTITY "FLC25 ACAL YAW Statistics", "Violation"
+--$comment
+--!COMMENT

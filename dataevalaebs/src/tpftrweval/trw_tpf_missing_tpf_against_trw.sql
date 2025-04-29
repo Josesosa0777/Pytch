@@ -1,0 +1,29 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$Timestamp
+--!QUANTITY "TPF TRW Compare", "timestamp"
+--$TPF TRW Compare
+--!LABEL "TPF TRW Compare"
+--$trw_track_id
+--!LABEL "FLR20 object"
+--$trw_dx
+--!QUANTITY "TPF TRW Compare", "trw_dx"
+--$trw_dy
+--!QUANTITY "TPF TRW Compare", "trw_dy"
+--$trw_alive_time
+--!QUANTITY "TPF TRW Compare", "trw_alive_time"
+--$nearest_tpf_track_id
+--!LABEL "FLC25 CEM TPF New ID"
+--$nearest_tpf_distance
+--!QUANTITY "TPF TRW Compare", "nearest_tpf_distance"
+--$nearest_tpf_delta_vx
+--!QUANTITY "TPF TRW Compare", "nearest_tpf_delta_vx"
+--$nearest_tpf_alive_time
+--!QUANTITY "TPF TRW Compare", "nearest_tpf_alive_time"
+
+--$comment
+--!COMMENT

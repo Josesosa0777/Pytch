@@ -1,0 +1,16 @@
+--Query most important attributes of the AEBS event intervals
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$Event
+--!LABEL "TSR event"
+--$Sign class ID
+--!QUANTITY 'TSR', 'sign_class_id'
+--$Postmarker Lane ref
+--!QUANTITY 'TSR', 'postmarker_Lane_ref'
+--$comment
+--!COMMENT

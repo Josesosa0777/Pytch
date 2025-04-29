@@ -1,0 +1,16 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$ego speed [km/h]
+--!QUANTITY "ego vehicle", "speed start", 3.6
+--$FLC25 eSign Status
+--!LABEL "FLC25 eSign Status"
+--$comment
+--!COMMENT

@@ -1,0 +1,14 @@
+--Query general attributes of the intervals
+
+--$entry
+--!TITLE
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$end [s]
+--!ENDTIME
+--$duration [s]
+--!DURATION
+--$comment
+--!COMMENT

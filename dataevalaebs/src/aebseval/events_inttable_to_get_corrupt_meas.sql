@@ -1,0 +1,14 @@
+--Query most important attributes of the AEBS event intervals
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$is_file_corrupt
+--!LABEL "is_file_corrupt"
+--$comment
+--!COMMENT

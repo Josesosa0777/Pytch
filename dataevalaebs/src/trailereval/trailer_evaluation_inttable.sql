@@ -1,0 +1,23 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$GTATRL event
+--!LABEL 'Trailer'
+--$AyFilt_max_value
+--!QUANTITY "Trailer", "AyFilt_max_value"
+--$AyCalc_max_value
+--!QUANTITY "Trailer", "AyCalc_max_value"
+--$AyLimLeft_max_value
+--!QUANTITY "Trailer", "AyLimLeft_max_value"
+--$AyLimRight_max_value
+--!QUANTITY "Trailer", "AyLimRight_max_value"
+--$comment
+--!COMMENT
+

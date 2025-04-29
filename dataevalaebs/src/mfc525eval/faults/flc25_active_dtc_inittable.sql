@@ -1,0 +1,20 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$DTC event
+--!LABEL "DTC event"
+--$DTC in DEC
+--!QUANTITY "DTC event check", "DTC in DEC"
+--$DTC in HEX
+--!QUANTITY "DTC event check", "DTC in HEX"
+--$DTC counter
+--!QUANTITY "DTC event check", "DTC counter"
+--$DTC timestamp
+--!QUANTITY "DTC event check", "DTC timestamp"
+--$comment
+--!COMMENT

@@ -1,0 +1,22 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$FLR25 events
+--!LABEL "FLR25 events"
+--$Cat2LastResetReason
+--!QUANTITY "FLR25 radar check", "Cat2LastResetReason"
+--$Address
+--!QUANTITY "FLR25 radar check", "Address"
+--$ResetCounter
+--!QUANTITY "FLR25 radar check", "ResetCounter"
+--$ReturnAddress
+--!QUANTITY "FLR25 radar check", "Return Address"
+--$comment
+--!COMMENT

@@ -1,0 +1,1 @@
+SELECT DISTINCT date(start, '-4 hour') as days FROM measurements ORDER BY days ASC; -- 4 hours minus to unify recordings after midnight with start day

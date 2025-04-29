@@ -1,0 +1,14 @@
+--Query most important attributes of the FCW event intervals
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$vehicle_in_accped_speed_range
+--!QUANTITY "ACC PED STOP", "vehicle_in_accped_speed_range"
+--$comment
+--!COMMENT

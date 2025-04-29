@@ -1,0 +1,31 @@
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$event
+--!LABEL "AEBS resim phase"
+--$resim event
+--!LABEL "AEBS resim phase"
+--$event source
+--!LABEL "Delta report data"
+--$ego speed [km/h]
+--!QUANTITY "ego vehicle", "speed start", 3.6
+--$total mileage [km]
+--!QUANTITY "ego vehicle", "mileage"
+--$event start time diff
+--!QUANTITY "ego vehicle", "event start time diff"
+--$measurement warning rating scale
+--!LABEL "event severity"
+--$resimulation warning rating scale
+--!LABEL "resim event severity"
+--$warning cause
+--!LABEL "AEBS event cause"
+--$event road type
+--!LABEL "road type"
+--$comment
+--!COMMENT

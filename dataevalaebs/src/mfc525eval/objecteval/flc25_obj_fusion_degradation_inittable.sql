@@ -1,0 +1,20 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$FLC25 event
+--!LABEL "FLC25 events"
+--$Object ID
+--!QUANTITY "FLC25 check", "obj_id"
+--$Measured_by
+--!QUANTITY "FLC25 check", "measured_by"
+--$Object DistanceX
+--!QUANTITY "FLC25 check", "obj_distx_val"
+--$comment
+--!COMMENT

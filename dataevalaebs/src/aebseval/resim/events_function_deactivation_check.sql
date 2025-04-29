@@ -1,0 +1,21 @@
+--Query most important attributes of the ACC event intervals
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$CAN XBR
+--!QUANTITY "Function Deactivation Check", "CAN XBR"
+--$CAN AEBSState
+--!QUANTITY "Function Deactivation Check", "CAN AEBSState"
+--$AEBS brake accel demand
+--!QUANTITY "Function Deactivation Check", "AEBS brake acceleration demand"
+--$Function deactivation check
+--!LABEL "Function deactivation check"
+--$comment
+--!COMMENT
+

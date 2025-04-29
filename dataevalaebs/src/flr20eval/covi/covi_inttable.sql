@@ -1,0 +1,16 @@
+--$measurement
+--!MEAS
+--$title
+--!TITLE
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$covi min
+--!QUANTITY "AC100 sensor check", "covi min"
+--$covi max
+--!QUANTITY "AC100 sensor check", "covi max"
+--$driven distance [km]
+--!QUANTITY "ego vehicle", "driven distance"
+--$comment
+--!COMMENT

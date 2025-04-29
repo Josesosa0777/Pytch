@@ -1,0 +1,16 @@
+--Query most important attributes of the AEBS event intervals
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$driven distance [km]
+--!QUANTITY "ego vehicle", "driven distance"
+--$road type
+--!LABEL "road type"
+--$comment
+--!COMMENT

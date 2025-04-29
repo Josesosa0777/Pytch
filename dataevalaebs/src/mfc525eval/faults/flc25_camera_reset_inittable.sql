@@ -1,0 +1,18 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$FLC25 events
+--!LABEL "FLC25 events"
+--$ResetReason
+--!QUANTITY "FLC25 camera check", "ResetReason"
+--$ResetCounter
+--!QUANTITY "FLC25 camera check", "ResetCounter"
+--$comment
+--!COMMENT

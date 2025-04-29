@@ -1,0 +1,14 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$ACTL event
+--!LABEL 'ACTL event'
+--$comment
+--!COMMENT

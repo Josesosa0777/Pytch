@@ -1,0 +1,18 @@
+--Query most important attributes of the FCW event intervals
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$Verdict
+--!LABEL "YACA Verdict"
+--$Trigger
+--!LABEL "Trigger"
+--$Status
+--!LABEL "Status"
+--$comment
+--!COMMENT

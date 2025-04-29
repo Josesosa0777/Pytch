@@ -1,0 +1,20 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$end [s]
+--!ENDTIME
+--$duration [s]
+--!DURATION
+--$frontAxleSpeed [km/h]
+--!QUANTITY "FLC25 LDWS", "FrontAxleSpeed"
+--$ConstructionSiteAvailable
+--!LABEL "FLC25 LDWS"
+--$LaneDepartureWarning
+--!LABEL "FLC25 LDWS"
+--$comment
+--!COMMENT

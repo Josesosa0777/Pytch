@@ -1,0 +1,16 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$DM1 event
+--!LABEL "DM1 event"
+--$AmberWarningLamp
+--!QUANTITY "DTC event check", "AmberWarningLamp"
+--$comment
+--!COMMENT

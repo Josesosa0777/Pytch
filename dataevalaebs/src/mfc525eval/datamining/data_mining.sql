@@ -1,0 +1,14 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$FLC25 event
+--!LABEL "Fusion3 Data Mining"
+--$comment
+--!COMMENT

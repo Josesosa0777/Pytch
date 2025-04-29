@@ -1,0 +1,15 @@
+enabled;batchfile;repdir
+1;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\06xB365\batch_06xB365.db;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\06xB365\batch_06xB365
+1;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\DE_DV1\batch_DE_DV1.db;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\DE_DV1\batch_DE_DV1
+1;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\DE_PV2\batch_DE_PV2.db;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\DE_DV1\batch_DE_PV2
+0;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\H566PP_Schwieberdingen\batch_H566PP_2.db;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\H566PP_Schwieberdingen\batch_H566PP_2
+0;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\HMCbus\batch_HMCbus.db;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\HMCbus\batch_HMCbus
+0;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\Karsan_MPXL_Bus\batch_Karsan_MPXL_Bus.db;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\Karsan_MPXL_Bus\batch_Karsan_MPXL_Bus
+0;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\M1SH10\batch_M1SH10.db;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\M1SH10\batch_M1SH10
+1;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\M1SH8\batch_M1SH8.db;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\M1SH8\batch_M1SH8
+1;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\M1SH9\batch_M1SH9.db;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\M1SH8\batch_M1SH9
+0;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\MAN_GV\batch_MAN_GV.db;\\strs0004\Measure1\DAS\EnduranceRun\Evaluation_And_Reports\MAN_GV\batch_MAN_GV
+0;\\istw0002\d\measurement\evaluationandreports\Ford_H566_M1PT17\batch_Ford_H566_M1PT17.db;\\istw0002\d\measurement\evaluationandreports\Ford_H566_M1PT17\batch_Ford_H566_M1PT17
+0;\\istw0002\d\measurement\evaluationandreports\Karsan_MPXL_Midibus\batch_Karsan_MPXL_Midibus.db;\\istw0002\d\measurement\evaluationandreports\Karsan_MPXL_Midibus\batch_Karsan_MPXL_Midibus
+1;\\selw0021\d$\evaluation\Hyundai_Universe_Coach\batch.db;\\selw0021\d$\evaluation\Hyundai_Universe_Coach\batch
+1;\\brsw0775\z$\evaluation\DE_20070_6x2RS\batch.db;\\brsw0775\z$\evaluation\DE_20070_6x2RS\batch

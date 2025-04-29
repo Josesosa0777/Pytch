@@ -1,0 +1,16 @@
+--$measurement
+--!MEAS
+--$title
+--!TITLE
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$blindness min
+--!QUANTITY "AC100 sensor check", "blindness min"
+--$blindness max
+--!QUANTITY "AC100 sensor check", "blindness max"
+--$driven distance [km]
+--!QUANTITY "ego vehicle", "driven distance"
+--$comment
+--!COMMENT

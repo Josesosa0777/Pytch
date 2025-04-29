@@ -1,0 +1,18 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$FLC25 event
+--!LABEL "FLC25 events"
+--$ego speed [km/h]
+--!QUANTITY "ego vehicle", "speed start", 3.6
+--$FLC25 CEM state
+--!LABEL "FLC25 CEM state"
+--$comment
+--!COMMENT

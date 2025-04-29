@@ -1,0 +1,22 @@
+--Query most important attributes of the ACC event intervals
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$ACC event
+--!LABEL "ACC event"
+--$ACC issue type
+--!LABEL "ACC issue type"
+--$ACC event cause
+--!LABEL "ACC event cause"
+--$dirk_red_button
+--!QUANTITY "ACC check", "dirk_red_button"
+--$dirk_green_button
+--!QUANTITY "ACC check", "dirk_green_button"
+--$comment
+--!COMMENT

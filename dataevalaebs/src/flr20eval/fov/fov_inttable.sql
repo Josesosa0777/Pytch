@@ -1,0 +1,24 @@
+--$measurement
+--!MEAS
+--$title
+--!TITLE
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$fov count left min
+--!QUANTITY "AC100 sensor check", "fov count left min"
+--$fov count left max
+--!QUANTITY "AC100 sensor check", "fov count left max"
+--$fov count centre min
+--!QUANTITY "AC100 sensor check", "fov count centre min"
+--$fov count centre max
+--!QUANTITY "AC100 sensor check", "fov count centre max"
+--$fov count right min
+--!QUANTITY "AC100 sensor check", "fov count right min"
+--$fov count right max
+--!QUANTITY "AC100 sensor check", "fov count right max"
+--$driven distance [km]
+--!QUANTITY "ego vehicle", "driven distance"
+--$comment
+--!COMMENT

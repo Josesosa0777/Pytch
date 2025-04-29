@@ -1,0 +1,34 @@
+--Query most important attributes of the Labels event intervals
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$Time
+--!LABEL "Time"
+--$Road Type
+--!LABEL "Road Type"
+--$Vehicle Headlamp
+--!LABEL "Vehicle Headlamp"
+--$Weather Conditions
+--!LABEL "Weather Conditions"
+--$Road edge
+--!LABEL "Road edge"
+--$Street Objects
+--!LABEL "Street Objects"
+--$Object on side of Road
+--!LABEL "Object on side of Road"
+--$Traffic Event
+--!LABEL "Traffic Event"
+--$Moving Objects
+--!LABEL "Moving Objects"
+--$Country Code
+--!LABEL "Country Code"
+--$Traffic Event
+--!LABEL "Traffic Event"
+--$comment
+--!COMMENT

@@ -1,0 +1,26 @@
+--TBD
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$FLC25 event
+--!LABEL "FLC25 events"
+--$LDWS system status
+--!LABEL "LDWS system status"
+--$ego speed [km/h]
+--!QUANTITY "ego vehicle", "speed start", 3.6
+--$FLC25 Blockage state
+--!LABEL "FLC25 Blockage state"
+--$lane_available_count
+--!QUANTITY "FLC25 LDWS", "Available"
+--$lane_not_available_count
+--!QUANTITY "FLC25 LDWS", "Not Available"
+--$ldws availability
+--!LABEL "FLC25 LDWS"
+--$comment
+--!COMMENT

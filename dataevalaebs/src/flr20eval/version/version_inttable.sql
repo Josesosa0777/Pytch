@@ -1,0 +1,14 @@
+--Query FLR21 SW version
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$title
+--!TITLE
+--$duration [s]
+--!DURATION
+--$driven distance [km]
+--!QUANTITY "ego vehicle", "driven distance"
+--$SW version
+--!COMMENT

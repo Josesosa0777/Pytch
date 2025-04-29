@@ -1,0 +1,9 @@
+--layout viewTrackNavigatorRoad-DEFPARAM TrackNavigator 212x526+55+165
+--layout viewVideoOverlay-DefParam VideoNavigator 648x502+277+192
+
+--fill +fillLRR3_POS
+--group +LRR3_POS
+
+--fill +fillCVR3_POS
+--group +CVR3_POS
+

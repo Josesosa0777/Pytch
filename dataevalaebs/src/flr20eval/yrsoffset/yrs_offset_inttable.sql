@@ -1,0 +1,16 @@
+--$measurement
+--!MEAS
+--$title
+--!TITLE
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$yaw rate offset min
+--!QUANTITY "AC100 sensor check", "yaw rate offset min"
+--$yaw rate offset max
+--!QUANTITY "AC100 sensor check", "yaw rate offset max"
+--$driven distance [km]
+--!QUANTITY "ego vehicle", "driven distance"
+--$comment
+--!COMMENT

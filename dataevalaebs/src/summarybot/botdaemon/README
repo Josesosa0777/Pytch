@@ -1,0 +1,10 @@
+taskschd_conf.xml
+=================
+
+Configuration file for Windows Task Scheduler.
+
+Path might need to be adjusted.
+User might need to be adjusted.
+
+Note:
+User password needs to be updated in Task Scheduler, every time it's changed!

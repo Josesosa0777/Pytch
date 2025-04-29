@@ -1,0 +1,28 @@
+--Query most important attributes of the AEBS event intervals
+
+--$fullmeas
+--!FULLMEAS
+--$measurement
+--!MEAS
+--$start [s]
+--!STARTTIME
+--$duration [s]
+--!DURATION
+--$Event
+--!LABEL "TSR verdict"
+--$Sign class ID
+--!QUANTITY 'TSR', 'sign_class_id'
+--$TP
+--!QUANTITY 'TSR', 'TP'
+--$FP
+--!QUANTITY 'TSR', 'FP'
+--$FN
+--!QUANTITY 'TSR', 'FN'
+--$conti_uid
+--!QUANTITY 'TSR', 'conti_uid'
+--$warning cause
+--!LABEL "AEBS event cause"
+--$warning rating scale
+--!LABEL "event severity"
+--$comment
+--!COMMENT
