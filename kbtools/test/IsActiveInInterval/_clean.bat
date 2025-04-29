@@ -1,0 +1,1 @@
+del test_IsActiveInInterval.txt

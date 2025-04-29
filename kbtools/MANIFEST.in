@@ -1,0 +1,2 @@
+include src/kbtools/kb_tex_logo_default.ps
+include src/kbtools/kb_tex_stylefile_default.sty

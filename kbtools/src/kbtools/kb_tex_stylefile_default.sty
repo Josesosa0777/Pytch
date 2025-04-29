@@ -1,0 +1,519 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{KB-Kopf}
+%%
+%%  Style-file fuer KB-Kopf, Optionen:
+%%
+%%
+%%
+
+\def\Version{0.1}
+\def\Stand{27.09.2006}
+\def\Autor{F. Hecker, U. Guecker}
+
+\typeout{*********************************************************************}
+\typeout{}
+\typeout{ Style-file fuer KB-Kopf, Version \Version, \Stand, by \Autor }
+\typeout{}
+\typeout{ Vorlagen (Optionen): ??}
+\typeout{ Optionen: nolines, engl, german, 1title, copyright, nopackages}
+\typeout{*********************************************************************}
+
+
+% ------------------------------------------------------------
+% einige Definitionen
+% ------------------------------------------------------------
+
+\def\DokNummer{}
+
+\def\firsttitle{}
+
+\def\seitenlinie{\put(138,0){\line(0,1){15}}}
+
+\def\@Dateiname{}
+
+\def\@linien{%
+  \put(0,0){\line(1,0){174}}%
+  \put(0,28){\line(1,0){174}}%
+  \put(38,14){\line(1,0){136}}%
+  \put(0,0){\line(0,1){28}}%
+  \put(38,0){\line(0,1){28}}%
+  \put(116,0){\line(0,1){28}}%
+  \put(151,0){\line(0,1){28}}%
+  \put(174,0){\line(0,1){28}}%
+%  \seitenlinie%
+  } 
+
+\def\KBcopyright{}
+
+\def\@nopackages{1}
+
+\def\@Kopf{}
+
+\def\@KBBegin{}
+\def\@KBEnd{}
+
+% ------------------------------------------------------------
+% Optionen definieren
+% ------------------------------------------------------------
+
+\DeclareOption{9540W6}{
+  \renewcommand{\DokNummer}{95 40 W6}
+  \def\seitenlinie{\put(138,0){\line(0,1){15}}}
+  \textwidth160mm
+  \textheight200mm
+  \voffset-20mm
+  \headsep-20mm
+  \def\@Kopf{1}
+}
+
+\DeclareOption{0540W6}{
+  \renewcommand{\DokNummer}{05 40 W6}
+  \def\seitenlinie{\put(138,-235){\line(0,1){250}}}
+  \textwidth135mm
+  \marginparsep5mm
+  \marginparwidth30mm
+  \headsep-20mm
+  \def\@Kopf{1}
+}
+
+\DeclareOption{fax}{
+  \renewcommand{\DokNummer}{FAX}
+  \voffset0mm
+  \hoffset-3mm
+  \headheight0mm
+  \headsep-20mm
+  \textheight260mm
+  \oddsidemargin0mm
+  \footskip9mm
+  \parindent0mm
+  \topskip0mm
+  \textwidth167mm
+  \marginparsep5mm
+  \marginparwidth30mm
+  \def\@Kopf{}
+  \def\@KBBegin{%
+    \setlength{\unitlength}{1mm}%
+    \begin{picture}(167,100)%
+      \thicklines%
+      \put(0,100){\line(1,0){167}}%
+      \put(0,92.5){\line(1,0){167}}%
+      \put(0,18.5){\line(1,0){167}}%
+      \put(0,10){\line(1,0){167}}%
+      \thinlines%
+      \put(0,83){\line(1,0){80}}\put(87,83){\line(1,0){80}}%
+      \put(0,74.5){\line(1,0){80}}\put(87,74.5){\line(1,0){80}}%
+      \put(0,66){\line(1,0){80}}\put(87,66){\line(1,0){80}}%
+      \put(0,57.5){\line(1,0){80}}\put(87,57.5){\line(1,0){80}}%
+      \put(0,49){\line(1,0){80}}\put(87,49){\line(1,0){80}}%
+      \put(0,40.5){\line(1,0){80}}\put(87,40.5){\line(1,0){80}}%
+      % Feste Texte
+      \put(2,98.5){\makebox(10,0)[tl]{\fcl Robert Bosch GmbH}}%
+      \put(2,88.5){\makebox(10,0)[tl]{\fcm An:}}%
+      \put(2,80){\makebox(10,0)[tl]{\fcm Name:}}%
+      \put(2,71.5){\makebox(10,0)[tl]{\fcm Abteilung:}}%
+      \put(2,63){\makebox(10,0)[tl]{\fcm Telefon:}}%
+      \put(2,54.5){\makebox(10,0)[tl]{\fcm Fax-Nr.:}}%
+      \put(2,46){\makebox(10,0)[tl]{\fcm Datum:}}%
+      \put(2,37.5){\makebox(10,0)[tl]{\fcm Bitte verteilen Sie Kopien an:}}%
+      \put(2,15){\makebox(10,0)[tl]{\fcm Betreff:}}%
+      \put(167,98.5){\makebox(0,0)[tr]{\fcl Telefax}}%
+      \put(87,88.5){\makebox(10,0)[tl]{\fcm Von:}}%
+      \put(87,80){\makebox(10,0)[tl]{\fcm Name:}}%
+      \put(87,71.5){\makebox(10,0)[tl]{\fcm Abteilung:}}%
+      \put(87,63){\makebox(10,0)[tl]{\fcm Telefon:}}%
+      \put(87,54.5){\makebox(10,0)[tl]{\fcm Fax-Nr.:}}%
+      \put(87,46){\makebox(10,0)[tl]{\fcm Seiten:}}%
+      \put(87,37.5){\makebox(10,0)[tl]{\fcm Kopien verteilt an:}}%
+      % Variable Texte:
+      \put(16,89.5){\makebox(10,0)[tl]{\@An}}%
+      \put(16,81){\makebox(10,0)[tl]{\@AnName}}%
+      \put(16,72.5){\makebox(10,0)[tl]{\@AnAbteilung}}%
+      \put(16,64){\makebox(10,0)[tl]{\@AnTelefon}}%
+      \put(16,55.5){\makebox(10,0)[tl]{\@AnFaxNr}}%
+      \put(16,47){\makebox(10,0)[tl]{\@date}}%
+      \put(16,38.5){\makebox(10,0)[tl]{\@BitteKopien}}%
+      \put(16,16){\makebox(10,0)[tl]{\@Betreff}}%
+      \put(102,89.5){\makebox(10,0)[tl]{\@Ausgabe}}%
+      \put(102,81){\makebox(10,0)[tl]{\@VonName}}%
+      \put(102,72.5){\makebox(10,0)[tl]{\@VonAbteilung}}%
+      \put(102,64){\makebox(10,0)[tl]{\@VonTelefon}}%
+      \put(102,55.5){\makebox(10,0)[tl]{\@VonFaxNr}}%
+      \put(102,47){\makebox(10,0)[tl]{\thepages}}%
+      \put(102,38.5){\makebox(10,0)[tl]{\@Kopienverteilt}}%
+    \end{picture}%
+    }
+    \def\@KBEnd{}
+}
+
+
+% ======================================================================
+% deutsch
+%\DeclareOption{copyright}{ 
+%  \def\KBCopyright{{\fcss c\quad  Alle  Rechte bei  Knorr-Bremse SfN GmbH,
+%      auch f{\"u}r    den    Fall  von    Schutzrechtsanmeldungen.    Jede
+%      Verf{\"u}gungsbefugnis, wie Kopier- und  Weitergaberecht, bei uns.}} 
+%}
+
+% english
+\DeclareOption{copyright}{ 
+  \def\KBCopyright{{\fcss c\quad  Knorr-Bremse SfN GmbH reserves all rights 
+  even in the event of industrial property. 
+  We reserve all rights of disposal such as copying and passing on to 
+  third parties.}} 
+}
+
+
+\DeclareOption{nolines}{
+  \def\@linien{}
+}
+
+\DeclareOption{nopackages}{
+  \def\@nopackages{1}
+}
+
+
+\DeclareOption{filename}{
+  \def\@Dateiname{1}
+}
+
+
+\DeclareOption{engl}{
+  \def\@AusgabeU{Revision/No.}%
+  \def\@Bearbeiter{Our Reference}%
+  \def\@Telefon{Telephone}%
+  \def\@Telefax{Facsimile}%
+  \def\@TelefonVW{(+49 7 11) 8 11-}%
+  \def\@TelefaxVW{(+49 7 11) 8 11-}%
+  \def\@Ort{Schwieberdingen}%
+  \def\@Blatt{Page}%
+  \def\@Blattvon{from}%
+  \def\@Datum{Date}%
+}
+
+\DeclareOption{german}{
+  \def\@AusgabeU{Ausgabe/Nr.}%
+  \def\@Bearbeiter{Bearbeiter}%
+  \def\@Telefon{Telefon-Durchwahl}%
+  \def\@Telefax{Telefax-Durchwahl}%
+  \def\@TelefonVW{(07 11) 8 11-}%
+  \def\@TelefaxVW{(07 11) 8 11-}%
+  \def\@Ort{Schwieberdingen}%
+  \def\@Blatt{Seite}%
+  \def\@Blattvon{von}%
+  \def\@Datum{Datum}%
+}
+
+
+% Titel nur auf der ersten Seite
+\DeclareOption{1title}{
+  \def\firsttitle{1}
+}
+
+\ExecuteOptions{9540W6,german,copyright}
+\ProcessOptions
+
+\ifx\@nopackages\emty{}\else
+  \RequirePackage{epsfig}
+  \RequirePackage{pstricks}
+\fi
+
+\RequirePackage{lastpage}
+
+
+
+
+
+
+% Daten fuer FAX
+\def\@An{}\def\@AnName{}\def\@AnAbteilung{}\def\@AnTelefon{}%
+\def\@AnFaxNr{}\def\@BitteKopien{}\def\@Betreff{}\def\@Ausgabe{Knorr-Bremse SfN GmbH}%
+\def\@VonName{}\def\@VonAbteilung{}\def\@VonTelefon{}\def\@VonFaxNr{}%
+\def\@Kopienverteilt{}%
+
+\def\An#1{\def\@An{#1}}%
+\def\AnName#1{\def\@AnName{#1}}%
+\def\AnAbteilung#1{\def\@AnAbteilung{#1}}%
+\def\AnTelefon#1{\def\@AnTelefon{#1}}%
+\def\AnFax#1{\def\@AnFaxNr{#1}}%
+\def\BitteKopien#1{\def\@BitteKopien{#1}}%
+\def\Betreff#1{\def\@Betreff{#1}}%
+\def\Ausgabe#1{\def\@Ausgabe{#1}}%
+\def\VonName#1{\def\@VonName{#1}}%
+\def\VonAbteilung#1{\def\@VonAbteilung{#1}}%
+\def\VonTelefon#1{\def\@VonTelefon{#1}}%
+\def\VonFaxNr#1{\def\@VonFaxNr{#1}}%
+\def\Seiten#1{\def\thepages{#1}}%
+\def\Kopienverteilt#1{\def\@Kopienverteilt{#1}}%
+
+
+
+
+
+
+
+
+
+
+
+
+% ------------------------------------------------------------
+% Seitenabmessungen definieren
+% ------------------------------------------------------------
+
+\def\@KopfRaender{
+  \voffset0mm
+  \hoffset0mm
+  \headheight15mm
+  \headsep8mm
+  \textheight22cm
+  \oddsidemargin0mm
+  \footskip13mm
+  \parindent0mm
+  \topskip0mm
+}
+
+% ------------------------------------------------------------
+% KB-Kopf definieren
+% ------------------------------------------------------------
+
+% Schriftart fuer mittlere Kleinschrift
+%\font\fcm=cmss8   scaled 1000
+\font\fcm=phvr   scaled 820
+
+% Schriftart fuer Kleinschrift
+%\font\fcs=cmss8   scaled 900
+\font\fcs=phvr   scaled 700
+
+% Schriftart fuer kleine Kleinschrift
+%\font\fcss=cmss8   scaled 680
+\font\fcss=phvr  scaled 560
+
+% Schriftart fuer Ueberschrift
+%\font\fcl=cmssbx10 scaled 1650
+% phvb : PostScript-Font Helvetica-Bold 
+\font\fcl=phvb    scaled 1650
+%Schriftarten fuer Titelfreesyle 
+\font\fontfortitlenormalsize=phvb    at 10pt
+\font\fontfortitleLarge=phvb    at 14pt
+
+
+% Schriftart fuer normale Ueberschrift
+%\font\fcl=cmssbx10 scaled 1000
+\font\fcn=phvb    scaled 1000
+
+% Schriftart fuer normale Grossschrift
+%\font\fcl=cmssbx10 scaled 1000
+\font\fcln=phvr    scaled 1000
+
+% Dokumenttitel
+\def\@titel{}
+\def\Titel#1{\renewcommand{\@titel}{#1}}
+\def\@titelI{}
+\def\TitelI#1{\renewcommand{\@titelI}{#1}}
+\def\@LOrigin{}
+\def\Origin#1{\renewcommand{\@LOrigin}{#1}}
+
+% Ort
+\def\Ort#1{\def\@Ort{#1}}
+
+% Y-Koordinaten neu definieren
+\def\@newposY#1#2#3#4#5#6{\def\@posY{#1}\def\@posYI{#2}%
+\def\@posYII{#3}\def\@posYIII{#4}\def\@posYIV{#5}\def\@posYV{#6}}
+
+% Positionsdefinitionen fuer Bearbeiter etc.
+\@newposY{10}{6}{2}{-2}{-6}{-10}
+
+% Y-Koordinaten automatisch neu definieren, abhaengig davon
+% wieviele Strings belegt sind
+\def\@newposYauto{%
+  \ifx\@FeldV\empty% falls V nicht belegt
+    \ifx\@FeldIV\empty% falls IV nicht belegt
+      \ifx\@FeldIII\empty% falls III nicht belegt
+        \ifx\@FeldII\empty% falls II nicht belegt
+          \ifx\@FeldI\empty% falls I nicht belegt
+            \@newposY{10}{6}{2}{-2}{-6}{-10}% I nicht belegt
+          \else\@newposY{10}{6}{2}{-2}{-6}{-10}\fi% I belegt
+        \else\@newposY{10}{6}{2}{-2}{-6}{-10}\fi% II belegt
+      \else\@newposY{12}{9}{6}{3}{0}{-2}\fi% III belegt
+    \else\@newposY{12.5}{9.5}{6.5}{3.5}{0.5}{-2.5}\fi% IV belegt
+  \else\@newposY{12.5}{9.5}{6.5}{3.5}{0.5}{-2.5}\fi% V belegt
+}
+
+% Telefonnummern der Autoren
+\def\@Feld{1}
+\def\@FeldI{}
+\def\@FeldII{}
+\def\@FeldIII{}
+\def\@FeldIV{}
+\def\@FeldV{}
+
+\def\@Phone{\@TelefonVW215}
+\def\@PhoneI{}
+\def\@PhoneII{}
+\def\@PhoneIII{}
+\def\@PhoneIV{}
+\def\@PhoneV{}
+\def\Phone#1{\def\@Phone{#1}\def\@Feld{1}}
+\def\PhoneI#1{\def\@PhoneI{#1}\def\@FeldI{1}}
+\def\PhoneII#1{\def\@PhoneII{#1}\def\@FeldII{1}}
+\def\PhoneIII#1{\def\@PhoneIII{#1}\def\@FeldIII{1}}
+\def\PhoneIV#1{\def\@PhoneIV{#1}\def\@FeldIV{1}}
+\def\PhoneV#1{\def\@PhoneV{#1}\def\@FeldV{1}}
+\def\TelDurchwahl#1{\def\@Phone{\@TelefonVW#1}\def\@Feld{1}}
+\def\TelDurchwahlI#1{\def\@PhoneI{\@TelefonVW#1}\def\@FeldI{1}}
+\def\TelDurchwahlII#1{\def\@PhoneII{\@TelefonVW#1}\def\@FeldII{1}}
+\def\TelDurchwahlIII#1{\def\@PhoneIII{\@TelefonVW#1}\def\@FeldIII{1}}
+\def\TelDurchwahlIV#1{\def\@PhoneIV{\@TelefonVW#1}\def\@FeldIV{1}}
+\def\TelDurchwahlV#1{\def\@PhoneV{\@TelefonVW#1}\def\@FeldV{1}}
+
+% Faxnummern der Autoren
+\def\@Fax{\@TelefaxVW129}
+\def\@FaxI{}
+\def\@FaxII{}
+\def\@FaxIII{}
+\def\@FaxIV{}
+\def\@FaxV{}
+\def\Fax#1{\def\@Fax{#1}\def\@Feld{1}}
+\def\FaxI#1{\def\@FaxI{#1}\def\@FeldI{1}}
+\def\FaxII#1{\def\@FaxII{#1}\def\@FeldII{1}}
+\def\FaxIII#1{\def\@FaxIII{#1}\def\@FeldIII{1}}
+\def\FaxIV#1{\def\@FaxIV{#1}\def\@FeldIV{1}}
+\def\FaxV#1{\def\@FaxV{#1}\def\@FeldV{1}}
+\def\FaxDurchwahl#1{\def\@Fax{\@TelefaxVW#1}\def\@Feld{1}}
+\def\FaxDurchwahlI#1{\def\@FaxI{\@TelefaxVW#1}\def\@FeldI{1}}
+\def\FaxDurchwahlII#1{\def\@FaxII{\@TelefaxVW#1}\def\@FeldII{1}}
+\def\FaxDurchwahlIII#1{\def\@FaxIII{\@TelefaxVW#1}\def\@FeldIII{1}}
+\def\FaxDurchwahlIV#1{\def\@FaxIV{\@TelefaxVW#1}\def\@FeldIV{1}}
+\def\FaxDurchwahlV#1{\def\@FaxV{\@TelefaxVW#1}\def\@FeldV{1}}
+
+% Co-Autoren
+\def\@authorI{}
+\def\@authorII{}
+\def\@authorIII{}
+\def\@authorIV{}
+\def\@authorV{}
+\def\CoautorI#1{\def\@authorI{#1}\def\@FeldI{1}}
+\def\CoautorII#1{\def\@authorII{#1}\def\@FeldII{1}}
+\def\CoautorIII#1{\def\@authorIII{#1}\def\@FeldIII{1}}
+\def\CoautorIV#1{\def\@authorIV{#1}\def\@FeldIV{1}}
+\def\CoautorV#1{\def\@authorV{#1}\def\@FeldV{1}}
+
+% Abteilungen der Autoren
+\def\@Ausgabe{}
+\def\@Abteilung{T/ESS~3.1}
+\def\Ausgabe#1{\def\@Ausgabe{#1}\def\@Feld{1}}
+\def\Abteilung#1{\def\@Abteilung{#1}\def\@FeldI{1}}
+
+
+% andere Datumsdarstellung: 1.1.97
+\renewcommand{\today}{\number\day.\number\month.\number\year}
+
+% fuer if-Abfrage
+\def\empty{}
+\def\first{}
+
+
+% ------------------------------------------------------------
+% Kopf gewuenscht?
+% ------------------------------------------------------------
+\ifx\@Kopf\empty{}\else
+% Seitenraender festlegen
+\@KopfRaender
+% neue Definition der Kopf- und Fusszeilen
+\renewcommand{\ps@myheadings}{%
+  \renewcommand{\@oddhead}{\@newposYauto\hspace*{-\oddsidemargin}%
+    \setlength{\unitlength}{1mm}%
+    \hspace*{-1cm}\begin{picture}(174,0)%
+      \@linien%
+      \put(9.5,12){\epsfig{file=KB_logo.ps,width=1.9cm}}
+      \ifx\first\empty{
+        \ifx\@titelI\empty{
+          \put(38,26){\makebox(78,12)[cc]{\fcl \@titel}}
+        }\else
+          \put(38,15){\makebox(78,12)[cc]{\fcl \@titel}}
+          \put(38,1){\makebox(78,12)[cc]{\fcl \@titelI}}
+        \fi
+      }\fi%
+      \put(118,27){\makebox(31,0)[tl]{\fcn \@AusgabeU}}%
+      \put(118,13){\makebox(31,0)[tl]{\fcn \@Bearbeiter}}%
+      \put(153,27){\makebox(19,0)[tl]{\fcn \@Blatt}}
+      \put(153,13){\makebox(19,0)[tl]{\fcn \@Datum}}
+
+      \put(153,20){\makebox(19,0)[tc]{\fcln \thepage / \pageref{LastPage}}}%
+%      \put(153,20){\makebox(19,0)[tc]{\fcln \thepage / \thepages}}%
+      \put(153,6){\makebox(19,0)[tc]{\fcm{\today}}}%
+      \put(118,20){\makebox(31,0)[tl]{\fcln \@Ausgabe}}%
+      \put(2,4){\makebox(34,3)[cc]{\fcln \@Abteilung}}%
+%
+      \put(118,5){\makebox(31,3)[tl]{\fcm{\@author}}}%
+      \put(118,1){\makebox(31,3)[tl]{\fcm{\@authorI}}}%
+      \put(118,\@posYII){\makebox(31,0)[tl]{\fcm{\@authorII}}}%
+%
+    \end{picture}%
+    \ifx\firsttitle\empty {} \else\def\first{1}\fi%
+  }%
+  \renewcommand{\@evenhead}{\@oddhead}%
+  \renewcommand{\@oddfoot}{\hspace*{-\oddsidemargin}%
+    \setlength{\unitlength}{1mm}%
+    \hspace*{-1cm}\begin{picture}(174,8)%
+      \put(0,8){\line(1,0){174}}%
+      \put(0,0){\makebox(174,5)[bc]{\fcm%\DokNummer\hfill%
+      \ifx\@LOrigin\empty{\jobname}\else
+          \@LOrigin%
+      \fi}}%
+%      \ifx\KBcopyright\empty{}\else{
+        \put(15.5,4.85){\circle{1.5}}      
+        \put(15,4){\makebox(159,4)[bl]{\KBCopyright}}
+%      }\fi%
+    \end{picture}%
+  }%
+  \renewcommand{\@evenfoot}{}%
+}
+
+% KB-Kopf als headings
+\pagestyle{myheadings}
+
+\fi
+
+% ------------------------------------------------------------
+% Gesamtzahl der Seiten merken
+% ------------------------------------------------------------
+
+% Enthaelt Gesamtzahl der Seiten
+\def\thepages{}  
+
+% Gesamtseitenzahl lesen (falls Datei: quelle.KBaux existiert)
+\AtBeginDocument{\IfFileExists{\jobname.KBaux}%
+  {\newread\KBaux\openin\KBaux=\jobname.KBaux \read\KBaux to \thepages \closein\KBaux}{}%
+  \@KBBegin}%
+
+% Gesamtseitenzahl rausschreiben (Datei: quelle.KBaux)
+\AtEndDocument{\newwrite\KBaux\openout\KBaux=\jobname.KBaux \write\KBaux{\thepage}\closeout\KBaux%
+  \@KBEnd}
+
+
+
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+% weitere Makros
+% ------------------------------------------------------------
+% ------------------------------------------------------------
+
+% kurze itemize Umgebung
+\newenvironment{sitemize}%
+  {\begin{list}{$\bullet$}{\leftmargin3ex\labelwidth1ex%
+                   \itemsep0.6ex\topsep0.6ex\parskip3pt\parsep0pt}\rm}
+  {\end{list}}
+
+% Grad-Zeichen
+\def\grd{\ensuremath^o}
+
+\renewcommand{\figurename}{Bild}
+
+
+
+\endinput
+
+
+
+

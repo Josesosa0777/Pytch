@@ -1,0 +1,63 @@
+%
+% conf_DAS_eval_step1
+%
+
+
+
+% -----------------------------------------------------------------
+% 1. Chose a Project (ABS6, EBS5, EBS23)
+Project = CVR3
+
+% ------------------------------------------------
+% 2. directory with the measurements 
+src_dir_meas = testdata01
+
+NpyHomeDir = MyNpyHomeDir
+
+% ------------------------------------------------
+% 3. m-file which is used for evaluation routines
+eval_function = EvalATS
+eval_function = EvalMeasTime
+
+
+% ------------------------------------------------
+% 4. Report
+% 4.1 directory, in which the report will be generated 
+report_dir                   = report_step1
+% 4.2 filename of the report
+report_name                  = report_step1
+% 4.3 Title
+report_title                 = CVR3
+% 4.4 Subtitle
+report_subtitle              = public roads
+% 4.5 Author (beneath 'Our Reference')
+report_author                = T/ESS3.2 (Guecker)
+% 4.6 Department (beneath KB logo)
+report_department            = T/ESS3.2
+
+
+% ------------------------------------------------
+% 6. First Page
+% 6.1 Title
+first_page_title             = Evaluation of Endurance Tests
+% 6.2 Project
+first_page_project           = LRR3
+% 6.3 Objective
+first_page_objective         = 
+% 6.4 Tested by
+first_page_tested_by         = T/ESS3.2
+% 6.5 Released by
+first_page_released_by       = 
+% 6.6 Distribution List
+first_page_distribution_list = 
+% 6.7 EDM Link
+first_page_EDM_link          = 
+% 6.8 Document Link
+first_page_document_link     = 
+% 6.9 Development Request Link
+first_page_DR_link           = 
+
+% ------------------------------------------------
+% 7. Debug
+%Debug = On
+%Report_Only = yes

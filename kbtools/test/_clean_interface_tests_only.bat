@@ -1,0 +1,3 @@
+del ResultTable_interface_tests_only.xls
+del Results_Consolidated_interface_tests_only.txt
+del results_interface_tests_only.txt
