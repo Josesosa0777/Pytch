@@ -1,0 +1,766 @@
+VERSION "DNNBNNNYNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/4/%%%/4/'%**4NNN///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 1569 Video_Object_Header: 8 Vector__XXX
+ SG_ Right_Close_Range_Cut_In : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Ped_In_Danger_Zone : 19|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Ped_FCW_On : 17|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Number_Of_Objects : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter_Header : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Left_Close_Range_Cut_In : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID_CIPV : 8|7@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ FCW_On : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1536 Video_Object_AES: 8 Vector__XXX
+ SG_ Right_Angle : 48|13@1+ (0.0002,-0.8192) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ Relative_Velocity : 20|12@1- (0.05,0) [-102.4|102.35] "m/s" Vector__XXX
+ SG_ Message_Counter : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance : 8|12@1+ (0.05,0) [0|204.75] "m" Vector__XXX
+ SG_ Left_Angle : 32|13@1+ (0.0002,-0.8192) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ ID : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ Class : 45|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1609 Video_Object_9_D: 8 Vector__XXX
+ SG_ Upper_Right_Top_from_FOE_9_D : 20|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Upper_Right_Right_from_FOE_9_D : 30|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Message_Counter_9_D : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lower_Left_Left_from_FOE_9_D : 0|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Lower_Left_Bottom_from_FOE_9_D : 10|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_Y_9_D : 50|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_X_9_D : 40|10@1- (2,0) [0|0] "" Vector__XXX
+
+BO_ 1608 Video_Object_9_C: 8 Vector__XXX
+ SG_ Message_Counter_9_C : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lateral_Distance_9_C : 24|12@1- (0.05,0) [-102.4|102.35] "m" Vector__XXX
+ SG_ Lane_Movement_Type_9_C : 17|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ID_extended_9_C : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Angle_STD_9_C : 0|8@1+ (0.0002,0) [0|0.051] "rad" Vector__XXX
+ SG_ Acceleration_Abs_9_C : 8|9@1- (0.05,0) [-12.8|12.75] "m/s²" Vector__XXX
+
+BO_ 1607 Video_Object_9_B: 8 Vector__XXX
+ SG_ Width_9_B : 24|7@1+ (0.05,0) [0|6.35] "m" Vector__XXX
+ SG_ Relative_Velocity_STD_9_B : 40|8@1+ (0.05,0) [0|12.75] "m/s" Vector__XXX
+ SG_ Rate_Mean_Angle_9_B : 16|8@1- (0.002,0) [-0.256|0.254] "rad/s" Vector__XXX
+ SG_ Motion_Status_9_B : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter_9_B : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_STD_9_B : 48|8@1+ (0.1,0) [0|25.5] "m" Vector__XXX
+ SG_ Lane_9_B : 13|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Inverse_TTC_9_B : 0|10@1- (0.015625,0) [-8|7.98438] "1/s" Vector__XXX
+ SG_ Indicator_9_B : 10|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Detection_Score_9_B : 32|8@1- (0.05,0) [-6.4|6.35] "" Vector__XXX
+ SG_ Brake_Light_9_B : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1606 Video_Object_9_A: 8 Vector__XXX
+ SG_ Right_Angle_9_A : 48|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ Relative_Velocity_9_A : 20|12@1- (0.05,0) [-102.4|102.35] "m/s" Vector__XXX
+ SG_ Message_Counter_9_A : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_9_A : 8|12@1+ (0.05,0) [0|204.75] "m" Vector__XXX
+ SG_ Left_Angle_9_A : 32|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ ID_9_A : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ Class_9_A : 45|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1605 Video_Object_8_D: 8 Vector__XXX
+ SG_ Upper_Right_Top_from_FOE_8_D : 20|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Upper_Right_Right_from_FOE_8_D : 30|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Message_Counter_8_D : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lower_Left_Left_from_FOE_8_D : 0|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Lower_Left_Bottom_from_FOE_8_D : 10|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_Y_8_D : 50|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_X_8_D : 40|10@1- (2,0) [0|0] "" Vector__XXX
+
+BO_ 1604 Video_Object_8_C: 8 Vector__XXX
+ SG_ Message_Counter_8_C : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lateral_Distance_8_C : 24|12@1- (0.05,0) [-102.4|102.35] "m" Vector__XXX
+ SG_ Lane_Movement_Type_8_C : 17|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ID_extended_8_C : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Angle_STD_8_C : 0|8@1+ (0.0002,0) [0|0.051] "rad" Vector__XXX
+ SG_ Acceleration_Abs_8_C : 8|9@1- (0.05,0) [-12.8|12.75] "m/s²" Vector__XXX
+
+BO_ 1603 Video_Object_8_B: 8 Vector__XXX
+ SG_ Width_8_B : 24|7@1+ (0.05,0) [0|6.35] "m" Vector__XXX
+ SG_ Relative_Velocity_STD_8_B : 40|8@1+ (0.05,0) [0|12.75] "m/s" Vector__XXX
+ SG_ Rate_Mean_Angle_8_B : 16|8@1- (0.002,0) [-0.256|0.254] "rad/s" Vector__XXX
+ SG_ Motion_Status_8_B : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter_8_B : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_STD_8_B : 48|8@1+ (0.1,0) [0|25.5] "m" Vector__XXX
+ SG_ Lane_8_B : 13|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Inverse_TTC_8_B : 0|10@1- (0.015625,0) [-8|7.98438] "1/s" Vector__XXX
+ SG_ Indicator_8_B : 10|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Detection_Score_8_B : 32|8@1- (0.05,0) [-6.4|6.35] "" Vector__XXX
+ SG_ Brake_Light_8_B : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1602 Video_Object_8_A: 8 Vector__XXX
+ SG_ Right_Angle_8_A : 48|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ Relative_Velocity_8_A : 20|12@1- (0.05,0) [-102.4|102.35] "m/s" Vector__XXX
+ SG_ Message_Counter_8_A : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_8_A : 8|12@1+ (0.05,0) [0|204.75] "m" Vector__XXX
+ SG_ Left_Angle_8_A : 32|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ ID_8_A : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ Class_8_A : 45|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1601 Video_Object_7_D: 8 Vector__XXX
+ SG_ Upper_Right_Top_from_FOE_7_D : 20|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Upper_Right_Right_from_FOE_7_D : 30|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Message_Counter_7_D : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lower_Left_Left_from_FOE_7_D : 0|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Lower_Left_Bottom_from_FOE_7_D : 10|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_Y_7_D : 50|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_X_7_D : 40|10@1- (2,0) [0|0] "" Vector__XXX
+
+BO_ 1600 Video_Object_7_C: 8 Vector__XXX
+ SG_ Message_Counter_7_C : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lateral_Distance_7_C : 24|12@1- (0.05,0) [-102.4|102.35] "m" Vector__XXX
+ SG_ Lane_Movement_Type_7_C : 17|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ID_extended_7_C : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Angle_STD_7_C : 0|8@1+ (0.0002,0) [0|0.051] "rad" Vector__XXX
+ SG_ Acceleration_Abs_7_C : 8|9@1- (0.05,0) [-12.8|12.75] "m/s²" Vector__XXX
+
+BO_ 1599 Video_Object_7_B: 8 Vector__XXX
+ SG_ Width_7_B : 24|7@1+ (0.05,0) [0|6.35] "m" Vector__XXX
+ SG_ Relative_Velocity_STD_7_B : 40|8@1+ (0.05,0) [0|12.75] "m/s" Vector__XXX
+ SG_ Rate_Mean_Angle_7_B : 16|8@1- (0.002,0) [-0.256|0.254] "rad/s" Vector__XXX
+ SG_ Motion_Status_7_B : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter_7_B : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_STD_7_B : 48|8@1+ (0.1,0) [0|25.5] "m" Vector__XXX
+ SG_ Lane_7_B : 13|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Inverse_TTC_7_B : 0|10@1- (0.015625,0) [-8|7.98438] "1/s" Vector__XXX
+ SG_ Indicator_7_B : 10|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Detection_Score_7_B : 32|8@1- (0.05,0) [-6.4|6.35] "" Vector__XXX
+ SG_ Brake_Light_7_B : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1598 Video_Object_7_A: 8 Vector__XXX
+ SG_ Right_Angle_7_A : 48|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ Relative_Velocity_7_A : 20|12@1- (0.05,0) [-102.4|102.35] "m/s" Vector__XXX
+ SG_ Message_Counter_7_A : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_7_A : 8|12@1+ (0.05,0) [0|204.75] "m" Vector__XXX
+ SG_ Left_Angle_7_A : 32|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ ID_7_A : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ Class_7_A : 45|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1597 Video_Object_6_D: 8 Vector__XXX
+ SG_ Upper_Right_Top_from_FOE_6_D : 20|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Upper_Right_Right_from_FOE_6_D : 30|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Message_Counter_6_D : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lower_Left_Left_from_FOE_6_D : 0|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Lower_Left_Bottom_from_FOE_6_D : 10|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_Y_6_D : 50|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_X_6_D : 40|10@1- (2,0) [0|0] "" Vector__XXX
+
+BO_ 1596 Video_Object_6_C: 8 Vector__XXX
+ SG_ Message_Counter_6_C : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lateral_Distance_6_C : 24|12@1- (0.05,0) [-102.4|102.35] "m" Vector__XXX
+ SG_ Lane_Movement_Type_6_C : 17|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ID_extended_6_C : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Angle_STD_6_C : 0|8@1+ (0.0002,0) [0|0.051] "rad" Vector__XXX
+ SG_ Acceleration_Abs_6_C : 8|9@1- (0.05,0) [-12.8|12.75] "m/s²" Vector__XXX
+
+BO_ 1595 Video_Object_6_B: 8 Vector__XXX
+ SG_ Width_6_B : 24|7@1+ (0.05,0) [0|6.35] "m" Vector__XXX
+ SG_ Relative_Velocity_STD_6_B : 40|8@1+ (0.05,0) [0|12.75] "m/s" Vector__XXX
+ SG_ Rate_Mean_Angle_6_B : 16|8@1- (0.002,0) [-0.256|0.254] "rad/s" Vector__XXX
+ SG_ Motion_Status_6_B : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter_6_B : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_STD_6_B : 48|8@1+ (0.1,0) [0|25.5] "m" Vector__XXX
+ SG_ Lane_6_B : 13|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Inverse_TTC_6_B : 0|10@1- (0.015625,0) [-8|7.98438] "1/s" Vector__XXX
+ SG_ Indicator_6_B : 10|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Detection_Score_6_B : 32|8@1- (0.05,0) [-6.4|6.35] "" Vector__XXX
+ SG_ Brake_Light_6_B : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1594 Video_Object_6_A: 8 Vector__XXX
+ SG_ Right_Angle_6_A : 48|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ Relative_Velocity_6_A : 20|12@1- (0.05,0) [-102.4|102.35] "m/s" Vector__XXX
+ SG_ Message_Counter_6_A : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_6_A : 8|12@1+ (0.05,0) [0|204.75] "m" Vector__XXX
+ SG_ Left_Angle_6_A : 32|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ ID_6_A : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ Class_6_A : 45|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1593 Video_Object_5_D: 8 Vector__XXX
+ SG_ Upper_Right_Top_from_FOE_5_D : 20|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Upper_Right_Right_from_FOE_5_D : 30|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Message_Counter_5_D : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lower_Left_Left_from_FOE_5_D : 0|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Lower_Left_Bottom_from_FOE_5_D : 10|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_Y_5_D : 50|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_X_5_D : 40|10@1- (2,0) [0|0] "" Vector__XXX
+
+BO_ 1592 Video_Object_5_C: 8 Vector__XXX
+ SG_ Message_Counter_5_C : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lateral_Distance_5_C : 24|12@1- (0.05,0) [-102.4|102.35] "m" Vector__XXX
+ SG_ Lane_Movement_Type_5_C : 17|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ID_extended_5_C : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Angle_STD_5_C : 0|8@1+ (0.0002,0) [0|0.051] "rad" Vector__XXX
+ SG_ Acceleration_Abs_5_C : 8|9@1- (0.05,0) [-12.8|12.75] "m/s²" Vector__XXX
+
+BO_ 1591 Video_Object_5_B: 8 Vector__XXX
+ SG_ Width_5_B : 24|7@1+ (0.05,0) [0|6.35] "m" Vector__XXX
+ SG_ Relative_Velocity_STD_5_B : 40|8@1+ (0.05,0) [0|12.75] "m/s" Vector__XXX
+ SG_ Rate_Mean_Angle_5_B : 16|8@1- (0.002,0) [-0.256|0.254] "rad/s" Vector__XXX
+ SG_ Motion_Status_5_B : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter_5_B : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_STD_5_B : 48|8@1+ (0.1,0) [0|25.5] "m" Vector__XXX
+ SG_ Lane_5_B : 13|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Inverse_TTC_5_B : 0|10@1- (0.015625,0) [-8|7.98438] "1/s" Vector__XXX
+ SG_ Indicator_5_B : 10|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Detection_Score_5_B : 32|8@1- (0.05,0) [-6.4|6.35] "" Vector__XXX
+ SG_ Brake_Light_5_B : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1590 Video_Object_5_A: 8 Vector__XXX
+ SG_ Right_Angle_5_A : 48|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ Relative_Velocity_5_A : 20|12@1- (0.05,0) [-102.4|102.35] "m/s" Vector__XXX
+ SG_ Message_Counter_5_A : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_5_A : 8|12@1+ (0.05,0) [0|204.75] "m" Vector__XXX
+ SG_ Left_Angle_5_A : 32|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ ID_5_A : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ Class_5_A : 45|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1589 Video_Object_4_D: 8 Vector__XXX
+ SG_ Upper_Right_Top_from_FOE_4_D : 20|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Upper_Right_Right_from_FOE_4_D : 30|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Message_Counter_4_D : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lower_Left_Left_from_FOE_4_D : 0|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Lower_Left_Bottom_from_FOE_4_D : 10|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_Y_4_D : 50|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_X_4_D : 40|10@1- (2,0) [0|0] "" Vector__XXX
+
+BO_ 1588 Video_Object_4_C: 8 Vector__XXX
+ SG_ Message_Counter_4_C : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lateral_Distance_4_C : 24|12@1- (0.05,0) [-102.4|102.35] "m" Vector__XXX
+ SG_ Lane_Movement_Type_4_C : 17|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ID_extended_4_C : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Angle_STD_4_C : 0|8@1+ (0.0002,0) [0|0.051] "rad" Vector__XXX
+ SG_ Acceleration_Abs_4_C : 8|9@1- (0.05,0) [-12.8|12.75] "m/s²" Vector__XXX
+
+BO_ 1587 Video_Object_4_B: 8 Vector__XXX
+ SG_ Width_4_B : 24|7@1+ (0.05,0) [0|6.35] "m" Vector__XXX
+ SG_ Relative_Velocity_STD_4_B : 40|8@1+ (0.05,0) [0|12.75] "m/s" Vector__XXX
+ SG_ Rate_Mean_Angle_4_B : 16|8@1- (0.002,0) [-0.256|0.254] "rad/s" Vector__XXX
+ SG_ Motion_Status_4_B : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter_4_B : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_STD_4_B : 48|8@1+ (0.1,0) [0|25.5] "m" Vector__XXX
+ SG_ Lane_4_B : 13|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Inverse_TTC_4_B : 0|10@1- (0.015625,0) [-8|7.98438] "1/s" Vector__XXX
+ SG_ Indicator_4_B : 10|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Detection_Score_4_B : 32|8@1- (0.05,0) [-6.4|6.35] "" Vector__XXX
+ SG_ Brake_Light_4_B : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1586 Video_Object_4_A: 8 Vector__XXX
+ SG_ Right_Angle_4_A : 48|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ Relative_Velocity_4_A : 20|12@1- (0.05,0) [-102.4|102.35] "m/s" Vector__XXX
+ SG_ Message_Counter_4_A : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_4_A : 8|12@1+ (0.05,0) [0|204.75] "m" Vector__XXX
+ SG_ Left_Angle_4_A : 32|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ ID_4_A : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ Class_4_A : 45|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1585 Video_Object_3_D: 8 Vector__XXX
+ SG_ Upper_Right_Top_from_FOE_3_D : 20|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Upper_Right_Right_from_FOE_3_D : 30|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Message_Counter_3_D : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lower_Left_Left_from_FOE_3_D : 0|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Lower_Left_Bottom_from_FOE_3_D : 10|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_Y_3_D : 50|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_X_3_D : 40|10@1- (2,0) [0|0] "" Vector__XXX
+
+BO_ 1584 Video_Object_3_C: 8 Vector__XXX
+ SG_ Message_Counter_3_C : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lateral_Distance_3_C : 24|12@1- (0.05,0) [-102.4|102.35] "m" Vector__XXX
+ SG_ Lane_Movement_Type_3_C : 17|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ID_extended_3_C : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Angle_STD_3_C : 0|8@1+ (0.0002,0) [0|0.051] "rad" Vector__XXX
+ SG_ Acceleration_Abs_3_C : 8|9@1- (0.05,0) [-12.8|12.75] "m/s²" Vector__XXX
+
+BO_ 1583 Video_Object_3_B: 8 Vector__XXX
+ SG_ Width_3_B : 24|7@1+ (0.05,0) [0|6.35] "m" Vector__XXX
+ SG_ Relative_Velocity_STD_3_B : 40|8@1+ (0.05,0) [0|12.75] "m/s" Vector__XXX
+ SG_ Rate_Mean_Angle_3_B : 16|8@1- (0.002,0) [-0.256|0.254] "rad/s" Vector__XXX
+ SG_ Motion_Status_3_B : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter_3_B : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_STD_3_B : 48|8@1+ (0.1,0) [0|25.5] "m" Vector__XXX
+ SG_ Lane_3_B : 13|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Inverse_TTC_3_B : 0|10@1- (0.015625,0) [-8|7.98438] "1/s" Vector__XXX
+ SG_ Indicator_3_B : 10|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Detection_Score_3_B : 32|8@1- (0.05,0) [-6.4|6.35] "" Vector__XXX
+ SG_ Brake_Light_3_B : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1582 Video_Object_3_A: 8 Vector__XXX
+ SG_ Right_Angle_3_A : 48|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ Relative_Velocity_3_A : 20|12@1- (0.05,0) [-102.4|102.35] "m/s" Vector__XXX
+ SG_ Message_Counter_3_A : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_3_A : 8|12@1+ (0.05,0) [0|204.75] "m" Vector__XXX
+ SG_ Left_Angle_3_A : 32|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ ID_3_A : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ Class_3_A : 45|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1581 Video_Object_2_D: 8 Vector__XXX
+ SG_ Upper_Right_Top_from_FOE_2_D : 20|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Upper_Right_Right_from_FOE_2_D : 30|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Message_Counter_2_D : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lower_Left_Left_from_FOE_2_D : 0|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Lower_Left_Bottom_from_FOE_2_D : 10|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_Y_2_D : 50|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_X_2_D : 40|10@1- (2,0) [0|0] "" Vector__XXX
+
+BO_ 1580 Video_Object_2_C: 8 Vector__XXX
+ SG_ Message_Counter_2_C : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lateral_Distance_2_C : 24|12@1- (0.05,0) [-102.4|102.35] "m" Vector__XXX
+ SG_ Lane_Movement_Type_2_C : 17|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ID_extended_2_C : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Angle_STD_2_C : 0|8@1+ (0.0002,0) [0|0.051] "rad" Vector__XXX
+ SG_ Acceleration_Abs_2_C : 8|9@1- (0.05,0) [-12.8|12.75] "m/s²" Vector__XXX
+
+BO_ 1579 Video_Object_2_B: 8 Vector__XXX
+ SG_ Width_2_B : 24|7@1+ (0.05,0) [0|6.35] "m" Vector__XXX
+ SG_ Relative_Velocity_STD_2_B : 40|8@1+ (0.05,0) [0|12.75] "m/s" Vector__XXX
+ SG_ Rate_Mean_Angle_2_B : 16|8@1- (0.002,0) [-0.256|0.254] "rad/s" Vector__XXX
+ SG_ Motion_Status_2_B : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter_2_B : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_STD_2_B : 48|8@1+ (0.1,0) [0|25.5] "m" Vector__XXX
+ SG_ Lane_2_B : 13|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Inverse_TTC_2_B : 0|10@1- (0.015625,0) [-8|7.98438] "1/s" Vector__XXX
+ SG_ Indicator_2_B : 10|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Detection_Score_2_B : 32|8@1- (0.05,0) [-6.4|6.35] "" Vector__XXX
+ SG_ Brake_Light_2_B : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1578 Video_Object_2_A: 8 Vector__XXX
+ SG_ Right_Angle_2_A : 48|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ Relative_Velocity_2_A : 20|12@1- (0.05,0) [-102.4|102.35] "m/s" Vector__XXX
+ SG_ Message_Counter_2_A : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_2_A : 8|12@1+ (0.05,0) [0|204.75] "m" Vector__XXX
+ SG_ Left_Angle_2_A : 32|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ ID_2_A : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ Class_2_A : 45|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1577 Video_Object_1_D: 8 Vector__XXX
+ SG_ Upper_Right_Top_from_FOE_1_D : 20|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Upper_Right_Right_from_FOE_1_D : 30|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Message_Counter_1_D : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lower_Left_Left_from_FOE_1_D : 0|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Lower_Left_Bottom_from_FOE_1_D : 10|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_Y_1_D : 50|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_X_1_D : 40|10@1- (2,0) [0|0] "" Vector__XXX
+
+BO_ 1576 Video_Object_1_C: 8 Vector__XXX
+ SG_ Message_Counter_1_C : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lateral_Distance_1_C : 24|12@1- (0.05,0) [-102.4|102.35] "m" Vector__XXX
+ SG_ Lane_Movement_Type_1_C : 17|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ID_extended_1_C : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Angle_STD_1_C : 0|8@1+ (0.0002,0) [0|0.051] "rad" Vector__XXX
+ SG_ Acceleration_Abs_1_C : 8|9@1- (0.05,0) [-12.8|12.75] "m/s²" Vector__XXX
+
+BO_ 1575 Video_Object_1_B: 8 Vector__XXX
+ SG_ Width_1_B : 24|7@1+ (0.05,0) [0|6.35] "m" Vector__XXX
+ SG_ Relative_Velocity_STD_1_B : 40|8@1+ (0.05,0) [0|12.75] "m/s" Vector__XXX
+ SG_ Rate_Mean_Angle_1_B : 16|8@1- (0.002,0) [-0.256|0.254] "rad/s" Vector__XXX
+ SG_ Motion_Status_1_B : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter_1_B : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_STD_1_B : 48|8@1+ (0.1,0) [0|25.5] "m" Vector__XXX
+ SG_ Lane_1_B : 13|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Inverse_TTC_1_B : 0|10@1- (0.015625,0) [-8|7.98438] "1/s" Vector__XXX
+ SG_ Indicator_1_B : 10|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Detection_Score_1_B : 32|8@1- (0.05,0) [-6.4|6.35] "" Vector__XXX
+ SG_ Brake_Light_1_B : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1574 Video_Object_1_A: 8 Vector__XXX
+ SG_ Right_Angle_1_A : 48|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ Relative_Velocity_1_A : 20|12@1- (0.05,0) [-102.4|102.35] "m/s" Vector__XXX
+ SG_ Message_Counter_1_A : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_1_A : 8|12@1+ (0.05,0) [0|204.75] "m" Vector__XXX
+ SG_ Left_Angle_1_A : 32|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ ID_1_A : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ Class_1_A : 45|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1573 Video_Object_0_D: 8 Vector__XXX
+ SG_ Upper_Right_Top_from_FOE_0_D : 20|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Upper_Right_Right_from_FOE_0_D : 30|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Message_Counter_0_D : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lower_Left_Left_from_FOE_0_D : 0|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ Lower_Left_Bottom_from_FOE_0_D : 10|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_Y_0_D : 50|10@1- (2,0) [0|0] "" Vector__XXX
+ SG_ FOE_X_0_D : 40|10@1- (2,0) [0|0] "" Vector__XXX
+
+BO_ 1572 Video_Object_0_C: 8 Vector__XXX
+ SG_ Message_Counter_0_C : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lateral_Distance_0_C : 24|12@1- (0.05,0) [-102.4|102.35] "m" Vector__XXX
+ SG_ Lane_Movement_Type_0_C : 17|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ID_extended_0_C : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Angle_STD_0_C : 0|8@1+ (0.0002,0) [0|0.051] "rad" Vector__XXX
+ SG_ Acceleration_Abs_0_C : 8|9@1- (0.05,0) [-12.8|12.75] "m/s²" Vector__XXX
+
+BO_ 1571 Video_Object_0_B: 8 Vector__XXX
+ SG_ Width_0_B : 24|7@1+ (0.05,0) [0|6.35] "m" Vector__XXX
+ SG_ Relative_Velocity_STD_0_B : 40|8@1+ (0.05,0) [0|12.75] "m/s" Vector__XXX
+ SG_ Rate_Mean_Angle_0_B : 16|8@1- (0.002,0) [-0.256|0.254] "rad/s" Vector__XXX
+ SG_ Motion_Status_0_B : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter_0_B : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_STD_0_B : 48|8@1+ (0.1,0) [0|25.5] "m" Vector__XXX
+ SG_ Lane_0_B : 13|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Inverse_TTC_0_B : 0|10@1- (0.015625,0) [-8|7.98438] "1/s" Vector__XXX
+ SG_ Indicator_0_B : 10|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Detection_Score_0_B : 32|8@1- (0.05,0) [-6.4|6.35] "" Vector__XXX
+ SG_ Brake_Light_0_B : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1570 Video_Object_0_A: 8 Vector__XXX
+ SG_ Right_Angle_0_A : 48|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ Relative_Velocity_0_A : 20|12@1- (0.05,0) [-102.4|102.35] "m/s" Vector__XXX
+ SG_ Message_Counter_0_A : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Longitudinal_Distance_0_A : 8|12@1+ (0.05,0) [0|204.75] "m" Vector__XXX
+ SG_ Left_Angle_0_A : 32|13@1- (0.0002,0) [-0.8192|0.819] "rad" Vector__XXX
+ SG_ ID_0_A : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ Class_0_A : 45|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1620 Video_Lane_Right_B: 8 Vector__XXX
+ SG_ View_Range_Right_B : 0|8@1+ (0.5,0) [0|127.5] "m" Vector__XXX
+ SG_ Message_Counter_Right_B : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ME_TLC_Right_B : 8|8@1+ (0.01,0) [0|2.55] "s" Vector__XXX
+ SG_ Me_Line_Changed_Right_B : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Line_Width_Right_B : 17|7@1+ (0.01,0) [0|1.27] "m" Vector__XXX
+ SG_ Lateral_Velocity_Right_B : 24|16@1- (1,0) [0|0] "cmps" Vector__XXX
+ SG_ C0_right_wheel_Right_B : 40|8@1- (0.01,0) [-327.68|327.67] "m" Vector__XXX
+ SG_ BX_TLC_Right_B : 48|8@1+ (0.01,0) [0|2.55] "s" Vector__XXX
+
+BO_ 1619 Video_Lane_Right_A: 8 Vector__XXX
+ SG_ Quality_Right_A : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Message_Counter_Right_A : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Line_Type_Right_A : 58|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ C3_Right_A : 0|16@1- (4E-009,0) [-0.00013107|0.000131068] "1/m²" Vector__XXX
+ SG_ C2_Right_A : 16|16@1- (1E-006,0) [-0.032768|0.032766] "1/m" Vector__XXX
+ SG_ C1_Right_A : 48|10@1- (0.00097656,0) [-0.357|0.357] "rad" Vector__XXX
+ SG_ C0_Right_A : 32|12@1- (0.01,0) [-20.48|20.47] "m" Vector__XXX
+
+BO_ 1624 Video_Lane_Next_Right_B: 8 Vector__XXX
+ SG_ View_Range_Next_Right_B : 0|8@1+ (0.5,0) [0|127.5] "m" Vector__XXX
+ SG_ TLC_Next_Right_B : 8|8@1+ (0.01,0) [0|2.55] "" Vector__XXX
+ SG_ Message_Counter_Next_Right_B : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Me_Line_Changed_Next_Right_B : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Line_Width_Next_Right_B : 17|7@1+ (0.01,0) [0|1.27] "m" Vector__XXX
+
+BO_ 1623 Video_Lane_Next_Right_A: 8 Vector__XXX
+ SG_ Quality_Next_Right_A : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Message_Counter_Next_Right_A : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Line_Type_Next_Right_A : 58|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ C3_Next_Right_A : 0|16@1- (4E-009,0) [-0.00013107|0.000131068] "1/m²" Vector__XXX
+ SG_ C2_Next_Right_A : 16|16@1- (1E-006,0) [-0.032768|0.032766] "1/m" Vector__XXX
+ SG_ C1_Next_Right_A : 48|10@1- (0.00097656,0) [-0.357|0.357] "rad" Vector__XXX
+ SG_ C0_Next_Right_A : 32|12@1- (0.01,0) [-20.48|20.47] "m" Vector__XXX
+
+BO_ 1626 Video_Lane_Next_Left_B: 8 Vector__XXX
+ SG_ View_Range_Next_Left_B : 0|8@1+ (0.5,0) [0|127.5] "m" Vector__XXX
+ SG_ TLC_Next_Left_B : 8|8@1+ (0.01,0) [0|2.55] "" Vector__XXX
+ SG_ Message_Counter_Next_Left_B : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Me_Line_Changed_Next_Left_B : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Line_Width_Next_Left_B : 17|7@1+ (0.01,0) [0|1.27] "m" Vector__XXX
+
+BO_ 1625 Video_Lane_Next_Left_A: 8 Vector__XXX
+ SG_ Quality_Next_Left_A : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Message_Counter_Next_Left_A : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Line_Type_Next_Left_A : 58|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ C3_Next_Left_A : 0|16@1- (4E-009,0) [-0.00013107|0.000131068] "1/m²" Vector__XXX
+ SG_ C2_Next_Left_A : 16|16@1- (1E-006,0) [-0.032768|0.032766] "1/m" Vector__XXX
+ SG_ C1_Next_Left_A : 48|10@1- (0.00097656,0) [-0.357|0.357] "rad" Vector__XXX
+ SG_ C0_Next_Left_A : 32|12@1- (0.01,0) [-20.48|20.47] "m" Vector__XXX
+
+BO_ 1622 Video_Lane_Left_B: 8 Vector__XXX
+ SG_ View_Range_Left_B : 0|8@1+ (0.5,0) [0|127.5] "m" Vector__XXX
+ SG_ Message_Counter_Left_B : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ME_TLC_Left_B : 8|8@1+ (0.01,0) [0|2.55] "s" Vector__XXX
+ SG_ Me_Line_Changed_Left_B : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Line_Width_Left_B : 17|7@1+ (0.01,0) [0|1.27] "m" Vector__XXX
+ SG_ Lateral_Velocity_Left_B : 24|16@1- (1,0) [0|0] "cmps" Vector__XXX
+ SG_ C0_left_wheel_Left_B : 40|8@1- (0.01,0) [-327.68|327.67] "m" Vector__XXX
+ SG_ BX_TLC_Left_B : 48|8@1+ (0.01,0) [0|2.55] "s" Vector__XXX
+
+BO_ 1621 Video_Lane_Left_A: 8 Vector__XXX
+ SG_ Quality_Left_A : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Message_Counter_Left_A : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Line_Type_Left_A : 58|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ C3_Left_A : 0|16@1- (4E-009,0) [-0.00013107|0.000131068] "1/m²" Vector__XXX
+ SG_ C2_Left_A : 16|16@1- (1E-006,0) [-0.032768|0.032766] "1/m" Vector__XXX
+ SG_ C1_Left_A : 48|10@1- (0.00097656,0) [-0.357|0.357] "rad" Vector__XXX
+ SG_ C0_Left_A : 32|12@1- (0.01,0) [-20.48|20.47] "m" Vector__XXX
+
+BO_ 1618 Video_Lane_Header: 8 Vector__XXX
+ SG_ Road_Type : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Message_Counter_Lane_Header : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LaneModuleValid : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Construction_Area : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1568 Video_Data_General_B: 8 Vector__XXX
+ SG_ SensorStatus : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter_General_B : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Frame_ID : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Driving_Side : 22|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Day_Time_Indicator : 20|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ CAN_Delay : 24|9@1+ (0.001,0) [0|0.511] "s" Vector__XXX
+
+BO_ 1567 Video_Data_General_A: 8 Vector__XXX
+ SG_ RefPoint_Y : 40|8@1- (0.01,0) [-1.28|1.27] "m" Vector__XXX
+ SG_ RefPoint_X : 32|8@1+ (0.02,0) [0|5.1] "m" Vector__XXX
+ SG_ Protocol_Version_D : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Protocol_Version_C : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Protocol_Version_B : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Protocol_Version_A : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Pictus_SW_Version : 49|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ Message_Counter_General_A : 62|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Debug_Msg_Tx : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Application_Version_D : 24|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Application_Version_C : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Application_Version_B : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Application_Version_A : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 1648 Bendix_Info: 8 Vector__XXX
+ SG_ Traffic_Sign_Warning : 8|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Traffic_Sign_Type : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Message_Counter_Bendix_Info : 62|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ME_LDW_LaneDeparture_Right : 4|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ME_LDW_LaneDeparture_Left : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LDW_LaneDeparture_Right : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LDW_LaneDeparture_Left : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ C0_right_wheel : 32|8@1- (0.01,0) [-327.68|327.67] "m" Vector__XXX
+ SG_ C0_left_wheel : 24|8@1- (0.01,0) [-327.68|327.67] "m" Vector__XXX
+ SG_ BX_LDW_Suppr : 40|16@1+ (1,0) [0|0] "" Vector__XXX
+
+
+
+CM_ SG_ 1536 Right_Angle "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1536 Left_Angle "in camera coords, this is directly proportional to the pixel values, so no small angle approximation";
+CM_ SG_ 1608 Angle_STD_9_C "proportional to std of mid-point of obstacle in pixel coordinates 
+";
+CM_ SG_ 1607 Rate_Mean_Angle_9_B "proportional to speed of object mid-point in pixel coordinates in left-right direction
+";
+CM_ SG_ 1606 Right_Angle_9_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1606 Left_Angle_9_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1604 Angle_STD_8_C "proportional to std of mid-point of obstacle in pixel coordinates 
+";
+CM_ SG_ 1603 Rate_Mean_Angle_8_B "proportional to speed of object mid-point in pixel coordinates in left-right direction
+";
+CM_ SG_ 1602 Right_Angle_8_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1602 Left_Angle_8_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1600 Angle_STD_7_C "proportional to std of mid-point of obstacle in pixel coordinates 
+";
+CM_ SG_ 1599 Rate_Mean_Angle_7_B "proportional to speed of object mid-point in pixel coordinates in left-right direction
+";
+CM_ SG_ 1598 Right_Angle_7_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1598 Left_Angle_7_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1596 Angle_STD_6_C "proportional to std of mid-point of obstacle in pixel coordinates 
+";
+CM_ SG_ 1595 Rate_Mean_Angle_6_B "proportional to speed of object mid-point in pixel coordinates in left-right direction
+";
+CM_ SG_ 1594 Right_Angle_6_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1594 Left_Angle_6_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1592 Angle_STD_5_C "proportional to std of mid-point of obstacle in pixel coordinates 
+";
+CM_ SG_ 1591 Rate_Mean_Angle_5_B "proportional to speed of object mid-point in pixel coordinates in left-right direction
+";
+CM_ SG_ 1590 Right_Angle_5_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1590 Left_Angle_5_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1588 Angle_STD_4_C "proportional to std of mid-point of obstacle in pixel coordinates 
+";
+CM_ SG_ 1587 Rate_Mean_Angle_4_B "proportional to speed of object mid-point in pixel coordinates in left-right direction
+";
+CM_ SG_ 1586 Right_Angle_4_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1586 Left_Angle_4_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1584 Angle_STD_3_C "proportional to std of mid-point of obstacle in pixel coordinates 
+";
+CM_ SG_ 1583 Rate_Mean_Angle_3_B "proportional to speed of object mid-point in pixel coordinates in left-right direction
+";
+CM_ SG_ 1582 Right_Angle_3_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1582 Left_Angle_3_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1580 Angle_STD_2_C "proportional to std of mid-point of obstacle in pixel coordinates 
+";
+CM_ SG_ 1579 Rate_Mean_Angle_2_B "proportional to speed of object mid-point in pixel coordinates in left-right direction
+";
+CM_ SG_ 1578 Right_Angle_2_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1578 Left_Angle_2_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1576 Angle_STD_1_C "proportional to std of mid-point of obstacle in pixel coordinates 
+";
+CM_ SG_ 1575 Rate_Mean_Angle_1_B "proportional to speed of object mid-point in pixel coordinates in left-right direction
+";
+CM_ SG_ 1574 Right_Angle_1_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1574 Left_Angle_1_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1572 Angle_STD_0_C "proportional to std of mid-point of obstacle in pixel coordinates 
+";
+CM_ SG_ 1571 Rate_Mean_Angle_0_B "proportional to speed of object mid-point in pixel coordinates in left-right direction
+";
+CM_ SG_ 1570 Right_Angle_0_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation
+";
+CM_ SG_ 1570 Left_Angle_0_A "in camera coords, this is directly proportional to the pixel values, so no small angle approximation";
+CM_ SG_ 1620 Me_Line_Changed_Right_B "is one for one cycle when lane model switched.
+";
+CM_ SG_ 1619 C2_Right_A "250m minimal radius
+";
+CM_ SG_ 1619 C1_Right_A "57 degrees, 0.06 degrees resolution
+";
+CM_ SG_ 1624 Me_Line_Changed_Next_Right_B "is one for one cycle when lane model switched.
+";
+CM_ SG_ 1623 C2_Next_Right_A "250m minimal radius
+";
+CM_ SG_ 1623 C1_Next_Right_A "57 degrees, 0.06 degrees resolution
+";
+CM_ SG_ 1626 Me_Line_Changed_Next_Left_B "is one for one cycle when lane model switched.
+";
+CM_ SG_ 1625 C2_Next_Left_A "250m minimal radius
+";
+CM_ SG_ 1625 C1_Next_Left_A "57 degrees, 0.06 degrees resolution
+";
+CM_ SG_ 1622 Me_Line_Changed_Left_B "is one for one cycle when lane model switched.
+";
+CM_ SG_ 1621 C2_Left_A "250m minimal radius
+";
+CM_ SG_ 1621 C1_Left_A "57 degrees, 0.06 degrees resolution
+";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+VAL_ 1569 Right_Close_Range_Cut_In 1 "Cut in" 0 "No cut in" ;
+VAL_ 1569 Ped_In_Danger_Zone 3 "Invalid" 1 "Pedestrian in danger zone" 0 "No pedestrian in danger zone" ;
+VAL_ 1569 Ped_FCW_On 3 "Invalid" 1 "Warning active" 0 "No warning" ;
+VAL_ 1569 Left_Close_Range_Cut_In 1 "Cut in" 0 "No cut in" ;
+VAL_ 1569 ID_CIPV 0 "NoCIPV" ;
+VAL_ 1569 FCW_On 1 "Warning active" 0 "No warning" ;
+VAL_ 1536 ID 0 "NoObject" ;
+VAL_ 1536 Class 6 "General" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "car" 1 "truck" 0 "undecided" ;
+VAL_ 1608 Lane_Movement_Type_9_C 2 "MovingRight" 1 "MovingLeft" 0 "Stable" ;
+VAL_ 1607 Motion_Status_9_B 8 "Moving (oncoming)" 7 "Unknown (oncoming)" 6 "Stopped (oncoming)" 5 "Moving (movable)" 4 "Unknown (movable)" 3 "Stopped (movable)" 2 "Parked (never moved lights off)" 1 "Standing (never moved lights on)" 0 "Not defined" ;
+VAL_ 1607 Lane_9_B 5 "next next lane right" 4 "next next lane left" 3 "next lane right" 2 "next lane left" 1 "ego lane" 0 "not assigned" ;
+VAL_ 1607 Indicator_9_B 4 "both" 3 "right" 2 "left" 1 "off" 0 "not available" ;
+VAL_ 1607 Brake_Light_9_B 2 "off" 1 "on" 0 "not available" ;
+VAL_ 1606 ID_9_A 0 "NoObject" ;
+VAL_ 1606 Class_9_A 6 "General  object" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "car" 1 "truck" 0 "undecided" ;
+VAL_ 1604 Lane_Movement_Type_8_C 2 "MovingRight" 1 "MovingLeft" 0 "Stable" ;
+VAL_ 1603 Motion_Status_8_B 8 "Moving (oncoming)" 7 "Unknown (oncoming)" 6 "Stopped (oncoming)" 5 "Moving (movable)" 4 "Unknown (movable)" 3 "Stopped (movable)" 2 "Parked (never moved lights off)" 1 "Standing (never moved lights on)" 0 "Not defined" ;
+VAL_ 1603 Lane_8_B 5 "next next lane right" 4 "next next lane left" 3 "next lane right" 2 "next lane left" 1 "ego lane" 0 "not assigned" ;
+VAL_ 1603 Indicator_8_B 4 "both" 3 "right" 2 "left" 1 "off" 0 "not available" ;
+VAL_ 1603 Brake_Light_8_B 2 "off" 1 "on" 0 "not available" ;
+VAL_ 1602 ID_8_A 0 "NoObject" ;
+VAL_ 1602 Class_8_A 6 "General  object" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "car" 1 "truck" 0 "undecided" ;
+VAL_ 1600 Lane_Movement_Type_7_C 2 "MovingRight" 1 "MovingLeft" 0 "Stable" ;
+VAL_ 1599 Motion_Status_7_B 8 "Moving (oncoming)" 7 "Unknown (oncoming)" 6 "Stopped (oncoming)" 5 "Moving (movable)" 4 "Unknown (movable)" 3 "Stopped (movable)" 2 "Parked (never moved lights off)" 1 "Standing (never moved lights on)" 0 "Not defined" ;
+VAL_ 1599 Lane_7_B 5 "next next lane right" 4 "next next lane left" 3 "next lane right" 2 "next lane left" 1 "ego lane" 0 "not assigned" ;
+VAL_ 1599 Indicator_7_B 4 "both" 3 "right" 2 "left" 1 "off" 0 "not available" ;
+VAL_ 1599 Brake_Light_7_B 2 "off" 1 "on" 0 "not available" ;
+VAL_ 1598 ID_7_A 0 "NoObject" ;
+VAL_ 1598 Class_7_A 6 "General  object" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "car" 1 "truck" 0 "undecided" ;
+VAL_ 1596 Lane_Movement_Type_6_C 2 "MovingRight" 1 "MovingLeft" 0 "Stable" ;
+VAL_ 1595 Motion_Status_6_B 8 "Moving (oncoming)" 7 "Unknown (oncoming)" 6 "Stopped (oncoming)" 5 "Moving (movable)" 4 "Unknown (movable)" 3 "Stopped (movable)" 2 "Parked (never moved lights off)" 1 "Standing (never moved lights on)" 0 "Not defined" ;
+VAL_ 1595 Lane_6_B 5 "next next lane right" 4 "next next lane left" 3 "next lane right" 2 "next lane left" 1 "ego lane" 0 "not assigned" ;
+VAL_ 1595 Indicator_6_B 4 "both" 3 "right" 2 "left" 1 "off" 0 "not available" ;
+VAL_ 1595 Brake_Light_6_B 2 "off" 1 "on" 0 "not available" ;
+VAL_ 1594 ID_6_A 0 "NoObject" ;
+VAL_ 1594 Class_6_A 6 "General  object" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "car" 1 "truck" 0 "undecided" ;
+VAL_ 1592 Lane_Movement_Type_5_C 2 "MovingRight" 1 "MovingLeft" 0 "Stable" ;
+VAL_ 1591 Motion_Status_5_B 8 "Moving (oncoming)" 7 "Unknown (oncoming)" 6 "Stopped (oncoming)" 5 "Moving (movable)" 4 "Unknown (movable)" 3 "Stopped (movable)" 2 "Parked (never moved lights off)" 1 "Standing (never moved lights on)" 0 "Not defined" ;
+VAL_ 1591 Lane_5_B 5 "next next lane right" 4 "next next lane left" 3 "next lane right" 2 "next lane left" 1 "ego lane" 0 "not assigned" ;
+VAL_ 1591 Indicator_5_B 4 "both" 3 "right" 2 "left" 1 "off" 0 "not available" ;
+VAL_ 1591 Brake_Light_5_B 2 "off" 1 "on" 0 "not available" ;
+VAL_ 1590 ID_5_A 0 "NoObject" ;
+VAL_ 1590 Class_5_A 6 "General  object" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "car" 1 "truck" 0 "undecided" ;
+VAL_ 1588 Lane_Movement_Type_4_C 2 "MovingRight" 1 "MovingLeft" 0 "Stable" ;
+VAL_ 1587 Motion_Status_4_B 8 "Moving (oncoming)" 7 "Unknown (oncoming)" 6 "Stopped (oncoming)" 5 "Moving (movable)" 4 "Unknown (movable)" 3 "Stopped (movable)" 2 "Parked (never moved lights off)" 1 "Standing (never moved lights on)" 0 "Not defined" ;
+VAL_ 1587 Lane_4_B 5 "next next lane right" 4 "next next lane left" 3 "next lane right" 2 "next lane left" 1 "ego lane" 0 "not assigned" ;
+VAL_ 1587 Indicator_4_B 4 "both" 3 "right" 2 "left" 1 "off" 0 "not available" ;
+VAL_ 1587 Brake_Light_4_B 2 "off" 1 "on" 0 "not available" ;
+VAL_ 1586 ID_4_A 0 "NoObject" ;
+VAL_ 1586 Class_4_A 6 "General  object" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "car" 1 "truck" 0 "undecided" ;
+VAL_ 1584 Lane_Movement_Type_3_C 2 "MovingRight" 1 "MovingLeft" 0 "Stable" ;
+VAL_ 1583 Motion_Status_3_B 8 "Moving (oncoming)" 7 "Unknown (oncoming)" 6 "Stopped (oncoming)" 5 "Moving (movable)" 4 "Unknown (movable)" 3 "Stopped (movable)" 2 "Parked (never moved lights off)" 1 "Standing (never moved lights on)" 0 "Not defined" ;
+VAL_ 1583 Lane_3_B 5 "next next lane right" 4 "next next lane left" 3 "next lane right" 2 "next lane left" 1 "ego lane" 0 "not assigned" ;
+VAL_ 1583 Indicator_3_B 4 "both" 3 "right" 2 "left" 1 "off" 0 "not available" ;
+VAL_ 1583 Brake_Light_3_B 2 "off" 1 "on" 0 "not available" ;
+VAL_ 1582 ID_3_A 0 "NoObject" ;
+VAL_ 1582 Class_3_A 6 "General  object" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "car" 1 "truck" 0 "undecided" ;
+VAL_ 1580 Lane_Movement_Type_2_C 2 "MovingRight" 1 "MovingLeft" 0 "Stable" ;
+VAL_ 1579 Motion_Status_2_B 8 "Moving (oncoming)" 7 "Unknown (oncoming)" 6 "Stopped (oncoming)" 5 "Moving (movable)" 4 "Unknown (movable)" 3 "Stopped (movable)" 2 "Parked (never moved lights off)" 1 "Standing (never moved lights on)" 0 "Not defined" ;
+VAL_ 1579 Lane_2_B 5 "next next lane right" 4 "next next lane left" 3 "next lane right" 2 "next lane left" 1 "ego lane" 0 "not assigned" ;
+VAL_ 1579 Indicator_2_B 4 "both" 3 "right" 2 "left" 1 "off" 0 "not available" ;
+VAL_ 1579 Brake_Light_2_B 2 "off" 1 "on" 0 "not available" ;
+VAL_ 1578 ID_2_A 0 "NoObject" ;
+VAL_ 1578 Class_2_A 6 "General  object" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "car" 1 "truck" 0 "undecided" ;
+VAL_ 1576 Lane_Movement_Type_1_C 2 "MovingRight" 1 "MovingLeft" 0 "Stable" ;
+VAL_ 1575 Motion_Status_1_B 8 "Moving (oncoming)" 7 "Unknown (oncoming)" 6 "Stopped (oncoming)" 5 "Moving (movable)" 4 "Unknown (movable)" 3 "Stopped (movable)" 2 "Parked (never moved lights off)" 1 "Standing (never moved lights on)" 0 "Not defined" ;
+VAL_ 1575 Lane_1_B 5 "next next lane right" 4 "next next lane left" 3 "next lane right" 2 "next lane left" 1 "ego lane" 0 "not assigned" ;
+VAL_ 1575 Indicator_1_B 4 "both" 3 "right" 2 "left" 1 "off" 0 "not available" ;
+VAL_ 1575 Brake_Light_1_B 2 "off" 1 "on" 0 "not available" ;
+VAL_ 1574 ID_1_A 0 "NoObject" ;
+VAL_ 1574 Class_1_A 6 "General  object" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "car" 1 "truck" 0 "undecided" ;
+VAL_ 1572 Lane_Movement_Type_0_C 2 "MovingRight" 1 "MovingLeft" 0 "Stable" ;
+VAL_ 1571 Motion_Status_0_B 8 "Moving (oncoming)" 7 "Unknown (oncoming)" 6 "Stopped (oncoming)" 5 "Moving (movable)" 4 "Unknown (movable)" 3 "Stopped (movable)" 2 "Parked (never moved lights off)" 1 "Standing (never moved lights on)" 0 "Not defined" ;
+VAL_ 1571 Lane_0_B 5 "next next lane right" 4 "next next lane left" 3 "next lane right" 2 "next lane left" 1 "ego lane" 0 "not assigned" ;
+VAL_ 1571 Indicator_0_B 4 "both" 3 "right" 2 "left" 1 "off" 0 "not available" ;
+VAL_ 1571 Brake_Light_0_B 2 "off" 1 "on" 0 "not available" ;
+VAL_ 1570 ID_0_A 0 "NoObject" ;
+VAL_ 1570 Class_0_A 6 "General  object" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "car" 1 "truck" 0 "undecided" ;
+VAL_ 1620 Me_Line_Changed_Right_B 1 "crossing" 0 "not" ;
+VAL_ 1619 Quality_Right_A 3 "High" 2 "Medium_PredictedOrLowScore" 1 "Low2_InsufficientScore" 0 "Low1_NoLineDetected" ;
+VAL_ 1619 Line_Type_Right_A 5 "bott's dotts" 4 "double lane mark" 3 "dashed" 2 "road edge" 1 "solid" 0 "undecided" ;
+VAL_ 1624 Me_Line_Changed_Next_Right_B 1 "crossing" 0 "not crossing" ;
+VAL_ 1623 Quality_Next_Right_A 3 "High" 2 "Medium_PredictedOrLowScore" 1 "Low2_InsufficientScore" 0 "Low1_NoLineDetected" ;
+VAL_ 1623 Line_Type_Next_Right_A 5 "bott's dotts" 4 "double lane mark" 3 "dashed" 2 "road edge" 1 "solid" 0 "undecided" ;
+VAL_ 1626 Me_Line_Changed_Next_Left_B 1 "crossing" 0 "not crossing" ;
+VAL_ 1625 Quality_Next_Left_A 3 "High" 2 "Medium_PredictedOrLowScore" 1 "Low2_InsufficientScore" 0 "Low1_NoLineDetected" ;
+VAL_ 1625 Line_Type_Next_Left_A 5 "bott's dotts" 4 "double lane mark" 3 "dashed" 2 "road edge" 1 "solid" 0 "undecided" ;
+VAL_ 1622 Me_Line_Changed_Left_B 1 "crossing" 0 "not" ;
+VAL_ 1621 Quality_Left_A 3 "High" 2 "Medium_PredictedOrLowScore" 1 "Low2_InsufficientScore" 0 "Low1_NoLineDetected" ;
+VAL_ 1621 Line_Type_Left_A 5 "bott's dotts" 4 "double lane mark" 3 "dashed" 2 "road edge" 1 "solid" 0 "undecided" ;
+VAL_ 1618 Road_Type 2 "inner city" 1 "highway" 0 "unknown" ;
+VAL_ 1618 LaneModuleValid 1 "valid" 0 "not valid" ;
+VAL_ 1618 Construction_Area 1 "construction area" 0 "not construction area" ;
+VAL_ 1568 SensorStatus 15 "NotAvailable" 14 "Error" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 3 "Blocked" 0 "Fully Operational" 8 "Reserved" 4 "Misaligned" 2 "Partially Blocked" 1 "Warming up / Initializing" ;
+VAL_ 1568 Driving_Side 0 "Left" 2 "Unknown" 1 "Right" ;
+VAL_ 1568 Day_Time_Indicator 2 "dusk" 1 "night" 0 "day" ;
+VAL_ 1567 Debug_Msg_Tx 1 "DebugMsgTxEnabled" 0 "DebugMsgTxDisabled" ;
+

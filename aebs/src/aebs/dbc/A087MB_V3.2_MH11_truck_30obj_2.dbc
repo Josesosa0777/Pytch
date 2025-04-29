@@ -1,0 +1,1005 @@
+VERSION "HIPBNYYYYYYYYYYYYYYYYYYYYYYYYYYYNNNNNNNNNN/4/%%%/4/'%**4NNN///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+VAL_TABLE_ lane_quality 3 "High" 2 "Medium (PredictedOrLowScore)" 1 "Low2 (InsufficientScore)" 0 "Low (NoLineDetected)" ;
+VAL_TABLE_ confidence_cw_track 0 "no CW-track" ;
+VAL_TABLE_ cm_system_status 4 "WAITING" 3 "BRAKING" 2 "WARNING" 1 "ALLOWED" 0 "NOT_ALLOWED" ;
+VAL_TABLE_ tracking_status 3 "sleeping" 2 "established" 1 "initialising" 0 "empty" ;
+VAL_TABLE_ acc_track_info 3 "NIV" 2 "IIV" 1 "ACC track" 0 "not relevant" ;
+VAL_TABLE_ shutdown_method 1 "low_speed_cancel" 0 "follow_to_stop" ;
+VAL_TABLE_ drive_program 3 "economy" 2 "comfort" 1 "normal" 0 "sport" ;
+VAL_TABLE_ ASCII 122 "z" 121 "y" 120 "x" 119 "w" 118 "v" 117 "u" 116 "t" 115 "s" 114 "r" 113 "q" 112 "p" 111 "o" 110 "n" 109 "m" 108 "l" 107 "k" 106 "j" 105 "i" 104 "h" 103 "g" 102 "f" 101 "e" 100 "d" 99 "c" 98 "b" 97 "a" 95 "_" 90 "Z" 89 "Y" 88 "X" 87 "W" 86 "V" 85 "U" 84 "T" 83 "S" 82 "R" 81 "Q" 80 "P" 79 "O" 78 "N" 77 "M" 76 "L" 75 "K" 74 "J" 73 "I" 72 "H" 71 "G" 70 "F" 69 "E" 68 "D" 67 "C" 66 "B" 65 "A" 57 "9" 56 "8" 55 "7" 54 "6" 53 "5" 52 "4" 51 "3" 50 "2" 49 "1" 48 "0" ;
+VAL_TABLE_ LC_controller_state 5 "hold on brake" 4 "low speed crawl" 3 "low speed shutdown" 2 "standard ACC" 1 "initialising" 0 "ACC passive" ;
+VAL_TABLE_ LC_acceleration_mode 6 "max acceleration" 5 "target memory active" 4 "NIV follow" 3 "IIV follow" 2 "follow" 1 "bend" 0 "cruise" ;
+VAL_TABLE_ ext_LED 2 "LED 100%" 1 "LED 50%" 0 "LED off" ;
+VAL_TABLE_ distance_warning_level 2 "level 2" 1 "level 1" 0 "no warning" ;
+VAL_TABLE_ A087MB_version 7 "V3.2" 6 "V3.1" 5 "V3.0" ;
+VAL_TABLE_ radar_type 2 "24 GHz Bistatic" 1 "24 GHz Monostatic (AC100)" 0 "76 GHz (AC3B)" ;
+VAL_TABLE_ modulation_ramp_type 6 "Split FSK/UP ramp" 5 "Split Down ramp/FSK" 4 "Split Up/Down ramp" 2 "Up ramp" 1 "Down ramp" 0 "FSK" ;
+
+
+BO_ 1635 Tracks: 8 Vector__XXX
+ SG_ tr0_is_env_object m6 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr1_is_env_object m14 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr2_is_env_object m22 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr3_is_env_object m30 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr4_is_env_object m38 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr5_is_env_object m46 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr6_is_env_object m54 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr7_is_env_object m62 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr8_is_env_object m70 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr9_is_env_object m78 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr0_width m6 : 20|5@0+ (0.125,0) [0|0] "m" Vector__XXX
+ SG_ tr1_width m14 : 20|5@0+ (0.125,0) [0|0] "m" Vector__XXX
+ SG_ tr2_width m22 : 20|5@0+ (0.125,0) [0|0] "m" Vector__XXX
+ SG_ tr3_width m30 : 20|5@0+ (0.125,0) [0|0] "m" Vector__XXX
+ SG_ tr4_width m38 : 20|5@0+ (0.125,0) [0|0] "m" Vector__XXX
+ SG_ tr5_width m46 : 20|5@0+ (0.125,0) [0|0] "m" Vector__XXX
+ SG_ tr6_width m54 : 20|5@0+ (0.125,0) [0|0] "m" Vector__XXX
+ SG_ tr7_width m62 : 20|5@0+ (0.125,0) [0|0] "m" Vector__XXX
+ SG_ tr8_width m70 : 20|5@0+ (0.125,0) [0|0] "m" Vector__XXX
+ SG_ tr9_width m78 : 20|5@0+ (0.125,0) [0|0] "m" Vector__XXX
+ SG_ tr0_video_confidence m6 : 31|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr1_video_confidence m14 : 31|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr2_video_confidence m22 : 31|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr3_video_confidence m30 : 31|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr4_video_confidence m38 : 31|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr5_video_confidence m46 : 31|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr6_video_confidence m54 : 31|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr7_video_confidence m62 : 31|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr8_video_confidence m70 : 31|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr9_video_confidence m78 : 31|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr0_lateral_position m6 : 47|10@0- (0.1,0) [0|0] "m" Vector__XXX
+ SG_ tr1_lateral_position m14 : 47|10@0- (0.1,0) [0|0] "m" Vector__XXX
+ SG_ tr2_lateral_position m22 : 47|10@0- (0.1,0) [0|0] "m" Vector__XXX
+ SG_ tr3_lateral_position m30 : 47|10@0- (0.1,0) [0|0] "m" Vector__XXX
+ SG_ tr4_lateral_position m38 : 47|10@0- (0.1,0) [0|0] "m" Vector__XXX
+ SG_ tr5_lateral_position m46 : 47|10@0- (0.1,0) [0|0] "m" Vector__XXX
+ SG_ tr6_lateral_position m54 : 47|10@0- (0.1,0) [0|0] "m" Vector__XXX
+ SG_ tr7_lateral_position m62 : 47|10@0- (0.1,0) [0|0] "m" Vector__XXX
+ SG_ tr8_lateral_position m70 : 47|10@0- (0.1,0) [0|0] "m" Vector__XXX
+ SG_ tr9_lateral_position m78 : 47|10@0- (0.1,0) [0|0] "m" Vector__XXX
+ SG_ tr0_radar_confidence m6 : 39|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr1_radar_confidence m14 : 39|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr2_radar_confidence m22 : 39|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr3_radar_confidence m30 : 39|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr4_radar_confidence m38 : 39|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr5_radar_confidence m46 : 39|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr6_radar_confidence m54 : 39|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr7_radar_confidence m62 : 39|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr8_radar_confidence m70 : 39|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr9_radar_confidence m78 : 39|8@0+ (0.00392156862745098,0) [0|1] "" Vector__XXX
+ SG_ tr0_object_class m6 : 23|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr1_object_class m14 : 23|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr2_object_class m22 : 23|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr3_object_class m30 : 23|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr4_object_class m38 : 23|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr5_object_class m46 : 23|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr6_object_class m54 : 23|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr7_object_class m62 : 23|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr8_object_class m70 : 23|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr9_object_class m78 : 23|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr0_env_object_ID m6 : 15|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr1_env_object_ID m14 : 15|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr2_env_object_ID m22 : 15|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr3_env_object_ID m30 : 15|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr4_env_object_ID m38 : 15|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr5_env_object_ID m46 : 15|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr6_env_object_ID m54 : 15|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr7_env_object_ID m62 : 15|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr8_env_object_ID m70 : 15|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr9_env_object_ID m78 : 15|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr0_asso_video_ID m6 : 62|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr1_asso_video_ID m14 : 62|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr2_asso_video_ID m22 : 62|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr3_asso_video_ID m30 : 62|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr4_asso_video_ID m38 : 62|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr5_asso_video_ID m46 : 62|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr6_asso_video_ID m54 : 62|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr7_asso_video_ID m62 : 62|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr8_asso_video_ID m70 : 62|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr9_asso_video_ID m78 : 62|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr0_reserved m6 : 53|7@0- (0.1,0) [0|0] "m/s" Vector__XXX
+ SG_ tr1_reserved m14 : 53|7@0- (0.1,0) [0|0] "m/s" Vector__XXX
+ SG_ tr2_reserved m22 : 53|7@0- (0.1,0) [0|0] "m/s" Vector__XXX
+ SG_ tr3_reserved m30 : 53|7@0- (0.1,0) [0|0] "m/s" Vector__XXX
+ SG_ tr4_reserved m38 : 53|7@0- (0.1,0) [0|0] "m/s" Vector__XXX
+ SG_ tr5_reserved m46 : 53|7@0- (0.1,0) [0|0] "m/s" Vector__XXX
+ SG_ tr6_reserved m54 : 53|7@0- (0.1,0) [0|0] "m/s" Vector__XXX
+ SG_ tr7_reserved m62 : 53|7@0- (0.1,0) [0|0] "m/s" Vector__XXX
+ SG_ tr8_reserved m70 : 53|7@0- (0.1,0) [0|0] "m/s" Vector__XXX
+ SG_ tr9_reserved m78 : 53|7@0- (0.1,0) [0|0] "m/s" Vector__XXX
+ SG_ tr9_is_video_associated m76 : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr8_is_video_associated m68 : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr7_is_video_associated m60 : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr6_is_video_associated m52 : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr5_is_video_associated m44 : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr4_is_video_associated m36 : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr3_is_video_associated m28 : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr2_is_video_associated m20 : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr1_is_video_associated m12 : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr0_is_video_associated m4 : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr0_internal_track_index m5 : 44|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr1_internal_track_index m13 : 44|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr2_internal_track_index m21 : 44|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr3_internal_track_index m29 : 44|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr4_internal_track_index m37 : 44|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr5_internal_track_index m45 : 44|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr6_internal_track_index m53 : 44|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr7_internal_track_index m61 : 44|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr8_internal_track_index m69 : 44|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr9_internal_track_index m77 : 44|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr0_corrected_lateral_distance m5 : 55|16@0- (0.001,0) [0|0] "m" Vector__XXX
+ SG_ tr1_corrected_lateral_distance m13 : 55|16@0- (0.001,0) [0|0] "m" Vector__XXX
+ SG_ tr2_corrected_lateral_distance m21 : 55|16@0- (0.001,0) [0|0] "m" Vector__XXX
+ SG_ tr3_corrected_lateral_distance m29 : 55|16@0- (0.001,0) [0|0] "m" Vector__XXX
+ SG_ tr4_corrected_lateral_distance m37 : 55|16@0- (0.001,0) [0|0] "m" Vector__XXX
+ SG_ tr5_corrected_lateral_distance m45 : 55|16@0- (0.001,0) [0|0] "m" Vector__XXX
+ SG_ tr6_corrected_lateral_distance m53 : 55|16@0- (0.001,0) [0|0] "m" Vector__XXX
+ SG_ tr7_corrected_lateral_distance m61 : 55|16@0- (0.001,0) [0|0] "m" Vector__XXX
+ SG_ tr8_corrected_lateral_distance m69 : 55|16@0- (0.001,0) [0|0] "m" Vector__XXX
+ SG_ tr9_corrected_lateral_distance m77 : 55|16@0- (0.001,0) [0|0] "m" Vector__XXX
+ SG_ tr0_uncorrected_angle m5 : 39|11@0- (0.05,0) [0|0] "°" Vector__XXX
+ SG_ tr1_uncorrected_angle m13 : 39|11@0- (0.05,0) [0|0] "°" Vector__XXX
+ SG_ tr2_uncorrected_angle m21 : 39|11@0- (0.05,0) [0|0] "°" Vector__XXX
+ SG_ tr3_uncorrected_angle m29 : 39|11@0- (0.05,0) [0|0] "°" Vector__XXX
+ SG_ tr4_uncorrected_angle m37 : 39|11@0- (0.05,0) [0|0] "°" Vector__XXX
+ SG_ tr5_uncorrected_angle m45 : 39|11@0- (0.05,0) [0|0] "°" Vector__XXX
+ SG_ tr6_uncorrected_angle m53 : 39|11@0- (0.05,0) [0|0] "°" Vector__XXX
+ SG_ tr7_uncorrected_angle m61 : 39|11@0- (0.05,0) [0|0] "°" Vector__XXX
+ SG_ tr8_uncorrected_angle m69 : 39|11@0- (0.05,0) [0|0] "°" Vector__XXX
+ SG_ tr9_uncorrected_angle m77 : 39|11@0- (0.05,0) [0|0] "°" Vector__XXX
+ SG_ tr0_acceleration_over_ground m5 : 31|8@0+ (0.05,-8.8) [0|0] "m/s²" Vector__XXX
+ SG_ tr1_acceleration_over_ground m13 : 31|8@0+ (0.05,-8.8) [0|0] "m/s²" Vector__XXX
+ SG_ tr2_acceleration_over_ground m21 : 31|8@0+ (0.05,-8.8) [0|0] "m/s²" Vector__XXX
+ SG_ tr3_acceleration_over_ground m29 : 31|8@0+ (0.05,-8.8) [0|0] "m/s²" Vector__XXX
+ SG_ tr4_acceleration_over_ground m37 : 31|8@0+ (0.05,-8.8) [0|0] "m/s²" Vector__XXX
+ SG_ tr5_acceleration_over_ground m45 : 31|8@0+ (0.05,-8.8) [0|0] "m/s²" Vector__XXX
+ SG_ tr6_acceleration_over_ground m53 : 31|8@0+ (0.05,-8.8) [0|0] "m/s²" Vector__XXX
+ SG_ tr7_acceleration_over_ground m61 : 31|8@0+ (0.05,-8.8) [0|0] "m/s²" Vector__XXX
+ SG_ tr8_acceleration_over_ground m69 : 31|8@0+ (0.05,-8.8) [0|0] "m/s²" Vector__XXX
+ SG_ tr9_acceleration_over_ground m77 : 31|8@0+ (0.05,-8.8) [0|0] "m/s²" Vector__XXX
+ SG_ tr0_power m5 : 23|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ tr1_power m13 : 23|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ tr2_power m21 : 23|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ tr3_power m29 : 23|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ tr4_power m37 : 23|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ tr5_power m45 : 23|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ tr6_power m53 : 23|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ tr7_power m61 : 23|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ tr8_power m69 : 23|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ tr9_power m77 : 23|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ tr0_CW_track m5 : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr1_CW_track m13 : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr2_CW_track m21 : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr3_CW_track m29 : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr4_CW_track m37 : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr5_CW_track m45 : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr6_CW_track m53 : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr7_CW_track m61 : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr8_CW_track m69 : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr9_CW_track m77 : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr0_forbidden m5 : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr1_forbidden m13 : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr2_forbidden m21 : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr3_forbidden m29 : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr4_forbidden m37 : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr5_forbidden m45 : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr6_forbidden m53 : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr7_forbidden m61 : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr8_forbidden m69 : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr9_forbidden m77 : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr0_secondary m5 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr1_secondary m13 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr2_secondary m21 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr3_secondary m29 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr4_secondary m37 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr5_secondary m45 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr6_secondary m53 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr7_secondary m61 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr8_secondary m69 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr9_secondary m77 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr0_asso_target_index m5 : 12|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr1_asso_target_index m13 : 12|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr2_asso_target_index m21 : 12|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr3_asso_target_index m29 : 12|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr4_asso_target_index m37 : 12|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr5_asso_target_index m45 : 12|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr6_asso_target_index m53 : 12|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr7_asso_target_index m61 : 12|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr8_asso_target_index m69 : 12|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr9_asso_target_index m77 : 12|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr0_tracking_status m4 : 54|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ tr1_tracking_status m12 : 54|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ tr2_tracking_status m20 : 54|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ tr3_tracking_status m28 : 54|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ tr4_tracking_status m36 : 54|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ tr5_tracking_status m44 : 54|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ tr6_tracking_status m52 : 54|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ tr7_tracking_status m60 : 54|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ tr8_tracking_status m68 : 54|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ tr9_tracking_status m76 : 54|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ tr0_track_selection_status m4 : 52|13@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr1_track_selection_status m12 : 52|13@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr2_track_selection_status m20 : 52|13@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr3_track_selection_status m28 : 52|13@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr4_track_selection_status m36 : 52|13@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr5_track_selection_status m44 : 52|13@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr6_track_selection_status m52 : 52|13@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr7_track_selection_status m60 : 52|13@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr8_track_selection_status m68 : 52|13@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr9_track_selection_status m76 : 52|13@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr0_range m4 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ tr1_range m12 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ tr2_range m20 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ tr3_range m28 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ tr4_range m36 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ tr5_range m44 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ tr6_range m52 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ tr7_range m60 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ tr8_range m68 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ tr9_range m76 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ tr0_relative_velocitiy m4 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ tr1_relative_velocitiy m12 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ tr2_relative_velocitiy m20 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ tr3_relative_velocitiy m28 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ tr4_relative_velocitiy m36 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ tr5_relative_velocitiy m44 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ tr6_relative_velocitiy m52 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ tr7_relative_velocitiy m60 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ tr8_relative_velocitiy m68 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ tr9_relative_velocitiy m76 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ tr0_acc_track_info m4 : 9|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr1_acc_track_info m12 : 9|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr2_acc_track_info m20 : 9|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr3_acc_track_info m28 : 9|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr4_acc_track_info m36 : 9|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr5_acc_track_info m44 : 9|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr6_acc_track_info m52 : 9|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr7_acc_track_info m60 : 9|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr8_acc_track_info m68 : 9|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr9_acc_track_info m76 : 9|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr0_credibility m4 : 15|6@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr1_credibility m12 : 15|6@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr2_credibility m20 : 15|6@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr3_credibility m28 : 15|6@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr4_credibility m36 : 15|6@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr5_credibility m44 : 15|6@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr6_credibility m52 : 15|6@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr7_credibility m60 : 15|6@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr8_credibility m68 : 15|6@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ tr9_credibility m76 : 15|6@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ track_multiplexor M : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1634 Targets: 8 Vector__XXX
+ SG_ fix_ta31_tracking_flags m253 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ fix_ta31_target_status m253 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ fix_ta31_target_flags_MSB m253 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ fix_ta31_target_flags_LSB m252 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ fix_ta31_secondary_FSK_range m253 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ fix_ta31_relative_velocitiy m252 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ fix_ta31_range_flags m253 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ fix_ta31_range m252 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ fix_ta31_primary_FSK_range m253 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ fix_ta31_power m252 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ fix_ta31_FSK_relative_velocitiy m253 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ fix_ta31_angle_MSB m252 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ fix_ta31_angle_LSB m252 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta0_secondary_FSK_range m5 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta1_secondary_FSK_range m13 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta2_secondary_FSK_range m21 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta3_secondary_FSK_range m29 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta4_secondary_FSK_range m37 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta5_secondary_FSK_range m45 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta6_secondary_FSK_range m53 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta7_secondary_FSK_range m61 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta8_secondary_FSK_range m69 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta9_secondary_FSK_range m77 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta10_secondary_FSK_range m85 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta11_secondary_FSK_range m93 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta12_secondary_FSK_range m101 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta13_secondary_FSK_range m109 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta14_secondary_FSK_range m117 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta15_secondary_FSK_range m125 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta16_secondary_FSK_range m133 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta17_secondary_FSK_range m141 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta18_secondary_FSK_range m149 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta19_secondary_FSK_range m157 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta20_secondary_FSK_range m165 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta21_secondary_FSK_range m173 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta22_secondary_FSK_range m181 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta23_secondary_FSK_range m189 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta24_secondary_FSK_range m197 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta25_secondary_FSK_range m205 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta26_secondary_FSK_range m213 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta27_secondary_FSK_range m221 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta28_secondary_FSK_range m229 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta29_secondary_FSK_range m237 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta30_secondary_FSK_range m245 : 50|11@0- (0.5,0) [0|0] "m" Vector__XXX
+ SG_ ta0_range_flags m5 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta1_range_flags m13 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta2_range_flags m21 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta3_range_flags m29 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta4_range_flags m37 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta5_range_flags m45 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta6_range_flags m53 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta7_range_flags m61 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta8_range_flags m69 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta9_range_flags m77 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta10_range_flags m85 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta11_range_flags m93 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta12_range_flags m101 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta13_range_flags m109 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta14_range_flags m117 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta15_range_flags m125 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta16_range_flags m133 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta17_range_flags m141 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta18_range_flags m149 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta19_range_flags m157 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta20_range_flags m165 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta21_range_flags m173 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta22_range_flags m181 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta23_range_flags m189 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta24_range_flags m197 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta25_range_flags m205 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta26_range_flags m213 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta27_range_flags m221 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta28_range_flags m229 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta29_range_flags m237 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta30_range_flags m245 : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta0_target_status m5 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta1_target_status m13 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta2_target_status m21 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta3_target_status m29 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta4_target_status m37 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta5_target_status m45 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta6_target_status m53 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta7_target_status m61 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta8_target_status m69 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta9_target_status m77 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta10_target_status m85 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta11_target_status m93 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta12_target_status m101 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta13_target_status m109 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta14_target_status m117 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta15_target_status m125 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta16_target_status m133 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta17_target_status m141 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta18_target_status m149 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta19_target_status m157 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta20_target_status m165 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta21_target_status m173 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta22_target_status m181 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta23_target_status m189 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta24_target_status m197 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta25_target_status m205 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta26_target_status m213 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta27_target_status m221 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta28_target_status m229 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta29_target_status m237 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta30_target_status m245 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta0_target_flags_MSB m5 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta1_target_flags_MSB m13 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta2_target_flags_MSB m21 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta3_target_flags_MSB m29 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta4_target_flags_MSB m37 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta5_target_flags_MSB m45 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta6_target_flags_MSB m53 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta7_target_flags_MSB m61 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta8_target_flags_MSB m69 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta9_target_flags_MSB m77 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta10_target_flags_MSB m85 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta11_target_flags_MSB m93 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta12_target_flags_MSB m101 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta13_target_flags_MSB m109 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta14_target_flags_MSB m117 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta15_target_flags_MSB m125 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta16_target_flags_MSB m133 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta17_target_flags_MSB m141 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta18_target_flags_MSB m149 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta19_target_flags_MSB m157 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta20_target_flags_MSB m165 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta21_target_flags_MSB m173 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta22_target_flags_MSB m181 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta23_target_flags_MSB m189 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta24_target_flags_MSB m197 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta25_target_flags_MSB m205 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta26_target_flags_MSB m213 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta27_target_flags_MSB m221 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta28_target_flags_MSB m229 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta29_target_flags_MSB m237 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta30_target_flags_MSB m245 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta0_FSK_relative_velocitiy m5 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta1_FSK_relative_velocitiy m13 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta2_FSK_relative_velocitiy m21 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta3_FSK_relative_velocitiy m29 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta4_FSK_relative_velocitiy m37 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta5_FSK_relative_velocitiy m45 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta6_FSK_relative_velocitiy m53 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta7_FSK_relative_velocitiy m61 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta8_FSK_relative_velocitiy m69 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta9_FSK_relative_velocitiy m77 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta10_FSK_relative_velocitiy m85 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta11_FSK_relative_velocitiy m93 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta12_FSK_relative_velocitiy m101 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta13_FSK_relative_velocitiy m109 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta14_FSK_relative_velocitiy m117 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta15_FSK_relative_velocitiy m125 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta16_FSK_relative_velocitiy m133 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta17_FSK_relative_velocitiy m141 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta18_FSK_relative_velocitiy m149 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta19_FSK_relative_velocitiy m157 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta20_FSK_relative_velocitiy m165 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta21_FSK_relative_velocitiy m173 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta22_FSK_relative_velocitiy m181 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta23_FSK_relative_velocitiy m189 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta24_FSK_relative_velocitiy m197 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta25_FSK_relative_velocitiy m205 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta26_FSK_relative_velocitiy m213 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta27_FSK_relative_velocitiy m221 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta28_FSK_relative_velocitiy m229 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta29_FSK_relative_velocitiy m237 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta30_FSK_relative_velocitiy m245 : 39|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta0_primary_FSK_range m5 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta1_primary_FSK_range m13 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta2_primary_FSK_range m21 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta3_primary_FSK_range m29 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta4_primary_FSK_range m37 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta5_primary_FSK_range m45 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta6_primary_FSK_range m53 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta7_primary_FSK_range m61 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta8_primary_FSK_range m69 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta9_primary_FSK_range m77 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta10_primary_FSK_range m85 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta11_primary_FSK_range m93 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta12_primary_FSK_range m101 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta13_primary_FSK_range m109 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta14_primary_FSK_range m117 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta15_primary_FSK_range m125 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta16_primary_FSK_range m133 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta17_primary_FSK_range m141 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta18_primary_FSK_range m149 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta19_primary_FSK_range m157 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta20_primary_FSK_range m165 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta21_primary_FSK_range m173 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta22_primary_FSK_range m181 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta23_primary_FSK_range m189 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta24_primary_FSK_range m197 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta25_primary_FSK_range m205 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta26_primary_FSK_range m213 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta27_primary_FSK_range m221 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta28_primary_FSK_range m229 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta29_primary_FSK_range m237 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta30_primary_FSK_range m245 : 23|16@0- (0.02,0) [0|0] "m" Vector__XXX
+ SG_ ta0_tracking_flags m5 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta1_tracking_flags m13 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta2_tracking_flags m21 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta3_tracking_flags m29 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta4_tracking_flags m37 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta5_tracking_flags m45 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta6_tracking_flags m53 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta7_tracking_flags m61 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta8_tracking_flags m69 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta9_tracking_flags m77 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta10_tracking_flags m85 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta11_tracking_flags m93 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta12_tracking_flags m101 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta13_tracking_flags m109 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta14_tracking_flags m117 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta15_tracking_flags m125 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta16_tracking_flags m133 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta17_tracking_flags m141 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta18_tracking_flags m149 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta19_tracking_flags m157 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta20_tracking_flags m165 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta21_tracking_flags m173 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta22_tracking_flags m181 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta23_tracking_flags m189 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta24_tracking_flags m197 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta25_tracking_flags m205 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta26_tracking_flags m213 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta27_tracking_flags m221 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta28_tracking_flags m229 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta29_tracking_flags m237 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta30_tracking_flags m245 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta0_target_flags_LSB m4 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta1_target_flags_LSB m12 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta2_target_flags_LSB m20 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta3_target_flags_LSB m28 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta4_target_flags_LSB m36 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta5_target_flags_LSB m44 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta6_target_flags_LSB m52 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta7_target_flags_LSB m60 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta8_target_flags_LSB m68 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta9_target_flags_LSB m76 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta10_target_flags_LSB m84 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta11_target_flags_LSB m92 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta12_target_flags_LSB m100 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta13_target_flags_LSB m108 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta14_target_flags_LSB m116 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta15_target_flags_LSB m124 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta16_target_flags_LSB m132 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta17_target_flags_LSB m140 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta18_target_flags_LSB m148 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta19_target_flags_LSB m156 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta20_target_flags_LSB m164 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta21_target_flags_LSB m172 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta22_target_flags_LSB m180 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta23_target_flags_LSB m188 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta24_target_flags_LSB m196 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta25_target_flags_LSB m204 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta26_target_flags_LSB m212 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta27_target_flags_LSB m220 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta28_target_flags_LSB m228 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta29_target_flags_LSB m236 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta30_target_flags_LSB m244 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ta0_power m4 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta1_power m12 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta2_power m20 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta3_power m28 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta4_power m36 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta5_power m44 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta6_power m52 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta7_power m60 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta8_power m68 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta9_power m76 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta10_power m84 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta11_power m92 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta12_power m100 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta13_power m108 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta14_power m116 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta15_power m124 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta16_power m132 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta17_power m140 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta18_power m148 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta19_power m156 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta20_power m164 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta21_power m172 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta22_power m180 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta23_power m188 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta24_power m196 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta25_power m204 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta26_power m212 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta27_power m220 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta28_power m228 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta29_power m236 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta30_power m244 : 55|8@0+ (0.5,0) [0|0] "dB" Vector__XXX
+ SG_ ta0_range m4 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta1_range m12 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta2_range m20 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta3_range m28 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta4_range m36 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta5_range m44 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta6_range m52 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta7_range m60 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta8_range m68 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta9_range m76 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta10_range m84 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta11_range m92 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta12_range m100 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta13_range m108 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta14_range m116 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta15_range m124 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta16_range m132 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta17_range m140 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta18_range m148 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta19_range m156 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta20_range m164 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta21_range m172 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta22_range m180 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta23_range m188 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta24_range m196 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta25_range m204 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta26_range m212 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta27_range m220 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta28_range m228 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta29_range m236 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta30_range m244 : 39|16@0+ (0.01,0) [0|0] "m" Vector__XXX
+ SG_ ta0_relative_velocitiy m4 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta1_relative_velocitiy m12 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta2_relative_velocitiy m20 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta3_relative_velocitiy m28 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta4_relative_velocitiy m36 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta5_relative_velocitiy m44 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta6_relative_velocitiy m52 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta7_relative_velocitiy m60 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta8_relative_velocitiy m68 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta9_relative_velocitiy m76 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta10_relative_velocitiy m84 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta11_relative_velocitiy m92 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta12_relative_velocitiy m100 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta13_relative_velocitiy m108 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta14_relative_velocitiy m116 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta15_relative_velocitiy m124 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta16_relative_velocitiy m132 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta17_relative_velocitiy m140 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta18_relative_velocitiy m148 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta19_relative_velocitiy m156 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta20_relative_velocitiy m164 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta21_relative_velocitiy m172 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta22_relative_velocitiy m180 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta23_relative_velocitiy m188 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta24_relative_velocitiy m196 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta25_relative_velocitiy m204 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta26_relative_velocitiy m212 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta27_relative_velocitiy m220 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta28_relative_velocitiy m228 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta29_relative_velocitiy m236 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta30_relative_velocitiy m244 : 21|14@0- (0.01,0) [0|0] "m/s" Vector__XXX
+ SG_ ta0_angle_LSB m4 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta1_angle_LSB m12 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta2_angle_LSB m20 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta3_angle_LSB m28 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta4_angle_LSB m36 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta5_angle_LSB m44 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta6_angle_LSB m52 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta7_angle_LSB m60 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta8_angle_LSB m68 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta9_angle_LSB m76 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta10_angle_LSB m84 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta11_angle_LSB m92 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta12_angle_LSB m100 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta13_angle_LSB m108 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta14_angle_LSB m116 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta15_angle_LSB m124 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta16_angle_LSB m132 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta17_angle_LSB m140 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta18_angle_LSB m148 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta19_angle_LSB m156 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta20_angle_LSB m164 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta21_angle_LSB m172 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta22_angle_LSB m180 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta23_angle_LSB m188 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta24_angle_LSB m196 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta25_angle_LSB m204 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta26_angle_LSB m212 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta27_angle_LSB m220 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta28_angle_LSB m228 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta29_angle_LSB m236 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta30_angle_LSB m244 : 63|3@0+ (0.05,0) [0|0.35] "°" Vector__XXX
+ SG_ ta0_angle_MSB m4 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta1_angle_MSB m12 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta2_angle_MSB m20 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta3_angle_MSB m28 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta4_angle_MSB m36 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta5_angle_MSB m44 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta6_angle_MSB m52 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta7_angle_MSB m60 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta8_angle_MSB m68 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta9_angle_MSB m76 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta10_angle_MSB m84 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta11_angle_MSB m92 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta12_angle_MSB m100 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta13_angle_MSB m108 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta14_angle_MSB m116 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta15_angle_MSB m124 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta16_angle_MSB m132 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta17_angle_MSB m140 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta18_angle_MSB m148 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta19_angle_MSB m156 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta20_angle_MSB m164 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta21_angle_MSB m172 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta22_angle_MSB m180 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta23_angle_MSB m188 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta24_angle_MSB m196 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta25_angle_MSB m204 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta26_angle_MSB m212 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta27_angle_MSB m220 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta28_angle_MSB m228 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta29_angle_MSB m236 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ ta30_angle_MSB m244 : 15|8@0- (0.4,0) [0|0] "°" Vector__XXX
+ SG_ target_multiplexor M : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1633 General_radar_status: 8 Vector__XXX
+ SG_ target_swap_count m99 : 23|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ quality_right_lane m102 : 59|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ quality_left_lane m102 : 57|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LF_is_video_valid m102 : 50|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LF_is_radar_valid m102 : 52|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LF_is_eHorizon_valid m102 : 51|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LF_is_CVD_valid m102 : 53|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LF_heading_angle m102 : 47|10@0- (0.00097656,0) [0|0] "rad" Vector__XXX
+ SG_ LF_curvature_rate m102 : 15|16@0- (2E-008,0) [0|0] "1/m²" Vector__XXX
+ SG_ LF_curvature m102 : 31|16@0- (2E-006,0) [0|0] "1/m" Vector__XXX
+ SG_ antenna_type m113 : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SP_filt_antenna_blocked_prob m119 : 62|7@0+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ SP_antenna_blocked m119 : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ signal_processing_version_num m119 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ FSK_step_size_F1_F2 m119 : 23|4@0+ (32.55,0) [0|0] "Hz" Vector__XXX
+ SG_ FSK_step_size_F0_F1 m119 : 19|4@0+ (32.55,0) [0|0] "Hz" Vector__XXX
+ SG_ FMCW_ramp_amplitude m119 : 31|8@0+ (1,0) [0|0] "MHz" Vector__XXX
+ SG_ centre_frequency m119 : 39|8@0+ (1,0) [0|0] "MHz" Vector__XXX
+ SG_ amplitude_correction_factor m119 : 47|8@0+ (1,0) [0|0] "dB" Vector__XXX
+ SG_ is_not_video_timeout m120 : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ is_fusion_sw m120 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ is_correct_video_sw m120 : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ is_correct_video_protocol m120 : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ is_camera_working m120 : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ is_object_fusion m120 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIB2_spare m97 : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIB2_radar_jamming_detected m97 : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIB2_phase_error m97 : 25|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIB2_MMIC_power_supply_error m97 : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIB2_internal_fault_TRM_off m97 : 30|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIB2_COVI_error m97 : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIB2_CODI_error m97 : 26|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIB1_spare m97 : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIB1_radar_cycle_overrun m97 : 18|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIB1_misalignment_error m97 : 19|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIB1_ICE_detected m97 : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIB1_FOV_error m97 : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIB1_EEPROM_error m97 : 17|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIB1_antenna_blocked m97 : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ fault_3_snapshot m118 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ fault_3_ID_bit8 m118 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ fault_3_ID m118 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ fault_2_snapshot m118 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ fault_2_ID_bit8 m118 : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ fault_2_ID m118 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ fault_1_snapshot m118 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ fault_1_ID_bit8 m118 : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SP_inst_prob_dynamic_obstruction m101 : 46|6@1+ (0.015873,0) [0|0] "" Vector__XXX
+ SG_ SP_inst_prob_antenna_distorted m101 : 58|6@1+ (0.015873,0) [0|0] "" Vector__XXX
+ SG_ SP_inst_prob_antenna_blocked m101 : 52|6@1+ (0.015873,0) [0|0] "" Vector__XXX
+ SG_ overtaking_status m101 : 45|6@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ prefiltered_yawrate m99 : 21|14@0- (0.01,0) [0|0] "°/s" Vector__XXX
+ SG_ cm_driver_attention m113 : 55|4@0+ (0.0666667,0) [0|0] "" Vector__XXX
+ SG_ cm_system_status m101 : 22|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cm_prefill m101 : 36|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cm_incr_drag_torque m101 : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cm_HBA m101 : 38|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cm_haptic_warning m101 : 32|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cm_global_cond_fulfilled m101 : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cm_emergency_braking m101 : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cm_mitigation_braking m101 : 33|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cm_advanced_brake_assist m101 : 34|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cm_ACR m101 : 37|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cm_collision_warning m101 : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cm_deceleration_demand m101 : 30|7@0+ (-0.1,0) [0|0] "m/s²" Vector__XXX
+ SG_ video_frame_id m101 : 18|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ relative_video_delay m101 : 15|8@0+ (2,0) [0|0] "ms" Vector__XXX
+ SG_ NFRT_abs m98 : 54|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ttc_cw m96 : 31|8@0+ (0.02,0) [0|0] "s" Vector__XXX
+ SG_ cvd_yawrate m96 : 53|14@0- (0.01,0) [0|0] "°/s" Vector__XXX
+ SG_ Steer_ok m113 : 60|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Stat_offset_ok m113 : 62|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Sensor_ok m113 : 61|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Rear_ok m113 : 59|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Quick_steer_ok m113 : 49|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Quick_rear_ok m113 : 48|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Quick_front_ok m113 : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LP_ready m113 : 56|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Front_ok m113 : 58|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ACC_lp_allowed m113 : 57|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ fault_1_ID m118 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PCB_temperature m117 : 63|8@0+ (1,-50) [0|0] "°C" Vector__XXX
+ SG_ TRM_temperature m117 : 55|8@0+ (1,-50) [0|0] "°C" Vector__XXX
+ SG_ PCB_type m117 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ frequency_linearity m117 : 38|7@0+ (1,0) [0|0] "%" Vector__XXX
+ SG_ mean_target_phase_right m117 : 31|8@0- (1,0) [0|0] "°" Vector__XXX
+ SG_ mean_target_phase_left m117 : 23|8@0- (1,0) [0|0] "°" Vector__XXX
+ SG_ ofpr m117 : 15|8@0- (0.01,0) [0|0] "m" Vector__XXX
+ SG_ FOV_count_centre m116 : 63|8@0+ (100,0) [0|0] "" Vector__XXX
+ SG_ FOV_count_right m116 : 55|8@0+ (100,0) [0|0] "" Vector__XXX
+ SG_ FOV_count_left m116 : 47|8@0+ (100,0) [0|0] "" Vector__XXX
+ SG_ SB_ID_ACC_track_dropped m116 : 39|8@0+ (0.0039215686275,0) [0|0] "" Vector__XXX
+ SG_ SB_ID_ACC_track_asleep m116 : 31|8@0+ (0.0039215686275,0) [0|0] "" Vector__XXX
+ SG_ SB_ID_fixed_echo_intensitiy m116 : 23|8@0+ (0.0039215686275,0) [0|0] "" Vector__XXX
+ SG_ SB_ID_fixed_echo_relvel m116 : 15|8@0+ (0.0039215686275,0) [0|0] "" Vector__XXX
+ SG_ tacho_correction_factor m115 : 63|8@0+ (0.002,0.9) [0|0] "" Vector__XXX
+ SG_ left_right_traffic_ID m115 : 54|7@0- (10,0) [0|0] "" Vector__XXX
+ SG_ sensor_blind_detected m115 : 47|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ sensor_blindness m115 : 46|7@0+ (0.007874,0) [0|0] "" Vector__XXX
+ SG_ severe_misalignment_angle m115 : 39|8@0- (0.05,0) [0|0] "°" Vector__XXX
+ SG_ dfil m115 : 31|8@0- (0.05,0) [0|0] "°" Vector__XXX
+ SG_ codi m115 : 23|8@0- (0.002,1) [0|0] "" Vector__XXX
+ SG_ covi m115 : 15|8@0- (0.002,1) [0|0] "" Vector__XXX
+ SG_ cal_rear_axle_offset m114 : 55|16@0- (2E-007,1) [0|0] "" Vector__XXX
+ SG_ cal_fr_axle_offset m114 : 39|16@0- (2E-007,1) [0|0] "" Vector__XXX
+ SG_ cal_steer_offset m114 : 31|8@0- (0.25,0) [0|0] "°" Vector__XXX
+ SG_ cal_yaw_offset m114 : 23|8@0- (0.025,0) [0|0] "°/s" Vector__XXX
+ SG_ yawrate_offset m114 : 15|8@0- (0.025,0) [0|0] "°/s" Vector__XXX
+ SG_ vehicle_coding m113 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ shutdown_method m113 : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ region_variant m113 : 42|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ drive_program m113 : 44|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ desired_headway m113 : 13|6@0+ (0.1,0) [0|0] "s" Vector__XXX
+ SG_ autocruise_serial_number m113 : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ software_version_char_8 m112 : 62|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ software_version_char_7 m112 : 53|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ software_version_char_6 m112 : 44|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ software_version_char_5 m112 : 35|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ software_version_char_4 m112 : 26|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ software_version_char_3 m112 : 17|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ software_version_char_2 m112 : 8|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ software_version_char_1 m112 : 15|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LC_undertaking m100 : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LC_reduced_acceleration m100 : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LC_controller_state m100 : 13|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LC_acceleration_mode m100 : 10|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LC_shaped_acceleration_demand m100 : 55|16@0+ (0.0002,-8.8) [0|0] "m/s²" Vector__XXX
+ SG_ vehicle_reference_acceleration m100 : 39|16@0+ (0.0004,-16) [0|0] "m/s²" Vector__XXX
+ SG_ raw_steering_yaw m100 : 19|12@0- (0.0125,0) [0|0] "°/s" Vector__XXX
+ SG_ ACC_from_overtaking_lane m100 : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ strong_IIV m100 : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ environment_speed m99 : 63|8@0+ (0.2,0) [0|0] "m/s" Vector__XXX
+ SG_ critical_bend_ID m99 : 46|7@0+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ CRB_lateral_pos_right m99 : 55|8@0+ (0.05,0) [0|0] "m" Vector__XXX
+ SG_ CRB_lateral_pos_left m99 : 39|8@0+ (-0.05,0) [0|0] "m" Vector__XXX
+ SG_ estimated_road_curvature m97 : 47|8@0- (50,0) [0|0] "m" Vector__XXX
+ SG_ CRB_credibility_left m99 : 15|4@0+ (5,0) [0|0] "" Vector__XXX
+ SG_ CRB_credibility_right m99 : 11|4@0+ (5,0) [0|0] "" Vector__XXX
+ SG_ ttc_slw m98 : 63|8@0+ (0.02,0) [0|0] "s" Vector__XXX
+ SG_ system_limits_flags m98 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ext_LED m98 : 51|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ext_buzzer m98 : 52|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ confidence_cw_track m98 : 47|8@0+ (0.1,-6) [0|0] "" Vector__XXX
+ SG_ distance_warning_level m98 : 49|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ current_MMIC_pos m98 : 31|8@0+ (2,0) [0|0] "mA" Vector__XXX
+ SG_ current_MMIC_neg m98 : 39|8@0+ (0.5,0) [0|0] "mA" Vector__XXX
+ SG_ battery_voltage m98 : 23|8@0+ (0.2,0) [0|0] "V" Vector__XXX
+ SG_ SIB2_linearity_error m97 : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIB1_general_status_ok m97 : 16|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ radar_type m97 : 63|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ radar_cycle_count m97 : 38|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ number_of_tracks m97 : 12|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ number_of_targets m97 : 60|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ current_ramp_type m97 : 15|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ A087MB_version m97 : 53|6@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ processor_time_used m96 : 15|8@0+ (0.5,0) [0|0] "%" Vector__XXX
+ SG_ estimated_broadband_noise_level m96 : 23|8@0+ (1,0) [0|0] "dB" Vector__XXX
+ SG_ actual_vehicle_speed m96 : 39|16@0+ (0.002,0) [0|0] "m/s" Vector__XXX
+ SG_ status_multiplexor M : 6|7@0+ (1,0) [0|0] "" Vector__XXX
+
+
+
+VAL_ 1635 tr0_tracking_status 3 "sleeping" 2 "established" 1 "initialising" 0 "empty" ;
+VAL_ 1635 tr1_tracking_status 3 "sleeping" 2 "established" 1 "initialising" 0 "empty" ;
+VAL_ 1635 tr2_tracking_status 3 "sleeping" 2 "established" 1 "initialising" 0 "empty" ;
+VAL_ 1635 tr3_tracking_status 3 "sleeping" 2 "established" 1 "initialising" 0 "empty" ;
+VAL_ 1635 tr4_tracking_status 3 "sleeping" 2 "established" 1 "initialising" 0 "empty" ;
+VAL_ 1635 tr5_tracking_status 3 "sleeping" 2 "established" 1 "initialising" 0 "empty" ;
+VAL_ 1635 tr6_tracking_status 3 "sleeping" 2 "established" 1 "initialising" 0 "empty" ;
+VAL_ 1635 tr7_tracking_status 3 "sleeping" 2 "established" 1 "initialising" 0 "empty" ;
+VAL_ 1635 tr8_tracking_status 3 "sleeping" 2 "established" 1 "initialising" 0 "empty" ;
+VAL_ 1635 tr9_tracking_status 3 "sleeping" 2 "established" 1 "initialising" 0 "empty" ;
+VAL_ 1635 tr0_track_selection_status 4096 "suppressed" 2048 "next right lane" 1024 "next left lane" 512 "out of ACC lane" 256 "ACC track" 128 "overtaken" 64 "mirror" 32 "opposite direction" 16 "stationary" 8 "same direction" 4 "same lane" 2 "right lane" 1 "left lane" ;
+VAL_ 1635 tr1_track_selection_status 4096 "suppressed" 2048 "next right lane" 1024 "next left lane" 512 "out of ACC lane" 256 "ACC track" 128 "overtaken" 64 "mirror" 32 "opposite direction" 16 "stationary" 8 "same direction" 4 "same lane" 2 "right lane" 1 "left lane" ;
+VAL_ 1635 tr2_track_selection_status 4096 "suppressed" 2048 "next right lane" 1024 "next left lane" 512 "out of ACC lane" 256 "ACC track" 128 "overtaken" 64 "mirror" 32 "opposite direction" 16 "stationary" 8 "same direction" 4 "same lane" 2 "right lane" 1 "left lane" ;
+VAL_ 1635 tr3_track_selection_status 4096 "suppressed" 2048 "next right lane" 1024 "next left lane" 512 "out of ACC lane" 256 "ACC track" 128 "overtaken" 64 "mirror" 32 "opposite direction" 16 "stationary" 8 "same direction" 4 "same lane" 2 "right lane" 1 "left lane" ;
+VAL_ 1635 tr4_track_selection_status 4096 "suppressed" 2048 "next right lane" 1024 "next left lane" 512 "out of ACC lane" 256 "ACC track" 128 "overtaken" 64 "mirror" 32 "opposite direction" 16 "stationary" 8 "same direction" 4 "same lane" 2 "right lane" 1 "left lane" ;
+VAL_ 1635 tr5_track_selection_status 4096 "suppressed" 2048 "next right lane" 1024 "next left lane" 512 "out of ACC lane" 256 "ACC track" 128 "overtaken" 64 "mirror" 32 "opposite direction" 16 "stationary" 8 "same direction" 4 "same lane" 2 "right lane" 1 "left lane" ;
+VAL_ 1635 tr6_track_selection_status 4096 "suppressed" 2048 "next right lane" 1024 "next left lane" 512 "out of ACC lane" 256 "ACC track" 128 "overtaken" 64 "mirror" 32 "opposite direction" 16 "stationary" 8 "same direction" 4 "same lane" 2 "right lane" 1 "left lane" ;
+VAL_ 1635 tr7_track_selection_status 4096 "suppressed" 2048 "next right lane" 1024 "next left lane" 512 "out of ACC lane" 256 "ACC track" 128 "overtaken" 64 "mirror" 32 "opposite direction" 16 "stationary" 8 "same direction" 4 "same lane" 2 "right lane" 1 "left lane" ;
+VAL_ 1635 tr8_track_selection_status 4096 "suppressed" 2048 "next right lane" 1024 "next left lane" 512 "out of ACC lane" 256 "ACC track" 128 "overtaken" 64 "mirror" 32 "opposite direction" 16 "stationary" 8 "same direction" 4 "same lane" 2 "right lane" 1 "left lane" ;
+VAL_ 1635 tr9_track_selection_status 4096 "suppressed" 2048 "next right lane" 1024 "next left lane" 512 "out of ACC lane" 256 "ACC track" 128 "overtaken" 64 "mirror" 32 "opposite direction" 16 "stationary" 8 "same direction" 4 "same lane" 2 "right lane" 1 "left lane" ;
+VAL_ 1635 tr0_acc_track_info 3 "NIV" 2 "IIV" 1 "ACC track" 0 "not relevant" ;
+VAL_ 1635 tr1_acc_track_info 3 "NIV" 2 "IIV" 1 "ACC track" 0 "not relevant" ;
+VAL_ 1635 tr2_acc_track_info 3 "NIV" 2 "IIV" 1 "ACC track" 0 "not relevant" ;
+VAL_ 1635 tr3_acc_track_info 3 "NIV" 2 "IIV" 1 "ACC track" 0 "not relevant" ;
+VAL_ 1635 tr4_acc_track_info 3 "NIV" 2 "IIV" 1 "ACC track" 0 "not relevant" ;
+VAL_ 1635 tr5_acc_track_info 3 "NIV" 2 "IIV" 1 "ACC track" 0 "not relevant" ;
+VAL_ 1635 tr6_acc_track_info 3 "NIV" 2 "IIV" 1 "ACC track" 0 "not relevant" ;
+VAL_ 1635 tr7_acc_track_info 3 "NIV" 2 "IIV" 1 "ACC track" 0 "not relevant" ;
+VAL_ 1635 tr8_acc_track_info 3 "NIV" 2 "IIV" 1 "ACC track" 0 "not relevant" ;
+VAL_ 1635 tr9_acc_track_info 3 "NIV" 2 "IIV" 1 "ACC track" 0 "not relevant" ;
+VAL_ 1634 ta0_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta1_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta2_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta3_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta4_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta5_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta6_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta7_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta8_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta9_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta10_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta11_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta12_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta13_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta14_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta15_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta16_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta17_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta18_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta19_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta20_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta21_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta22_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta23_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta24_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta25_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta26_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta27_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta28_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta29_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta30_range_flags 4 "diff vector" 2 "LL vector" 1 "delta higher" ;
+VAL_ 1634 ta0_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta1_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta2_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta3_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta4_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta5_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta6_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta7_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta8_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta9_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta10_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta11_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta12_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta13_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta14_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta15_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta16_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta17_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta18_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta19_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta20_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta21_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta22_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta23_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta24_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta25_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta26_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta27_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta28_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta29_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1634 ta30_target_flags_LSB 16 "clone" 8 "weak partner" 4 "weak detection" 2 "ambiguous" 1 "stationary" ;
+VAL_ 1633 quality_right_lane 3 "High" 2 "Medium (PredictedOrLowScore)" 1 "Low2 (InsufficientScore)" 0 "Low (NoLineDetected)" ;
+VAL_ 1633 quality_left_lane 3 "High" 2 "Medium (PredictedOrLowScore)" 1 "Low2 (InsufficientScore)" 0 "Low (NoLineDetected)" ;
+VAL_ 1633 antenna_type 3 "unknown (3)" 2 "IVQ831" 1 "IVQ830" 0 "unknown (0)" ;
+VAL_ 1633 overtaking_status 32 "in follow mode" 16 "in overtaking maneuver" 8 "ind. toward overtaking lane" 4 "overtaking with indicator" 2 "overtaking" 1 "driver increasing speed" 0 "standard" ;
+VAL_ 1633 cm_system_status 4 "WAITING" 3 "BRAKING" 2 "WARNING" 1 "ALLOWED" 0 "NOT_ALLOWED" ;
+VAL_ 1633 shutdown_method 1 "low_speed_cancel" 0 "follow_to_stop" ;
+VAL_ 1633 drive_program 3 "economy" 2 "comfort" 1 "normal" 0 "sport" ;
+VAL_ 1633 software_version_char_8 122 "z" 121 "y" 120 "x" 119 "w" 118 "v" 117 "u" 116 "t" 115 "s" 114 "r" 113 "q" 112 "p" 111 "o" 110 "n" 109 "m" 108 "l" 107 "k" 106 "j" 105 "i" 104 "h" 103 "g" 102 "f" 101 "e" 100 "d" 99 "c" 98 "b" 97 "a" 95 "_" 90 "Z" 89 "Y" 88 "X" 87 "W" 86 "V" 85 "U" 84 "T" 83 "S" 82 "R" 81 "Q" 80 "P" 79 "O" 78 "N" 77 "M" 76 "L" 75 "K" 74 "J" 73 "I" 72 "H" 71 "G" 70 "F" 69 "E" 68 "D" 67 "C" 66 "B" 65 "A" 57 "9" 56 "8" 55 "7" 54 "6" 53 "5" 52 "4" 51 "3" 50 "2" 49 "1" 48 "0" ;
+VAL_ 1633 software_version_char_7 122 "z" 121 "y" 120 "x" 119 "w" 118 "v" 117 "u" 116 "t" 115 "s" 114 "r" 113 "q" 112 "p" 111 "o" 110 "n" 109 "m" 108 "l" 107 "k" 106 "j" 105 "i" 104 "h" 103 "g" 102 "f" 101 "e" 100 "d" 99 "c" 98 "b" 97 "a" 95 "_" 90 "Z" 89 "Y" 88 "X" 87 "W" 86 "V" 85 "U" 84 "T" 83 "S" 82 "R" 81 "Q" 80 "P" 79 "O" 78 "N" 77 "M" 76 "L" 75 "K" 74 "J" 73 "I" 72 "H" 71 "G" 70 "F" 69 "E" 68 "D" 67 "C" 66 "B" 65 "A" 57 "9" 56 "8" 55 "7" 54 "6" 53 "5" 52 "4" 51 "3" 50 "2" 49 "1" 48 "0" ;
+VAL_ 1633 software_version_char_6 122 "z" 121 "y" 120 "x" 119 "w" 118 "v" 117 "u" 116 "t" 115 "s" 114 "r" 113 "q" 112 "p" 111 "o" 110 "n" 109 "m" 108 "l" 107 "k" 106 "j" 105 "i" 104 "h" 103 "g" 102 "f" 101 "e" 100 "d" 99 "c" 98 "b" 97 "a" 95 "_" 90 "Z" 89 "Y" 88 "X" 87 "W" 86 "V" 85 "U" 84 "T" 83 "S" 82 "R" 81 "Q" 80 "P" 79 "O" 78 "N" 77 "M" 76 "L" 75 "K" 74 "J" 73 "I" 72 "H" 71 "G" 70 "F" 69 "E" 68 "D" 67 "C" 66 "B" 65 "A" 57 "9" 56 "8" 55 "7" 54 "6" 53 "5" 52 "4" 51 "3" 50 "2" 49 "1" 48 "0" ;
+VAL_ 1633 software_version_char_5 122 "z" 121 "y" 120 "x" 119 "w" 118 "v" 117 "u" 116 "t" 115 "s" 114 "r" 113 "q" 112 "p" 111 "o" 110 "n" 109 "m" 108 "l" 107 "k" 106 "j" 105 "i" 104 "h" 103 "g" 102 "f" 101 "e" 100 "d" 99 "c" 98 "b" 97 "a" 95 "_" 90 "Z" 89 "Y" 88 "X" 87 "W" 86 "V" 85 "U" 84 "T" 83 "S" 82 "R" 81 "Q" 80 "P" 79 "O" 78 "N" 77 "M" 76 "L" 75 "K" 74 "J" 73 "I" 72 "H" 71 "G" 70 "F" 69 "E" 68 "D" 67 "C" 66 "B" 65 "A" 57 "9" 56 "8" 55 "7" 54 "6" 53 "5" 52 "4" 51 "3" 50 "2" 49 "1" 48 "0" ;
+VAL_ 1633 software_version_char_4 122 "z" 121 "y" 120 "x" 119 "w" 118 "v" 117 "u" 116 "t" 115 "s" 114 "r" 113 "q" 112 "p" 111 "o" 110 "n" 109 "m" 108 "l" 107 "k" 106 "j" 105 "i" 104 "h" 103 "g" 102 "f" 101 "e" 100 "d" 99 "c" 98 "b" 97 "a" 95 "_" 90 "Z" 89 "Y" 88 "X" 87 "W" 86 "V" 85 "U" 84 "T" 83 "S" 82 "R" 81 "Q" 80 "P" 79 "O" 78 "N" 77 "M" 76 "L" 75 "K" 74 "J" 73 "I" 72 "H" 71 "G" 70 "F" 69 "E" 68 "D" 67 "C" 66 "B" 65 "A" 57 "9" 56 "8" 55 "7" 54 "6" 53 "5" 52 "4" 51 "3" 50 "2" 49 "1" 48 "0" ;
+VAL_ 1633 software_version_char_3 122 "z" 121 "y" 120 "x" 119 "w" 118 "v" 117 "u" 116 "t" 115 "s" 114 "r" 113 "q" 112 "p" 111 "o" 110 "n" 109 "m" 108 "l" 107 "k" 106 "j" 105 "i" 104 "h" 103 "g" 102 "f" 101 "e" 100 "d" 99 "c" 98 "b" 97 "a" 95 "_" 90 "Z" 89 "Y" 88 "X" 87 "W" 86 "V" 85 "U" 84 "T" 83 "S" 82 "R" 81 "Q" 80 "P" 79 "O" 78 "N" 77 "M" 76 "L" 75 "K" 74 "J" 73 "I" 72 "H" 71 "G" 70 "F" 69 "E" 68 "D" 67 "C" 66 "B" 65 "A" 57 "9" 56 "8" 55 "7" 54 "6" 53 "5" 52 "4" 51 "3" 50 "2" 49 "1" 48 "0" ;
+VAL_ 1633 software_version_char_2 122 "z" 121 "y" 120 "x" 119 "w" 118 "v" 117 "u" 116 "t" 115 "s" 114 "r" 113 "q" 112 "p" 111 "o" 110 "n" 109 "m" 108 "l" 107 "k" 106 "j" 105 "i" 104 "h" 103 "g" 102 "f" 101 "e" 100 "d" 99 "c" 98 "b" 97 "a" 95 "_" 90 "Z" 89 "Y" 88 "X" 87 "W" 86 "V" 85 "U" 84 "T" 83 "S" 82 "R" 81 "Q" 80 "P" 79 "O" 78 "N" 77 "M" 76 "L" 75 "K" 74 "J" 73 "I" 72 "H" 71 "G" 70 "F" 69 "E" 68 "D" 67 "C" 66 "B" 65 "A" 57 "9" 56 "8" 55 "7" 54 "6" 53 "5" 52 "4" 51 "3" 50 "2" 49 "1" 48 "0" ;
+VAL_ 1633 software_version_char_1 122 "z" 121 "y" 120 "x" 119 "w" 118 "v" 117 "u" 116 "t" 115 "s" 114 "r" 113 "q" 112 "p" 111 "o" 110 "n" 109 "m" 108 "l" 107 "k" 106 "j" 105 "i" 104 "h" 103 "g" 102 "f" 101 "e" 100 "d" 99 "c" 98 "b" 97 "a" 95 "_" 90 "Z" 89 "Y" 88 "X" 87 "W" 86 "V" 85 "U" 84 "T" 83 "S" 82 "R" 81 "Q" 80 "P" 79 "O" 78 "N" 77 "M" 76 "L" 75 "K" 74 "J" 73 "I" 72 "H" 71 "G" 70 "F" 69 "E" 68 "D" 67 "C" 66 "B" 65 "A" 57 "9" 56 "8" 55 "7" 54 "6" 53 "5" 52 "4" 51 "3" 50 "2" 49 "1" 48 "0" ;
+VAL_ 1633 LC_controller_state 5 "hold on brake" 4 "low speed crawl" 3 "low speed shutdown" 2 "standard ACC" 1 "initialising" 0 "ACC passive" ;
+VAL_ 1633 LC_acceleration_mode 6 "max acceleration" 5 "target memory active" 4 "NIV follow" 3 "IIV follow" 2 "follow" 1 "bend" 0 "cruise" ;
+VAL_ 1633 system_limits_flags 128 "lower SLR after timeout" 64 "robust selection IV" 32 "system limits insuff. braking" 16 "potential collision" 8 "system limits warn. supp." 4 "EMS driver override" 2 "raise SLR" 1 "system limits reached" ;
+VAL_ 1633 ext_LED 2 "LED 100%" 1 "LED 50%" 0 "LED off" ;
+VAL_ 1633 confidence_cw_track 0 "no CW-track" ;
+VAL_ 1633 distance_warning_level 2 "level 2" 1 "level 1" 0 "no warning" ;
+VAL_ 1633 radar_type 3 "Developmentcontroller" 2 "SMS 24 GHz" 1 "TRW 24 GHz" 0 "76 GHz (AC3B)" ;
+VAL_ 1633 current_ramp_type 6 "Split FSK/UP ramp" 5 "Split Down ramp/FSK" 4 "Split Up/Down ramp" 2 "Up ramp" 1 "Down ramp" 0 "FSK" ;
+VAL_ 1633 A087MB_version 5 "V3.0" ;
+

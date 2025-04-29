@@ -1,0 +1,67 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 778 VBOX_LDWS_VCI_1: 8 Vector__XXX
+ SG_ Range_Lt : 7|32@0- (1,0) [0|0] "Metres" Vector__XXX
+ SG_ Range_Rt : 39|32@0- (1,0) [0|0] "Meters" Vector__XXX
+
+BO_ 779 VBOX_LDWS_VCI_2: 8 Vector__XXX
+ SG_ Lat_Spd_Lt : 7|32@0- (0.36,0) [0|0] "m/s" Vector__XXX
+ SG_ Status : 39|32@0- (1,0) [0|0] "" Vector__XXX
+
+BO_ 780 VBOX_LDWS_VCI_3: 8 Vector__XXX
+ SG_ TTLC_Lt : 7|32@0- (1,0) [0|0] "Seconds" Vector__XXX
+ SG_ Lat_Spd_Rt : 39|32@0- (0.36,0) [0|0] "m/s" Vector__XXX
+
+BO_ 781 VBOX_LDWS_VCI_4: 8 Vector__XXX
+ SG_ TTLC_Rt : 7|32@0- (1,0) [0|0] "Seconds" Vector__XXX
+ SG_ Angle : 39|32@0- (1,0) [0|0] "Deg" Vector__XXX
+
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+SIG_VALTYPE_ 778 Range_Lt : 1;
+SIG_VALTYPE_ 778 Range_Rt : 1;
+SIG_VALTYPE_ 779 Lat_Spd_Lt : 1;
+SIG_VALTYPE_ 779 Status : 1;
+SIG_VALTYPE_ 780 TTLC_Lt : 1;
+SIG_VALTYPE_ 780 Lat_Spd_Rt : 1;
+SIG_VALTYPE_ 781 TTLC_Rt : 1;
+SIG_VALTYPE_ 781 Angle : 1;
+

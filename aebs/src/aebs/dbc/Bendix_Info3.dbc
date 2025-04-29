@@ -1,0 +1,104 @@
+VERSION "DNNBNNNYNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/4/%%%/4/'%**4NNN///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+BO_ 1649 Bendix_Info2: 8 Vector__XXX
+ SG_ BX_TLC_B : 48|8@1+ (0.01,0) [0|200] "s" Vector__XXX
+ SG_ C0_right_wheel_Right_B : 8|8@1- (0.01,0) [-327.68|327.67] "m" Vector__XXX
+ SG_ C0_left_wheel_Left_B : 0|8@1- (0.01,0) [-327.68|327.67] "m" Vector__XXX
+ SG_ Message_Counter_Bendix_Info2 : 62|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Lateral_Velocity_Right_B : 32|16@1- (1,0) [0|0] "cmps" Vector__XXX
+ SG_ Lateral_Velocity_Left_B : 16|16@1- (1,0) [0|0] "cmps" Vector__XXX
+
+BO_ 1650 Bendix_Info3: 8 Vector__XXX
+ SG_ DEBUG_TLC_thresh_right_ms : 19|11@1+ (1,0) [0|2000] "ms" Vector__XXX
+ SG_ DEBUG_TLC_thresh_left_ms : 8|11@1+ (1,0) [0|2000] "ms" Vector__XXX
+ SG_ DEBUG_Space_mm : 50|12@1+ (1,0) [0|4000] "mm" Vector__XXX
+ SG_ Not_used : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Message_Counter_Bendix_Info3 : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DEBUG_LNVU_TimeBased_flag : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DEBUG_LNVU_isWarningRight : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DEBUG_LNVU_isWarningLeft : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DEBUG_LNVU_Frame_Id_LSB : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LNVU_AlgoState : 5|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DEBUG_D_margin_right_mm : 40|10@1- (1,0) [-300|300] "mm" Vector__XXX
+ SG_ DEBUG_D_margin_left_mm : 30|10@1- (1,0) [-300|300] "mm" Vector__XXX
+
+BO_ 1651 Bendix_Info4: 8 Vector__XXX
+ SG_ Message_Counter_Bendix_Info4 : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BX_HighSteeringAngleRate : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BX_HighDeceleration : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BX_HighRoadwayCurvature_Right : 31|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BX_HighRoadwayCurvature_Left : 30|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BX_HighLateralVelocity_Right : 29|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BX_HighLateralVelocity_Left : 28|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BX_WS_InnerReset_Right : 27|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BX_WS_InnerReset_Left : 26|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BX_WarnNow_Right : 25|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BX_WarnNow_Left : 24|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BX_TLC_Right : 12|12@1- (1,0) [-2048|2047] "ms" Vector__XXX
+ SG_ BX_TLC_Left : 0|12@1- (1,0) [-2048|2047] "ms" Vector__XXX
+
+
+CM_ BO_ 1650 "For internal purpose";
+CM_ SG_ 1650 DEBUG_TLC_thresh_right_ms "Absolute value of DEBUG_TLC_thresh_ms[1]";
+CM_ SG_ 1650 DEBUG_TLC_thresh_left_ms "Absolute value of DEBUG_TLC_thresh_ms[0]";
+CM_ SG_ 1650 DEBUG_Space_mm "Absolute value of D_Space_mm";
+CM_ SG_ 1650 Not_used "Not used";
+CM_ SG_ 1650 Message_Counter_Bendix_Info3 "Increments with each transmission";
+CM_ SG_ 1650 DEBUG_LNVU_TimeBased_flag "LNVU Warning Module Time/Distance based flag";
+CM_ SG_ 1650 DEBUG_LNVU_isWarningRight "LNVU Warning Module LDW Right";
+CM_ SG_ 1650 DEBUG_LNVU_isWarningLeft "LNVU Warning Module LDW Left";
+CM_ SG_ 1650 DEBUG_LNVU_Frame_Id_LSB "Least significant 2 bits of ME Frame Id as seen by LNVU Warning Module.";
+CM_ SG_ 1650 LNVU_AlgoState "0: Algo Init; 1:Search Mode; 2:Track Mode";
+CM_ SG_ 1650 DEBUG_D_margin_right_mm "DEBUG_D_margin_mm[1]";
+CM_ SG_ 1650 DEBUG_D_margin_left_mm "DEBUG_D_margin_mm[0]";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+VAL_ 1650 DEBUG_LNVU_TimeBased_flag 1 "time" 0 "distance" ;
+VAL_ 1650 DEBUG_LNVU_isWarningRight 1 "Warning" 0 "NotWarning" ;
+VAL_ 1650 DEBUG_LNVU_isWarningLeft 1 "Warning" 0 "NotWarning" ;
+VAL_ 1651 BX_HighSteeringAngleRate 1 "TRUE" 0 "-" ;
+VAL_ 1651 BX_HighDeceleration 1 "TRUE" 0 "-" ;
+VAL_ 1651 BX_HighRoadwayCurvature_Right 1 "TRUE" 0 "-" ;
+VAL_ 1651 BX_HighRoadwayCurvature_Left 1 "TRUE" 0 "-" ;
+VAL_ 1651 BX_HighLateralVelocity_Right 1 "TRUE" 0 "-" ;
+VAL_ 1651 BX_HighLateralVelocity_Left 1 "TRUE" 0 "-" ;
+VAL_ 1651 BX_WS_InnerReset_Right 1 "TRUE" 0 "-" ;
+VAL_ 1651 BX_WS_InnerReset_Left 1 "TRUE" 0 "-" ;
+VAL_ 1651 BX_WarnNow_Right 1 "TRUE" 0 "-" ;
+VAL_ 1651 BX_WarnNow_Left 1 "TRUE" 0 "-" ;
+

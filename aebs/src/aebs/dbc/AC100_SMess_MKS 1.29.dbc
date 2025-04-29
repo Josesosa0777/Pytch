@@ -1,0 +1,336 @@
+VERSION "HIPBNYYYYYYYYYYYYYYYYYYYYYYYYYYYNNNNNNNNNN/4/%%%/4/'%**4NNN///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: ETAS ACC
+VAL_TABLE_ LCG_actuation 4 "engine_and_drive_retarder,_brs" 3 "engine_retarder,_drivel_retarder" 2 "engine_retarder" 1 "engine" 0 "EMS_internal_cruise_control" ;
+VAL_TABLE_ XBR_LIMIT 4 "NLD2" 3 "POST" 2 "YC / ROP" 1 "Brake Overuse" 0 "No Limiting" ;
+VAL_TABLE_ XBR_SOURCE 3 "Bendix CMT" 2 "TRW AEBS" 1 "ACB" 0 "None" ;
+VAL_TABLE_ AEB_DrvOverride 3 "Reserved3" 2 "Reserved2" 1 ">90%" 0 "None" ;
+VAL_TABLE_ AEBState 4 "Activate" 3 "Warning" 2 "Possible" 1 "Enabled" 0 "Disabled" ;
+VAL_TABLE_ Boolean 1 "True" 0 "False" ;
+
+
+BO_ 2634018091 ETAS_S09: 8 ETAS
+ SG_ ETAS_AEB_TO_dyv : 32|16@1- (0.0078125,0) [-256|256] "m" Vector__XXX
+ SG_ ETAS_ACB_BrakeOveruseCount : 56|8@1+ (0.256,0) [0|65.535] "s" Vector__XXX
+ SG_ ETAS_AEB_DrvOverride : 51|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ETAS_AEB_state : 48|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ ETAS_AEB_WarnTTCThres : 16|16@1+ (0.00048828125,0) [0|32] "s" Vector__XXX
+ SG_ ETAS_AEBaThreshold : 0|16@1- (0.00048828125,0) [-16|16] "m/s^2" Vector__XXX
+
+BO_ 2634017067 ETAS_S08: 8 ETAS
+ SG_ ETAS_AEB_TargetTimer : 8|8@1+ (0.015625,0) [0|4] "s" Vector__XXX
+ SG_ ETAS_AEB_StoppedTimer : 0|8@1+ (0.015625,0) [0|4] "s" Vector__XXX
+ SG_ ETAS_AEB_aCloseRange : 48|16@1- (0.00048828125,0) [0|0] "m/s²" Vector__XXX
+ SG_ ETAS_AEB_TimeToCollisionThres : 32|16@1+ (0.00048828125,0) [0|0] "s" Vector__XXX
+ SG_ ETAS_AEB_TimeToCollision : 16|16@1+ (0.00048828125,0) [0|0] "s" Vector__XXX
+
+BO_ 2634016811 ETAS_S07: 8 ETAS
+ SG_ ETAS_ACB_StationaryObjectAlert : 63|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ETAS_ACB_POSTRunning : 62|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ETAS_ACB_DynoMode : 61|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ETAS_ACB_ESPActive : 60|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ETAS_AEB_ReEntryTimerActive : 59|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ETAS_AEB_Activate : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ETAS_AEB_Possible : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ETAS_AEB_DriverAlert : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ETAS_AEB_AlertTimer : 48|8@1+ (0.015625,0) [0|4] "s" Vector__XXX
+ SG_ ETAS_AEB_CommandAcceleration : 32|16@1- (0.00048828125,0) [-16|16] "m/s^2" Vector__XXX
+ SG_ ETAS_AEB_CAMPCommandAccel_Flit : 16|16@1- (0.00048828125,0) [-16|16] "m/s^2" Vector__XXX
+ SG_ ETAS_AEB_CAMPCommandAccel : 0|16@1- (0.00048828125,0) [-16|16] "m/s^2" Vector__XXX
+
+BO_ 2634018090 ACC_S09: 8 ACC
+ SG_ AEB_DrvOverride : 51|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ AEB_state : 48|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ AEB_TO_dyv : 32|16@1- (0.0078125,0) [-256|256] "m" Vector__XXX
+ SG_ AEB_WarnTTCThres : 16|16@1+ (0.00048828125,0) [0|32] "s" Vector__XXX
+ SG_ AEBaThreshold : 0|16@1- (0.00048828125,0) [-16|16] "m/s^2" Vector__XXX
+
+BO_ 2634017066 ACC_S08: 8 ACC
+ SG_ AEB_aCloseRange : 48|16@1- (0.00048828125,0) [0|0] "m/s²" Vector__XXX
+ SG_ AEB_TimeToCollisionThreshold : 32|16@1+ (0.00048828125,0) [0|32] "s" Vector__XXX
+ SG_ AEB_TimeToCollision : 16|16@1+ (0.00048828125,0) [0|32] "s" Vector__XXX
+ SG_ AEB_TargetTimer : 8|8@1+ (0.015625,0) [0|4] "s" Vector__XXX
+ SG_ AEB_StoppedTimer : 0|8@1+ (0.015625,0) [0|4] "s" Vector__XXX
+
+BO_ 2634016810 ACC_S07: 8 ACC
+ SG_ AEB_ReEntryTimerActive : 59|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACB_StationaryObjectAlert : 63|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACB_POSTRunning : 62|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACB_DynoMode : 61|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACB_ESPActive : 60|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AEB_Activate : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AEB_DriverAlert : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AEB_Possible : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AEB_AlertTimer : 48|8@1+ (0.015625,0) [0|4] "s" Vector__XXX
+ SG_ AEB_CommandAcceleration : 32|16@1- (0.00048828125,0) [-16|16] "m/s^2" Vector__XXX
+ SG_ AEB_CommandAccel_Flit : 16|16@1- (0.00048828125,0) [-16|16] "m/s^2" Vector__XXX
+ SG_ AEB_CommandAccel_unfilt : 0|16@1- (0.00048828125,0) [-16|16] "m/s^2" Vector__XXX
+
+BO_ 2634016042 ACC_S06: 8 ACC
+ SG_ AEB_HostVelocity : 48|16@1- (0.00390625,0) [-128|128] "m/s" Vector__XXX
+ SG_ AEB_TargetDistance : 32|16@1+ (0.0078125,0) [-256|256] "m" Vector__XXX
+ SG_ AEB_TargetRelativeVelocity : 16|16@1- (0.00390625,0) [-128|128] "m/s" Vector__XXX
+ SG_ AEB_TargetAcceleration : 0|16@1- (0.00048828125,0) [-16|16] "m/s^2" Vector__XXX
+
+BO_ 2634016554 ACC_S11: 8 Vector__XXX
+ SG_ Retarder_detected : 40|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ umoCandidateQualified : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ umoFaultDetectClearTimer : 24|8@1+ (15,0) [0|3825] "seconds" Vector__XXX
+ SG_ umoCandidateDetectTimer : 8|8@1+ (100,0) [0|25500] "milliseconds" Vector__XXX
+ SG_ radarUMOFaultDetectCounter : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ umoDetected : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDATable : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ XBRLimit : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ XBRSource : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ umoDetectTimer : 16|8@1+ (300,0) [0|76500] "milliseconds" Vector__XXX
+ SG_ umoCandidateDetected : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ radarUMOFaultDetected : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2634022698 ACC_S99: 8 ACC
+
+BO_ 2634017322 ACC_S20: 8 ACC
+ SG_ debug_cancel_cw_cond : 32|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ debug_allow_entry_cw_cond : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2634015786 ACC_S05: 8 ACC
+ SG_ ACD_v_hv_est__s_1 : 48|8@1+ (0.078,-9.984) [-9.984|9.906] "m/sec^2" Vector__XXX
+ SG_ ACD_v_hv_est__s_0 : 40|8@1+ (0.19,0) [0|48.45] "m/sec" Vector__XXX
+ SG_ ACD_j_road_bft : 32|8@1+ (0.00039,-0.04992) [-0.04992|0.04953] "1/meter" Vector__XXX
+ SG_ LCG_actuation : 5|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LCM_a_cmd__s : 8|8@1+ (0.02,-4) [-4|1] "m/s^2" Vector__XXX
+ SG_ LCG_a_xbr_out : 24|8@1+ (0.02,-4) [-4|1] "m/s^2" Vector__XXX
+ SG_ LCG_a_cti__s : 16|8@1+ (0.02,-4) [-4|1] "m/s^2" Vector__XXX
+
+BO_ 2634017834 ACC_S22: 8 ACC
+ SG_ debug_cancel_global_cond : 32|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ debug_allow_entry_global_cond : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2634022442 ACC_S98: 8 ACC
+
+BO_ 2634017578 ACC_S21: 8 ACC
+ SG_ debug_cancel_cmb_cond : 32|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ debug_allow_entry_cmb_cond : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2634019114 ACC_S31: 8 ACC
+
+BO_ 2634019370 ACC_S32: 8 ACC
+
+BO_ 2634018858 ACC_S30: 8 ACC
+ SG_ cw_relaccel : 16|16@1- (0.00048828125,0) [0|0] "m/s2" Vector__XXX
+ SG_ cw_latspeed : 32|16@1- (0.00390625,0) [0|0] "m/s" Vector__XXX
+ SG_ cw_vidconf : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cw_stopped : 14|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cw_stationary : 15|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cw_moving : 13|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cm_allow_entry_global_conditions : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cm_cancel_global_conditions : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cw_allow_entry : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cw_cancel : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cmb_allow_entry : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cmb_cancel : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2634015530 ACC_S04: 8 ACC
+ SG_ LCM_is_allowed : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LCM_is_commanding_xbr : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LCM_is_cruisehandover : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACD_b_ctl : 56|8@1- (0.015,0) [-1.92|1.905] "m/sec^3 jolt" Vector__XXX
+ SG_ ACD_b_dmd_min_alim : 32|8@1- (0.015,0) [-1.92|1.905] "m/sec^3 jolt" Vector__XXX
+ SG_ ACD_b_dmd_max_cruise : 48|8@1- (0.015,0) [-1.92|1.905] "m/sec^3 jolt" Vector__XXX
+ SG_ ACD_b_dmd_max_alim : 40|8@1- (0.015,0) [-1.92|1.905] "m/sec^3 jolt" Vector__XXX
+ SG_ LCM_n_pcnt_eng_out : 24|8@1+ (1,-125) [-125|125] "" Vector__XXX
+ SG_ LCM_is_commanding_eng : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACD_b_dmd_max_bend : 16|8@1- (0.015,0) [-1.92|1.905] "m/s^3" Vector__XXX
+ SG_ ACD_b_dmd_max_follow : 8|8@1- (0.015,0) [-1.92|1.905] "m/s^3" Vector__XXX
+ SG_ ACD_is_demanding_ctv_bend : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACD_is_demanding_ctr : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LCM_is_allowed_braking : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2634016298 ACC_S10: 8 ACC
+ SG_ CMT_AEBS_RAM_Counter : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CMT_AEBS_NVM_Counter : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2634015274 ACC_S03: 8 ACC
+ SG_ KBAEBSRuntimeWorst : 48|16@1+ (1,0) [0|0] "us" Vector__XXX
+ SG_ KBAEBSRuntimeCurrent : 32|16@1+ (1,0) [0|0] "us" Vector__XXX
+ SG_ MinimumMainStack : 16|16@1+ (1,0) [0|65535] "bytes" Vector__XXX
+ SG_ MaximumProcessorLoad : 8|8@1+ (0.5,0) [0|110] "%" Vector__XXX
+ SG_ CurrentProcessorLoad : 0|8@1+ (0.5,0) [0|110] "%" Vector__XXX
+
+BO_ 2634015018 ACC_S02: 8 ACC
+ SG_ ActiveFault04 : 55|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ActiveFault03 : 39|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ActiveFault02 : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ActiveFault01 : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2634014762 ACC_S01: 8 ACC
+ SG_ TO_Plausibility : 51|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ TO_stopped : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TO_present : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TO_handle : 42|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ TO_dx : 32|10@1+ (0.25,0) [0|256] "" Vector__XXX
+ SG_ TO_dyv : 24|8@1- (0.125,0) [-128|127] "" Vector__XXX
+ SG_ TO_axv : 16|8@1- (0.125,0) [-16|16] "" Vector__XXX
+ SG_ TO_vr : 0|8@1- (0.5,0) [-64|64] "" Vector__XXX
+
+BO_ 2566901802 DIRK: 8 ACC
+ SG_ DFM_Cnt_red_button : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DFM_Cnt_green_button : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DFM_red_button : 2|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DFM_green_button : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+
+
+
+CM_ BO_ 2634018091 "AEB signals";
+CM_ BO_ 2634017067 "AEB signals";
+CM_ BO_ 2634016811 "AEB signals";
+CM_ BO_ 2634018090 "AEB signals";
+CM_ BO_ 2634017066 "AEB signals";
+CM_ BO_ 2634016810 "AEB signals";
+CM_ BO_ 2634016042 "AEB signals";
+CM_ BO_ 2634016554 "Transmit  period 100ms ";
+CM_ SG_ 2634016554 umoCandidateQualified "Radar track which has been declared a UMO Candidate and it has the right relative disstance and relative velocity";
+CM_ SG_ 2634016554 umoFaultDetectClearTimer "formerly Obstruction_confirmed_decrement_timer
+transmitted value scaled to 15sec / bit.
+
+APV 
+Bdx_UMOFaultDetectClearTime_apv 
+/* formerly Bdx_ObstructionImage_FaultDetect_decrement_time_apv  */";
+CM_ SG_ 2634016554 umoCandidateDetectTimer "formerly Obstruction_target_timer (in the code)
+transmit value scaleed to 100 ms/bit,
+value will saturate at 255 (25.5 sec)
+
+
+used apv is
+Bdx_UMOCandidateDetectLimit_apv 
+/* formerly Bdx_Obstruction_target_timer_limit_apv  */";
+CM_ SG_ 2634016554 radarUMOFaultDetectCounter "formerly ObstructionImage_FaultDetect_counter
+There is no scaling
+Value not expected to be more than 15
+
+The associated APV is
+Bdx_RadarUMOFaultDetectLimit_apv
+/* formerly Bdx_ObstructionImage_FaultDetect_limit_apv  */";
+CM_ SG_ 2634016554 umoDetected "formerly Obstruction_event_confirmed";
+CM_ SG_ 2634016554 umoDetectTimer "formerly Obstruction_counter
+transmit value scaled to 300ms / bit
+
+uses
+Bdx_UMODetectTimerDecrement_apv 
+/* formerly Obstruction_counter_decrement_apv  */
+Bdx_UMODetectTimerLimit_apv
+/* formerly Obstruction_counter_limit_apv  */";
+CM_ SG_ 2634016554 umoCandidateDetected "formerly Obstruction_detected";
+CM_ SG_ 2634016554 radarUMOFaultDetected "Previously called Obstruction_confirmed
+The radar has been faulted by virtue of a UMO which would not clear
+";
+CM_ BO_ 2634022698 "Version information";
+CM_ BO_ 2634017322 "ACF controller values";
+CM_ BO_ 2634015786 "VLC transmission values";
+CM_ SG_ 2634015786 ACD_v_hv_est__s_1 "Long controller Host Vehicle Acceleration estimation";
+CM_ SG_ 2634015786 ACD_v_hv_est__s_0 " Long controller Host Vehicle Velocity estimation";
+CM_ SG_ 2634015786 ACD_j_road_bft " Long Controller road curvature estimation";
+CM_ SG_ 2634015786 LCM_a_cmd__s "Acceleration command (Post Command Filtering)";
+CM_ SG_ 2634015786 LCG_a_xbr_out "Acceleration command (Post Inverse plant transfer function.)";
+CM_ SG_ 2634015786 LCG_a_cti__s "Acceleration command (Post Plant Filtering)";
+CM_ BO_ 2634017834 "Course prediction";
+CM_ BO_ 2634022442 "Mirror of error memory";
+CM_ BO_ 2634017578 "Lane classification";
+CM_ BO_ 2634019114 "Misalignment";
+CM_ BO_ 2634019370 "Blindness";
+CM_ BO_ 2634018858 "Misalignment";
+CM_ BO_ 2634015530 "VLC acceleration values";
+CM_ SG_ 2634015530 ACD_b_ctl "Jolt output from closed loop controller series";
+CM_ SG_ 2634015530 ACD_b_dmd_min_alim "Calculated acceleration jolt limit min";
+CM_ SG_ 2634015530 ACD_b_dmd_max_cruise "Calculated acceleration jolt limit cruise";
+CM_ SG_ 2634015530 ACD_b_dmd_max_alim "Calculated acceleration jolt limit max";
+CM_ BO_ 2634016298 "ACC overview";
+CM_ BO_ 2634015274 "ACC states";
+CM_ BO_ 2634015018 "Error information";
+CM_ SG_ 2634015018 ActiveFault04 "UDS Fault Id ";
+CM_ SG_ 2634015018 ActiveFault03 "UDS Fault Id ";
+CM_ SG_ 2634015018 ActiveFault02 "UDS Fault Id ";
+CM_ SG_ 2634015018 ActiveFault01 "UDS Fault Id ";
+CM_ BO_ 2634014762 "Target information";
+CM_ SG_ 2634014762 TO_Plausibility "Derived  from trk_ptr_ACC->credibility_f32
+
+When a object is present  it identifies the credibility of this track to correspond with a physical target ";
+CM_ SG_ 2634014762 TO_stopped "Derived from 
+fabs(IV.velocity) < STOPPED_TRACK_SOG)";
+CM_ SG_ 2634014762 TO_present "Derived from IV.present
+";
+CM_ SG_ 2634014762 TO_handle "Derived from Num_acc_out_s32";
+CM_ SG_ 2634014762 TO_dx "Derived from IV.range
+
+Target measured or predicted distance
+units LSB = 1/4m";
+CM_ SG_ 2634014762 TO_dyv "Derived from trk_ptr_ACC->fi_latdistcor_f32
+final filtered lateral distance with estimated curvature correction
+
+median filtered lateral offset compensated relative to vehicle axis 
+Units 1 LSB = 1/8 m
+";
+CM_ SG_ 2634014762 TO_axv "Derived from IV.acceleration
+before scaling units are 1/8 m/sec^2
+";
+CM_ SG_ 2634014762 TO_vr "derived from IV.relative_velocity
+0.5 m/s per bit before scaling";
+CM_ BO_ 2566901802 "Driver Interactive Response Keys
+(Driver feedback buttons)";
+VAL_ 2634018091 ETAS_AEB_DrvOverride 3 "Reserved3" 2 "Reserved2" 1 ">90%" 0 "None" ;
+VAL_ 2634018091 ETAS_AEB_state 5 "Suspend" 4 "Activate" 3 "Warning" 2 "Possible" 1 "Enabled" 0 "Disabled" ;
+VAL_ 2634016811 ETAS_ACB_StationaryObjectAlert 1 "True" 0 "False" ;
+VAL_ 2634016811 ETAS_ACB_POSTRunning 1 "True" 0 "False" ;
+VAL_ 2634016811 ETAS_ACB_DynoMode 1 "True" 0 "False" ;
+VAL_ 2634016811 ETAS_ACB_ESPActive 1 "True" 0 "False" ;
+VAL_ 2634016811 ETAS_AEB_ReEntryTimerActive 1 "True" 0 "False" ;
+VAL_ 2634016811 ETAS_AEB_Activate 1 "True" 0 "False" ;
+VAL_ 2634016811 ETAS_AEB_Possible 1 "True" 0 "False" ;
+VAL_ 2634016811 ETAS_AEB_DriverAlert 1 "True" 0 "False" ;
+VAL_ 2634018090 AEB_DrvOverride 3 "Reserved3" 2 "Reserved2" 1 ">90%" 0 "None" ;
+VAL_ 2634018090 AEB_state 5 "Suspend" 4 "Activate" 3 "Warning" 2 "Possible" 1 "Enabled" 0 "Disabled" ;
+VAL_ 2634016810 AEB_ReEntryTimerActive 1 "True" 0 "False" ;
+VAL_ 2634016810 ACB_StationaryObjectAlert 1 "True" 0 "False" ;
+VAL_ 2634016810 ACB_POSTRunning 1 "True" 0 "False" ;
+VAL_ 2634016810 ACB_DynoMode 1 "True" 0 "False" ;
+VAL_ 2634016810 ACB_ESPActive 1 "True" 0 "False" ;
+VAL_ 2634016810 AEB_Activate 1 "True" 0 "False" ;
+VAL_ 2634016810 AEB_DriverAlert 1 "True" 0 "False" ;
+VAL_ 2634016810 AEB_Possible 1 "True" 0 "False" ;
+VAL_ 2634016554 Retarder_detected 1 "True" 0 "False" ;
+VAL_ 2634016554 XBRLimit 5 "UMO_DETECTED_LIMIT" 4 "NLD2" 3 "POST" 2 "YC / ROP" 1 "Brake Overuse" 0 "No Limiting" ;
+VAL_ 2634016554 XBRSource 3 "Bendix CMT" 2 "TRW AEBS" 1 "ACB" 0 "None" ;
+VAL_ 2634015786 LCG_actuation 4 "engine_and_drive_retarder,_brs" 3 "engine_retarder,_drivel_retarder" 2 "engine_retarder" 1 "engine" 0 "EMS_internal_cruise_control" ;
+

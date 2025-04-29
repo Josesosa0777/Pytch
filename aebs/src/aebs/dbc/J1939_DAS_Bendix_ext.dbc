@@ -1,0 +1,195 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Instrument_Cluster_27 AEBS_2A ACC_2A Body_Controller_21 Body_Controller_E6 Brakes_System_Controller_0B Clock_17 Engine_Controller_00 Gearbox_03 Instrument_Cluster_17 LDW_TRW_E8 Retarder_Driveline_10 Retarder_Engine_0F Tachograph_EE EDC_00_29 Engine_1 ECU_30
+
+
+BO_ 2365443122 OEL_17: 8 Instrument_Cluster_17
+ SG_ OEL_TurnSigSw_17 : 8|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ OEL_HighBeamSw_17 : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ OEL_HazardLightSw_17 : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+    
+BO_ 2364476202 XBRUS_2A: 8 AEBS_2A
+ SG_ XBRUS_BDRTrigger_2A : 39|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ XBRUS_NLDPlausFreeze_2A : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ XBRUS_PullRight_2A : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ XBRUS_PullLeft_2A : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ XBRUS_NLDLimitActive_2A : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ XBRUS_ATGInProgress_2A : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ XBRUS_ATGPossible_2A : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ XBRUS_AEBActivate_2A : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ XBRUS_AEBPossible_2A : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ XBRUS_EnableInterface_2A : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ XBRUS_TSC1StartStop_2A : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ XBRUS_TSC1TorqueLimit_2A : 40|8@1+ (1,-125) [0|250] "%" Vector__XXX
+ SG_ XBRUS_TSC1ControlPriority_2A : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ XBRUS_TSC1ControlPurpose_2A : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ XBRUS_TSC1ControlMode_2A : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ XBRUS_Checksum_2A : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ XBRUS_MessageCounter_2A : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ XBRUS_Urgency_2A : 24|8@1+ (0.4,0) [0|250] "%" Vector__XXX
+ SG_ XBRUS_leerbit22to23_2A : 22|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ XBRUS_ControlMode_2A : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ XBRUS_Priority_2A : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ XBRUS_EBIMode_2A : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ XBRUS_AccelDemand_2A : 0|16@1+ (0.00048828125,-15.687) [0|64250] "m/s2" Vector__XXX
+
+BO_ 2566852650 PropWarn: 8 Vector__XXX
+ SG_ TSROveruse : 62|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TargetFused : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FusionAvailable : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TSR_Warning_Flag : 63|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ TSRSpeedLimit : 56|6@1+ (5,0) [0|315] "kph" Vector__XXX
+ SG_ FusionEnabled : 55|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ NetVehFollowInt : 0|8@1+ (0.125,0) [0|31.875] "s" Vector__XXX
+ SG_ FLR_ErrorStatus : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACB_AEBEnabled : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACCSensorBlocked : 44|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ POSTStatus : 48|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RADARBrakeRequest : 52|1@1- (1,0) [0|0] "-" Vector__XXX
+ SG_ AEBActivate : 51|1@1+ (1,0) [0|0] "-" Vector__XXX
+ SG_ AEBPossible : 50|1@1+ (1,0) [0|0] "-" Vector__XXX
+ SG_ BrakeCoolOffPeriod : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ACCModeTell : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CruiseControlOnTell : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CruiseControlSetSpeed : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ FollowingDistanceInSeconds : 24|8@1+ (0.125,0) [0|31.875] "0.125 sec/bit" Vector__XXX
+ SG_ FollowingDistanceInFeet : 16|8@1+ (2,0) [0|510] "2 feet/bit" Vector__XXX
+ SG_ FDALightStripControl : 11|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ AudibleFeedback : 8|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 2566857192 Camera_Prop_Warn: 8 LDW_TRW_E8
+ SG_ ME_Region_Type : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CountryCode : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Speed_Sign_Life : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Acoustic_Left_Warning : 22|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Acoustic_Right_Warning : 20|2@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Optical_Left_Warning : 18|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Optical_Right_Warning : 16|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CountryCode : 58|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ SpeedSignValue : 48|8@1+ (1,0) [0|255] ""  ACC_2A
+ SG_ NewSpeedSignDetected : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ME_LDW_LaneDeparture_Right : 12|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ME_LDW_LaneDeparture_Left : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Traffic_Sign_Warning : 8|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Ped_DangerZone : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Ped_FCW : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LDW_LaneDeparture_Left : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LDW_LaneDeparture_Right : 4|2@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2566856936 Camera_Prop_State_E8: 8 LDW_TRW_E8
+ SG_ CAMFusionEnabledFlag : 18|2@1+ (1,0) [0|3] "-" Vector__XXX
+ SG_ ME_Speed_Sign_ID : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ME_Region_Type : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CountryCode : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ TSR_Active : 16|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DrowsyDriver_Enabled : 34|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ FCW_Enabled : 32|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Video_Data_Enabled : 30|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Driver_Data_Enabled : 28|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fusion_Enabled : 26|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Ped_Det_Enabled : 24|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TSR_Enabled : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Traffic_Sign_Type : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LDW_Right_Tracking : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LDW_Left_Tracking : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LDW_Enabled : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+
+ 
+BO_TX_BU_ 2364476202 : AEBS_2A,ACC_2A;
+
+
+CM_ BO_ 2365443122 "Operators External Light Controls Message (Body Controller)";
+CM_ BO_ 2364476202 "External Brake Request US Prop (Headway Controller)";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_DEF_  "VFrameFormat" "ExtendedCAN";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "ProtocolType" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_ "BusType" "CAN";
+VAL_ 2365443122 OEL_TurnSigSw_17 15 "Not Available" 14 "Error" 0 "NoTurnbeingSignaled" 2 "RightTurnSignalFlashing" 1 "LeftTurnSignalFlashing" ;
+VAL_ 2365443122 OEL_HighBeamSw_17 3 "Not available" 2 "Error" 1 "Active" 0 "Not active" ;
+VAL_ 2365443122 OEL_HazardLightSw_17 15 "Not available" 14 "Error" 1 "Lamps flashing" 0 "Lamps off" ;
+VAL_ 2364476202 XBRUS_BDRTrigger_2A 1 "False" 0 "True" ;
+VAL_ 2364476202 XBRUS_NLDPlausFreeze_2A 1 "False" 0 "True" ;
+VAL_ 2364476202 XBRUS_PullRight_2A 1 "False" 0 "True" ;
+VAL_ 2364476202 XBRUS_PullLeft_2A 1 "False" 0 "True" ;
+VAL_ 2364476202 XBRUS_NLDLimitActive_2A 1 "False" 0 "True" ;
+VAL_ 2364476202 XBRUS_ATGInProgress_2A 1 "False" 0 "True" ;
+VAL_ 2364476202 XBRUS_ATGPossible_2A 1 "False" 0 "True" ;
+VAL_ 2364476202 XBRUS_AEBActivate_2A 1 "False" 0 "True" ;
+VAL_ 2364476202 XBRUS_AEBPossible_2A 1 "False" 0 "True" ;
+VAL_ 2364476202 XBRUS_EnableInterface_2A 1 "Available" 0 "Off for power cycle" ;
+VAL_ 2364476202 XBRUS_TSC1StartStop_2A 1 "Stop" 0 "Start" ;
+VAL_ 2364476202 XBRUS_TSC1ControlPriority_2A 3 "Low" 2 "Medium" 1 "High" 0 "Highest" ;
+VAL_ 2364476202 XBRUS_TSC1ControlPurpose_2A 1 "Cruise Control" 0 "Accelerator Pedal" ;
+VAL_ 2364476202 XBRUS_TSC1ControlMode_2A 3 "Speed/Torque Limiting" 2 "Torque Control" 1 "Speed Control" 0 "Override Disabled" ;
+VAL_ 2364476202 XBRUS_Urgency_2A 255 "Not available" 254 "Error" ;
+VAL_ 2364476202 XBRUS_ControlMode_2A 2 "With maximum mode" 1 "With addition mode" 0 "Override disabled" ;
+VAL_ 2364476202 XBRUS_Priority_2A 3 "Low Priority" 2 "Medium Priority" 1 "High Priority" 0 "Highest Priority" ;
+VAL_ 2364476202 XBRUS_EBIMode_2A 3 "not_available" 2 "endurance_brake_integration" 1 "only_endurance_brakes" 0 "no_endurance_brake_integration" ;
+VAL_ 2364476202 XBRUS_AccelDemand_2A 65535 "Not available" 65024 "Error" ;
+VAL_ 2566852650 TSROveruse 1 "False" 0 "True" ;
+VAL_ 2566852650 TargetFused 1 "Fused" 0 "Not fused" ;
+VAL_ 2566852650 FusionAvailable 1 "Available" 0 "Not Available" ;
+VAL_ 2566852650 TSR_Warning_Flag 1 "No sign detected" 0 "Sign detected" ;
+VAL_ 2566852650 FusionEnabled 1 "False" 0 "True" ;
+VAL_ 2566852650 FLR_ErrorStatus 1 "False" 0 "True" ;
+VAL_ 2566852650 ACB_AEBEnabled 1 "False" 0 "True" ;
+VAL_ 2566852650 ACCSensorBlocked 3 "not available" 2 "error" 1 "Sensor blocked" 0 "Senor not blocked" ;
+VAL_ 2566852650 POSTStatus 3 "POST not ready" 2 "POST failed" 1 "POST passed" 0 "POST in progress" ;
+VAL_ 2566852650 RADARBrakeRequest 1 "Foundation brakes off" 0 "Foundation brakes on" ;
+VAL_ 2566852650 AEBActivate 1 "False" 0 "True" ;
+VAL_ 2566852650 AEBPossible 1 "False" 0 "True" ;
+VAL_ 2566852650 BrakeCoolOffPeriod 3 "Not available" 2 "Error" 1 "On" 0 "Off" ;
+VAL_ 2566852650 ACCModeTell 3 "not available" 2 "error" 1 "Following mode" 0 "Not in following mode" ;
+VAL_ 2566852650 CruiseControlOnTell 3 "Not available" 2 "Error" 1 "On" 0 "Off" ;
+VAL_ 2566852650 FDALightStripControl 7 "not available" 6 "error" 5 "Dyno Mode" 4 "Follow level 2" 3 "Stationary object warning" 2 "Follow level 1" 1 "POST active" 0 "Off" ;
+VAL_ 2566852650 AudibleFeedback 7 "not available" 6 "error" 5 "Take over request" 4 "ACC shutoff warning" 3 "Audible Alert 3" 2 "Audible Alert 2" 1 "Audible Alert 1" 0 "OFF" ;
+
+

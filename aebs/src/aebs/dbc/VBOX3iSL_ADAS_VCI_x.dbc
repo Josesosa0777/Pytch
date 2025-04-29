@@ -1,0 +1,230 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 776 VBOX_8: 8 Vector__XXX
+ SG_ Latitude_48bit : 7|48@0- (1E-007,0) [-10800|10800] "Minutes" Vector__XXX
+ SG_ Kalman_Filter_Status : 56|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 777 VBOX_9: 8 Vector__XXX
+ SG_ Longitude_48bit : 7|48@0- (1E-007,0) [-5400|5400] "Minutes" Vector__XXX
+
+BO_ 775 VBOX_7: 8 Vector__XXX
+ SG_ Roll_Angle : 39|16@0- (0.01,0) [-180|180] "degrees" Vector__XXX
+ SG_ Yaw_Rate : 23|16@0- (0.01,0) [-1333|1333] "deg/s" Vector__XXX
+ SG_ Long_Velocity_mph : 55|16@0- (0.0115078,0) [-377.0875904|377.0760826] "mph" Vector__XXX
+ SG_ Long_Velocity_kmh : 55|16@0- (0.01852,0) [-606.86336|606.84484] "km/h" Vector__XXX
+ SG_ Lat_Velocity_mph : 7|16@0- (0.0115078,0) [-377.0875904|377.0760826] "mph" Vector__XXX
+ SG_ Lat_Velocity_kmh : 7|16@0- (0.01852,0) [-606.86336|606.84484] "km/h" Vector__XXX
+
+BO_ 774 VBOX_6: 8 Vector__XXX
+ SG_ Pitch_Angle : 55|16@0- (0.01,0) [-90|90] "degrees" Vector__XXX
+ SG_ Slip_Angle : 39|16@0- (0.01,0) [-180|180] "degrees" Vector__XXX
+ SG_ True_Heading : 23|16@0+ (0.01,0) [0|360] "degrees" Vector__XXX
+ SG_ Vel_Quality : 7|16@0- (0.01,0) [0|0] "km/h" Vector__XXX
+
+BO_ 773 VBOX_5: 8 Vector__XXX
+ SG_ Trig_Vel_Mph : 55|16@0+ (0.0115078,0) [0|754.163673] "Mph" Vector__XXX
+ SG_ Trig_Vel_Kmh : 55|16@0+ (0.01852,0) [0|1213.7082] "Km/h" Vector__XXX
+ SG_ Trig_time : 39|16@0+ (0.01,0) [0|655.35] "Secs" Vector__XXX
+ SG_ Distance : 7|32@0+ (7.8125E-005,0) [0|335544] "Metres" Vector__XXX
+
+BO_ 772 VBOX_4: 8 Vector__XXX
+ SG_ Lateral_acceleration : 55|16@0- (0.01,0) [-327.68|327.67] "G" Vector__XXX
+ SG_ Longitudinal_acceleration : 39|16@0- (0.01,0) [-327.68|327.67] "G" Vector__XXX
+ SG_ Trig_Dist : 7|32@0+ (7.8125E-005,0) [0|335544] "Metres" Vector__XXX
+
+BO_ 771 VBOX_3: 8 Vector__XXX
+ SG_ DGPS : 61|1@0+ (1,0) [0|0] "On" Vector__XXX
+ SG_ Brake_trigger : 60|1@0+ (1,0) [0|0] "On" Vector__XXX
+ SG_ Vertical_Velocity : 31|16@0- (0.01,0) [0|655.36] "m/s" Vector__XXX
+ SG_ Altitude_WGS84 : 7|24@0- (0.01,0) [0|42949700] "metres" Vector__XXX
+ SG_ Logging : 52|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 770 VBOX_2: 8 Vector__XXX
+ SG_ Velocity_mph : 39|16@0+ (0.0115078,0) [0|754.163673] "mph" Vector__XXX
+ SG_ Heading : 55|16@0+ (0.01,0) [0|359.99] "Degrees" Vector__XXX
+ SG_ Velocity_kmh : 39|16@0+ (0.01852,0) [0|1213.7082] "Km/h" Vector__XXX
+ SG_ Longitude : 7|32@0- (1E-005,0) [-21474.83648|21474.83647] "Minutes" Vector__XXX
+
+BO_ 769 VBOX_1: 8 Vector__XXX
+ SG_ Latitude : 39|32@0- (1E-005,0) [-21474.83648|21474.83647] "Minutes" Vector__XXX
+ SG_ Time_Since_Midnight : 15|24@0+ (0.01,0) [0|0] "Seconds" Vector__XXX
+ SG_ Sats : 7|8@0+ (1,0) [0|12] "Sats" Vector__XXX
+
+BO_ 787 Slip_1_1: 8 Vector__XXX
+ SG_ Slip_FL : 7|16@0- (0.01,0) [-180|180] "deg" Vector__XXX
+ SG_ Slip_FR : 23|16@0- (0.01,0) [-180|180] "deg" Vector__XXX
+ SG_ Slip_RL : 39|16@0- (0.01,0) [-180|180] "deg" Vector__XXX
+ SG_ Slip_RR : 55|16@0- (0.01,0) [-180|180] "deg" Vector__XXX
+
+BO_ 788 Slip_1_2: 8 Vector__XXX
+ SG_ Slip_COG : 7|16@0- (0.01,0) [-180|180] "deg" Vector__XXX
+
+BO_ 778 ADAS_VCI_T1_1: 8 Vector__XXX
+ SG_ Range_tg1 : 7|32@0- (1,0) [0|0] "Metres" Vector__XXX
+ SG_ RelSpd_tg1 : 39|32@0- (1,0) [0|0] "km/h" Vector__XXX
+
+BO_ 779 ADAS_VCI_T1_2: 8 Vector__XXX
+ SG_ LngRsv_tg1 : 7|32@0- (1,0) [0|0] "Metres" Vector__XXX
+ SG_ LatRsv_tg1 : 39|32@0- (1,0) [0|0] "Metres" Vector__XXX
+
+BO_ 780 ADAS_VCI_T1_3: 8 Vector__XXX
+ SG_ LngSsv_tg1 : 7|32@0- (1,0) [0|0] "km/h" Vector__XXX
+ SG_ LatSsv_tg1 : 39|32@0- (1,0) [0|0] "km/h" Vector__XXX
+
+BO_ 781 ADAS_VCI_T1_4: 8 Vector__XXX
+ SG_ Angle_tg1 : 7|32@0- (1,0) [0|0] "Deg" Vector__XXX
+ SG_ Status_tg1 : 39|8@0+ (1,0) [0|0] "RTK" Vector__XXX
+ SG_ LKTime_tg1 : 47|24@0+ (0.01,0) [0|0] "Seconds" Vector__XXX
+
+BO_ 782 ADAS_VCI_T1_5: 8 Vector__XXX
+ SG_ LngRtg_tg1 : 7|32@0- (1,0) [0|0] "Metres" Vector__XXX
+ SG_ LatRtg_tg1 : 39|32@0- (1,0) [0|0] "Metres" Vector__XXX
+
+BO_ 783 ADAS_VCI_T1_6: 8 Vector__XXX
+ SG_ T2Csv_tg1 : 7|32@0- (1,0) [0|0] "Seconds" Vector__XXX
+ SG_ Status_sv_T1 : 39|8@0+ (1,0) [0|0] "RTK" Vector__XXX
+ SG_ Yawdif_tg1 : 55|16@0- (0.01,0) [0|0] "Deg" Vector__XXX
+
+BO_ 784 ADAS_VCI_T1_7: 8 Vector__XXX
+ SG_ Spd_tg1 : 7|32@0- (1,0) [0|0] "km/h" Vector__XXX
+ SG_ T2C2sv_tg1 : 39|32@0- (1,0) [0|0] "Seconds" Vector__XXX
+
+BO_ 785 ADAS_VCI_T1_8: 8 Vector__XXX
+ SG_ LatRreftg1 : 7|32@0- (1,0) [0|0] "Metres" Vector__XXX
+ SG_ Accel_tg1 : 39|32@0- (1,0) [0|0] "g" Vector__XXX
+
+BO_ 786 ADAS_VCI_T1_9: 8 Vector__XXX
+ SG_ SepTim_tg1 : 7|32@0- (1,0) [0|0] "Seconds" Vector__XXX
+ SG_ T2Ctg_tg1 : 39|32@0- (1,0) [0|0] "Seconds" Vector__XXX
+
+BO_ 789 ADAS_VCI_T1_10: 8 Vector__XXX
+ SG_ Latdif_tg1 : 7|32@0- (1,0) [0|0] "Minutes" Vector__XXX
+ SG_ Lngdif_tg1 : 39|32@0- (1,0) [0|0] "Minutes" Vector__XXX
+
+BO_ 790 ADAS_VCI_T1_11: 8 Vector__XXX
+ SG_ YawRat_tg1 : 7|32@0- (1,0) [0|0] "Deg/s" Vector__XXX
+
+BO_ 791 ADAS_VCI_T2_1: 8 Vector__XXX
+ SG_ RelSpd_tg2 : 39|32@0- (1,0) [0|0] "km/h" Vector__XXX
+ SG_ Range_tg2 : 7|32@0- (1,0) [0|0] "Metres" Vector__XXX
+
+BO_ 800 ADAS_VCI_T2_10: 8 Vector__XXX
+ SG_ Lngdif_tg2 : 39|32@0- (1,0) [0|0] "Minutes" Vector__XXX
+ SG_ Latdif_tg2 : 7|32@0- (1,0) [0|0] "Minutes" Vector__XXX
+
+BO_ 799 ADAS_VCI_T2_9: 8 Vector__XXX
+ SG_ SepTim_tg2 : 7|32@0- (1,0) [0|0] "Seconds" Vector__XXX
+ SG_ T2Ctg_tg2 : 39|32@0- (1,0) [0|0] "Seconds" Vector__XXX
+
+BO_ 798 ADAS_VCI_T2_8: 8 Vector__XXX
+ SG_ LatRreftg2 : 7|32@0- (1,0) [0|0] "Metres" Vector__XXX
+ SG_ Accel_tg2 : 39|32@0- (1,0) [0|0] "g" Vector__XXX
+
+BO_ 797 ADAS_VCI_T2_7: 8 Vector__XXX
+ SG_ T2C2sv_tg2 : 39|32@0- (1,0) [0|0] "Seconds" Vector__XXX
+ SG_ Spd_tg2 : 7|32@0- (1,0) [0|0] "km/h" Vector__XXX
+
+BO_ 796 ADAS_VCI_T2_6: 8 Vector__XXX
+ SG_ T2Csv_tg2 : 7|32@0- (1,0) [0|0] "Seconds" Vector__XXX
+ SG_ Yawdif_tg2 : 55|16@0- (0.01,0) [0|0] "Deg" Vector__XXX
+ SG_ Status_sv_T2 : 39|8@0+ (1,0) [0|0] "RTK" Vector__XXX
+
+BO_ 795 ADAS_VCI_T2_5: 8 Vector__XXX
+ SG_ LngRtg_tg2 : 7|32@0- (1,0) [0|0] "Metres" Vector__XXX
+ SG_ LatRtg_tg2 : 39|32@0- (1,0) [0|0] "Metres" Vector__XXX
+
+BO_ 794 ADAS_VCI_T2_4: 8 Vector__XXX
+ SG_ LKTime_tg2 : 47|24@0+ (0.01,0) [0|0] "Seconds" Vector__XXX
+ SG_ Angle_tg2 : 7|32@0- (1,0) [0|0] "Deg" Vector__XXX
+ SG_ Status_tg2 : 39|8@0+ (1,0) [0|0] "RTK" Vector__XXX
+
+BO_ 793 ADAS_VCI_T2_3: 8 Vector__XXX
+ SG_ LatSsv_tg2 : 39|32@0- (1,0) [0|0] "km/h" Vector__XXX
+ SG_ LngSsv_tg2 : 7|32@0- (1,0) [0|0] "km/h" Vector__XXX
+
+BO_ 792 ADAS_VCI_T2_2: 8 Vector__XXX
+ SG_ LngRsv_tg2 : 7|32@0- (1,0) [0|0] "Metres" Vector__XXX
+ SG_ LatRsv_tg2 : 39|32@0- (1,0) [0|0] "Metres" Vector__XXX
+
+BO_ 801 ADAS_VCI_T2_11: 8 Vector__XXX
+ SG_ YawRat_tg2 : 7|32@0- (1,0) [0|0] "Deg/s" Vector__XXX
+
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+SIG_VALTYPE_ 778 Range_tg1 : 1;
+SIG_VALTYPE_ 778 RelSpd_tg1 : 1;
+SIG_VALTYPE_ 779 LngRsv_tg1 : 1;
+SIG_VALTYPE_ 779 LatRsv_tg1 : 1;
+SIG_VALTYPE_ 780 LngSsv_tg1 : 1;
+SIG_VALTYPE_ 780 LatSsv_tg1 : 1;
+SIG_VALTYPE_ 781 Angle_tg1 : 1;
+SIG_VALTYPE_ 782 LngRtg_tg1 : 1;
+SIG_VALTYPE_ 782 LatRtg_tg1 : 1;
+SIG_VALTYPE_ 783 T2Csv_tg1 : 1;
+SIG_VALTYPE_ 784 Spd_tg1 : 1;
+SIG_VALTYPE_ 784 T2C2sv_tg1 : 1;
+SIG_VALTYPE_ 785 LatRreftg1 : 1;
+SIG_VALTYPE_ 785 Accel_tg1 : 1;
+SIG_VALTYPE_ 786 SepTim_tg1 : 1;
+SIG_VALTYPE_ 786 T2Ctg_tg1 : 1;
+SIG_VALTYPE_ 789 Latdif_tg1 : 1;
+SIG_VALTYPE_ 789 Lngdif_tg1 : 1;
+SIG_VALTYPE_ 790 YawRat_tg1 : 1;
+SIG_VALTYPE_ 791 RelSpd_tg2 : 1;
+SIG_VALTYPE_ 791 Range_tg2 : 1;
+SIG_VALTYPE_ 800 Lngdif_tg2 : 1;
+SIG_VALTYPE_ 800 Latdif_tg2 : 1;
+SIG_VALTYPE_ 799 SepTim_tg2 : 1;
+SIG_VALTYPE_ 799 T2Ctg_tg2 : 1;
+SIG_VALTYPE_ 798 LatRreftg2 : 1;
+SIG_VALTYPE_ 798 Accel_tg2 : 1;
+SIG_VALTYPE_ 797 T2C2sv_tg2 : 1;
+SIG_VALTYPE_ 797 Spd_tg2 : 1;
+SIG_VALTYPE_ 796 T2Csv_tg2 : 1;
+SIG_VALTYPE_ 795 LngRtg_tg2 : 1;
+SIG_VALTYPE_ 795 LatRtg_tg2 : 1;
+SIG_VALTYPE_ 794 Angle_tg2 : 1;
+SIG_VALTYPE_ 793 LatSsv_tg2 : 1;
+SIG_VALTYPE_ 793 LngSsv_tg2 : 1;
+SIG_VALTYPE_ 792 LngRsv_tg2 : 1;
+SIG_VALTYPE_ 792 LatRsv_tg2 : 1;
+SIG_VALTYPE_ 801 YawRat_tg2 : 1;
+
